@@ -1,0 +1,117 @@
+$corPrimaria: #58C25A;
+$corSecundaria: #FFD51D;
+$corFundo: #004733;
+$corFundoEscura: #01271c;
+$corFundoClara: #107a62;
+$corBotoes: #ABDDD2;
+$corBotoesEscuros: #ABDDD2;
+$corTexto: #ABDDD2;
+$corTextoHover: #eafffb;
+$corTextoEscuro: #182E29;
+
+
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: $corBotoes !important;
+    background: rgb(1,39,28);
+    background: linear-gradient(124deg, rgba(1,39,28,1) 0%, rgba(16,122,98,1) 100%);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: #ffffff00 !important;
+    & &-brand{
+        &-Logo{
+            width: 50px;
+            border-radius: 50px;
+        }
+    }
+    & .nav-link{
+        text-transform: uppercase;
+    }
+}
+
+.btn{
+    background-color: $corBotoes;
+    border: 2px solid $corFundoClara;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25) !important;
+    & &-icon{
+        color: $corFundoEscura !important;
+        
+    }
+    &:hover{
+        background-color: $corBotoes;
+    }
+}
+
+.navbar-toggler{
+    background-color: $corBotoes;
+    border: 2px solid $corFundoClara;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25) !important;
+    & &-icon{
+        color: $corFundoEscura !important;
+        
+    }
+    &:hover{
+        background-color: $corBotoes;
+    }
+}
+
+footer{
+
+    margin: 10px;
+
+    .footerBase{
+        display: flex;
+
+        align-items: center;
+        margin: auto;
+        box-sizing: border-box;
+        & .logoFooter{
+            width: 50px;
+            border-radius: 50px;
+        }
+        p{
+            font-size: 8px;
+            margin-left: 1px;
+            text-align: center;
+            margin: auto;
+        }
+    }
+    .footerDown{
+        display: flex;
+        flex-wrap: wrap;
+        a{
+            font-size: 10px;
+            color: $corTexto;
+            text-decoration: none;
+            transition: 300ms !important;
+            &:hover{
+                color: $corTextoHover;
+            }
+        }
+
+        & .groupFooter{
+            display: flex;
+            align-items: center;
+            margin: auto;
+            i{
+                width: 10px;
+                margin-right: 7px;
+            }
+            a{
+                font-size: 10px;
+                color: $corTexto;
+                text-decoration: none;
+                transition: 300ms !important;
+                &:hover{
+                    color: $corTextoHover;
+                }
+            }
+        }
+    }
+
+}
