@@ -4,114 +4,210 @@ $corFundo: #004733;
 $corFundoEscura: #01271c;
 $corFundoClara: #107a62;
 $corBotoes: #ABDDD2;
-$corBotoesEscuros: #ABDDD2;
-$corTexto: #ABDDD2;
-$corTextoHover: #eafffb;
+$corBotoesEscuros: #203b35;
+$corTexto: #ffffff;
+$corTextoHover: #ABDDD2;
 $corTextoEscuro: #182E29;
 
 
 
-body{
+body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    color: $corBotoes !important;
-    background: rgb(1,39,28);
-    background: linear-gradient(124deg, rgba(1,39,28,1) 0%, rgba(16,122,98,1) 100%);
+    color: $corTexto !important;
+    background: rgb(1, 39, 28);
+    background: linear-gradient(124deg, rgba(1, 39, 28, 1) 0%, rgba(16, 122, 98, 1) 100%);
     background-repeat: no-repeat;
     box-sizing: border-box;
 }
 
-.navbar{
+.navbar {
     background-color: #ffffff00 !important;
-    & &-brand{
-        &-Logo{
+
+    & &-brand {
+        &-Logo {
             width: 50px;
             border-radius: 50px;
         }
     }
-    & .nav-link{
+
+    & .nav-link {
         text-transform: uppercase;
     }
+
+    & .divisorIcon {
+        display: none;
+        align-items: center;
+        margin: 10px;
+
+        i {
+            width: 10px;
+            margin-right: 7px;
+        }
+
+        a {
+            font-size: 10px;
+            color: $corTexto !important;
+            text-decoration: none;
+            transition: 300ms !important;
+
+        }
+    }
+
+    & .divisorIcon-Nav {
+        display: none;
+    }
+
+    & .siteTitle {
+        text-decoration: none;
+        color: $corTexto !important;
+    }
+
 }
 
-.btn{
+.btn {
     background-color: $corBotoes;
     border: 2px solid $corFundoClara;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.25) !important;
-    & &-icon{
+
+    & &-icon {
         color: $corFundoEscura !important;
-        
+
     }
-    &:hover{
+
+    &:hover {
         background-color: $corBotoes;
     }
 }
 
-.navbar-toggler{
-    background-color: $corBotoes;
+.navbar-toggler {
+    background-color: $corBotoes !important;
     border: 2px solid $corFundoClara;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25) !important;
-    & &-icon{
+
+    & &-icon {
         color: $corFundoEscura !important;
-        
+
     }
-    &:hover{
-        background-color: $corBotoes;
+
+    &:hover {
+        background-color: $corBotoes !important;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.25) !important;
     }
 }
 
-footer{
+.dropdown-item {
+    &:hover {
+        color: $corTextoHover !important;
+        margin: 50px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5) !important;
+    }
+}
+
+footer {
 
     margin: 10px;
 
-    .footerBase{
+    .footerBase {
         display: flex;
 
         align-items: center;
         margin: auto;
         box-sizing: border-box;
-        & .logoFooter{
+
+        & .logoFooter {
             width: 50px;
             border-radius: 50px;
         }
-        p{
+
+        p {
             font-size: 8px;
             margin-left: 1px;
             text-align: center;
             margin: auto;
         }
     }
-    .footerDown{
+
+    .footerDown {
         display: flex;
         flex-wrap: wrap;
-        a{
+
+        a {
             font-size: 10px;
-            color: $corTexto;
+            color: $corTexto !important;
             text-decoration: none;
             transition: 300ms !important;
-            &:hover{
+
+            &:hover {
                 color: $corTextoHover;
+                box-shadow: 0 0 5px rgba(255, 255, 255, 0.25) !important;
+
             }
         }
 
-        & .groupFooter{
+        & .groupFooter {
             display: flex;
             align-items: center;
             margin: auto;
-            i{
+
+            i {
                 width: 10px;
                 margin-right: 7px;
             }
-            a{
+
+            a {
                 font-size: 10px;
-                color: $corTexto;
+                color: $corTexto !important;
                 text-decoration: none;
                 transition: 300ms !important;
-                &:hover{
-                    color: $corTextoHover;
-                }
+
+            }
+
+            &:hover {
+                color: $corTextoHover !important;
+                box-shadow: 0 0 5px rgba(255, 255, 255, 0.25) !important;
             }
         }
     }
 
+}
+
+.titleDestaque {
+    color: $corTexto !important;
+    margin: 10px;
+}
+
+.dropdown-item {
+    &:hover {
+        color: $corTextoHover !important;
+        margin: 50px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5) !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+//Desktop
+
+@media (min-width: 480px) {
+    footer {
+
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10px;
+
+    }
+}
+
+@media (min-width: 990px) {
+    .navbar {
+        & .divisorIcon-Nav {
+            display: flex;
+        }
+    }
 }

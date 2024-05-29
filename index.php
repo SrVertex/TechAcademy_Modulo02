@@ -25,14 +25,18 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img class="navbar-brand-Logo" src="img/logoTipo02_low.png" alt="Vapor Store"></a>
+                <a class="navbar-brand" href="index.php"><img class="navbar-brand-Logo" src="img/logoTipo02_low.png" alt="Vapor Store"></a>
+                <a href="index.php" class="siteTitle">Vapor Store</a>
+                <div class="divisorIcon divisorIcon-Nav">
+                    <span>|</span>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Loja</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Jogos</a>
@@ -155,61 +159,44 @@
 
 
 
-
-
-
-
     <footer>
         <div class="footerBase">
             <a href="#"><img class="logoFooter" src="img/logoTipo02_low.png" alt="Vapor Store"></a>
             <p>© 2024 SrVertex Corporation. Todos os direitos reservados. Todas as marcas comerciais são propriedade dos respetivos proprietários nos E.U.A. e outros países.
-            IVA incluído em todos os preços onde aplicável.</p>
+                IVA incluído em todos os preços onde aplicável.</p>
         </div>
         <div class="footerDown">
-
             <div class="groupFooter">
                 <a href="#">Parceiros</a>
             </div>
-
             <div class="groupFooter">
                 <span>|</span>
             </div>
-
             <div class="groupFooter">
                 <a href="#">Contato</a>
             </div>
-
             <div class="groupFooter">
                 <span>|</span>
             </div>
-
             <div class="groupFooter">
                 <i class="bi bi-facebook"></i>
                 <a href="#">SrVertex</a>
             </div>
-
             <div class="groupFooter">
                 <span>|</span>
             </div>
-
             <div class="groupFooter">
                 <i class="bi bi-instagram"></i>
                 <a href="#">@sr.vertex</a>
             </div>
-
             <div class="groupFooter">
                 <span>|</span>
             </div>
-
-
-
             <div class="groupFooter">
                 <i class="bi bi-github"></i>
                 <a href="#">SrVertex</a>
             </div>
         </div>
-
-
     </footer>
 
 
