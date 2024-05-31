@@ -1,3 +1,15 @@
+
+
+
+<?php 
+
+$dadosApi = file_get_contents("http://localhost/VaporStore_web/api/games.php");
+$dadosApi = json_decode($dadosApi);
+
+?>
+
+
+
 <div class="container-fluid">
 
     <h1 class="titleDestaque text-center">Jogos em Destaque</h1>
@@ -9,21 +21,23 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/banner_GhostOfTsushima.png" class="d-block w-100" alt="...">
+                <a href=""><img src="<?=$jogo->banner01?>" class="d-block w-100" alt="..."></a>
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/banner_ResidentEvil.png" class="d-block w-100" alt="...">
+                <a href=""><img src="img/banner_ResidentEvil.png" class="d-block w-100" alt="..."></a>
+
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
                     <p>Some representative placeholder content for the second slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/banner_Cyberpunk.png" class="d-block w-100" alt="...">
+                <a href=""></a>
+                
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
                     <p>Some representative placeholder content for the third slide.</p>
@@ -39,45 +53,28 @@
             <span class="visually-hidden" alt="Proxima Foto">Proximo</span>
         </button>
     </div>
+</div>
+
+
+
+<?php
+foreach($dadosApi as $jogo) {
+    ?>
+
+
+
+
+
+
+
 
 
 
 
 
     <?php
-
-$url = "games.json"
-
-$dados = file_get_contents($url);
-
-foreach ($dados->results as $jogo){
-    
-    <div class="row">
-    <div class="col-12 col-md3">
-        <div class="card">
-            <img src="" alt="">
-        </div>
-    </div>
-    <div class="col-12 col-md3">
-        <div class="card">
-
-        </div>
-    </div>
-
-
-
-
-
-
-</div>
+    echo "<p>{$jogo->id} - {$jogo->title}</p>";
 }
 
+
 ?>
-
-
-
-
-
-
-
-</div>
