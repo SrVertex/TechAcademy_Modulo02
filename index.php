@@ -21,7 +21,17 @@
 </head>
 
 <body>
+<?php
 
+$api = file_get_contents("http://localhost/VaporStore_web/api/games.php");
+$dadosApi = json_decode($api);
+
+?>
+
+<?php
+foreach ($dadosApi as $jogo) {
+}
+?>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid">
@@ -36,10 +46,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Loja</a>
+                            <a class="nav-link active" aria-current="page" href="index.php">Loja</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Jogos</a>
+                            <a class="nav-link active" href="#">Biblioteca</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
