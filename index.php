@@ -35,8 +35,8 @@ foreach ($dadosApi as $jogo) {
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.php"><img class="navbar-brand-Logo" src="img/logoTipo02_low.png" alt="Vapor Store"></a>
-                <a href="index.php" class="siteTitle">Vapor Store</a>
+                <a class="navbar-brand" href="home"><img class="navbar-brand-Logo" src="img/logoTipo02_low.png" alt="Vapor Store"></a>
+                <a href="home" class="siteTitle">Vapor Store</a>
                 <div class="divisorIcon divisorIcon-Nav">
                     <span>|</span>
                 </div>
@@ -46,31 +46,41 @@ foreach ($dadosApi as $jogo) {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.php">Loja</a>
+                            <a class="nav-link navText" aria-current="page" href="home">Loja</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Biblioteca</a>
+                            <a class="nav-link navText" href="biblioteca">Biblioteca</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link active navTextActive dropdown-toggle" id="buttonActive" onclick="toggleNav()" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Categorias
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Ação</a></li>
-                                <li><a class="dropdown-item" href="#">Plataforma</a></li>
-                                <li><a class="dropdown-item" href="#">RPG</a></li>
-                                <li><a class="dropdown-item" href="#">Simulação</a></li>
-                                <li><a class="dropdown-item" href="#">Sobrevivencia</a></li>
+                                <li><a class="dropdown-item" href="action">Ação</a></li>
+                                <li><a class="dropdown-item" href="plataform">Plataforma</a></li>
+                                <li><a class="dropdown-item" href="RPG">RPG</a></li>
+                                <li><a class="dropdown-item" href="simulator">Simulação</a></li>
+                                <li><a class="dropdown-item" href="survival">Sobrevivencia</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Todos</a></li>
+                                <li><a class="dropdown-item" href="allGames">Todos</a></li>
                             </ul>
 
                         </li>
                     </ul>
 
-                    <div class="dropdown">
+                    <a href="login" class="btn btn-light">Login</a>
+
+
+
+
+
+
+
+
+
+                    <!-- <div class="dropdown">
                         <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                             Login
                         </button>
@@ -98,7 +108,10 @@ foreach ($dadosApi as $jogo) {
                             <a class="dropdown-item" href="#">É novo por aqui? Cadastre-se</a>
                             <a class="dropdown-item" href="#">Esqueceu sua senha?</a>
                         </div>
-                    </div>
+                    </div> -->
+                
+                
+                
                 </div>
             </div>
         </nav>
@@ -171,7 +184,7 @@ foreach ($dadosApi as $jogo) {
 
     <footer>
         <div class="footerBase">
-            <a href="#"><img class="logoFooter" src="img/logoTipo02_low.png" alt="Vapor Store"></a>
+            <a href="home"><img class="logoFooter" src="img/logoTipo02_low.png" alt="Vapor Store"></a>
             <p>© 2024 SrVertex Corporation. Todos os direitos reservados. Todas as marcas comerciais são propriedade dos respetivos proprietários nos E.U.A. e outros países.
                 IVA incluído em todos os preços onde aplicável.</p>
         </div>

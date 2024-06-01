@@ -31,9 +31,8 @@ body {
         }
     }
 
-    & .nav-link {
-        text-transform: uppercase;
-    }
+
+
 
     & .divisorIcon {
         display: none;
@@ -64,6 +63,8 @@ body {
     }
 
 }
+
+
 
 .btn {
     background-color: $corBotoes;
@@ -98,10 +99,36 @@ body {
 .dropdown-item {
     &:hover {
         color: $corTextoHover !important;
-        margin: 50px;
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.5) !important;
     }
 }
+
+.navText {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $corTexto !important;
+    transition: 100ms;
+    padding: 8px;
+
+    &:hover {
+        color: $corTextoHover !important;
+    }
+}
+
+.navTextActive {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $corTextoHover !important;
+    transition: 100ms;
+    padding: 8px;
+
+    &:hover {
+        color: $corTexto !important;
+    }
+
+}
+
+
 
 footer {
 
@@ -176,16 +203,30 @@ footer {
     margin: 10px;
 }
 
-.dropdown-item {
-    &:hover {
-        color: $corTextoHover !important;
-        margin: 50px;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5) !important;
+
+.loginPC {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    padding: 20px;
+    background-image: url(..//img/loginPhotoPC.png);
+    z-index: -99;
+
+    & .bannerLogin {
+
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        & .imgLoginPC{
+            width: 40%;
+        }
+        & .sa{
+            background-image: url(..//img/backgroundGreen.png);
+            z-index: 99;
+        }
+
     }
 }
-
-
-
 
 
 

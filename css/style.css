@@ -15,9 +15,6 @@ body {
   width: 50px;
   border-radius: 50px;
 }
-.navbar .nav-link {
-  text-transform: uppercase;
-}
 .navbar .divisorIcon {
   display: none;
   align-items: center;
@@ -67,8 +64,29 @@ body {
 
 .dropdown-item:hover {
   color: #ABDDD2 !important;
-  margin: 50px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5) !important;
+}
+
+.navText {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff !important;
+  transition: 100ms;
+  padding: 8px;
+}
+.navText:hover {
+  color: #ABDDD2 !important;
+}
+
+.navTextActive {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ABDDD2 !important;
+  transition: 100ms;
+  padding: 8px;
+}
+.navTextActive:hover {
+  color: #ffffff !important;
 }
 
 footer {
@@ -129,10 +147,25 @@ footer .footerDown .groupFooter:hover {
   margin: 10px;
 }
 
-.dropdown-item:hover {
-  color: #ABDDD2 !important;
+.loginPC {
+  display: flex;
+  flex-direction: column;
   margin: 50px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5) !important;
+  padding: 20px;
+  background-image: url(..//img/loginPhotoPC.png);
+  z-index: -99;
+}
+.loginPC .bannerLogin {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.loginPC .bannerLogin .imgLoginPC {
+  width: 40%;
+}
+.loginPC .bannerLogin .sa {
+  background-image: url(..//img/backgroundGreen.png);
+  z-index: 99;
 }
 
 @media (min-width: 480px) {
