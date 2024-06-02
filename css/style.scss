@@ -4,11 +4,13 @@ $corFundo: #004733;
 $corFundoEscura: #01271c;
 $corFundoClara: #107a62;
 $corBotoes: #ABDDD2;
+$corBotoesHover: #81a2d4;
 $corBotoesEscuros: #203b35;
+$corBotoesAvisos: #DB5939;
 $corTexto: #ffffff;
 $corTextoHover: #ABDDD2;
 $corTextoEscuro: #182E29;
-
+$corTextoPreco: #DB5939;
 
 
 body {
@@ -16,7 +18,7 @@ body {
     font-weight: 400;
     color: $corTexto !important;
     background: rgb(1, 39, 28);
-    background: linear-gradient(124deg, rgba(1, 39, 28, 1) 0%, rgba(16, 122, 98, 1) 100%);
+    background: linear-gradient(124deg, rgba(1, 39, 28, 1) 0%, rgb(16, 122, 98) 100%);
     background-repeat: no-repeat;
     box-sizing: border-box;
 }
@@ -70,6 +72,7 @@ body {
     background-color: $corBotoes;
     border: 2px solid $corFundoClara;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.25) !important;
+    transition: 300ms;
 
     & &-icon {
         color: $corFundoEscura !important;
@@ -77,7 +80,8 @@ body {
     }
 
     &:hover {
-        background-color: $corBotoes;
+        background-color: $corBotoesAvisos;
+        color: $corTexto;
     }
 }
 
@@ -128,7 +132,16 @@ body {
 
 }
 
+.textLinks {
+    text-decoration: none;
+    color: $corTexto !important;
+    transition: 100ms;
+    padding: 8px;
 
+    &:hover {
+        color: $corTextoHover !important;
+    }
+}
 
 footer {
 
@@ -214,7 +227,7 @@ footer {
 
 
     padding: 10px;
-    background-image: url(..//img/bac);
+    background-image: url(..//img/backgroundGreenMobile.png);
     background-size: 100%;
     border-radius: 10px;
     border: 2px solid #83838383;
@@ -224,7 +237,8 @@ footer {
         padding: 5px;
         display: flex;
         flex-direction: column;
-        & .imgLoginPC{
+
+        & .imgLoginPC {
             width: 50%;
             align-items: center;
             margin: auto;
@@ -232,7 +246,12 @@ footer {
             border-radius: 5px 0px 0px 5px;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
         }
-        & .imgLoginMobile{
+
+        & .imgLoginPC2 {
+            display: none;
+        }
+
+        & .imgLoginMobile {
             display: flex;
             margin: auto;
             width: 100%;
@@ -245,7 +264,7 @@ footer {
 
 
 
-    & .formLogin{
+    & .formLogin {
         margin: 10px;
     }
 
@@ -253,6 +272,101 @@ footer {
 
 
 }
+
+
+
+
+
+
+.resetPassword {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-around;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.26);
+
+
+
+    padding: 10px;
+    background-image: url(..//img/backgroundGreenMobile.png);
+    background-size: 100%;
+    border-radius: 10px;
+    border: 2px solid #83838383;
+
+    & .bannerPassword {
+        justify-content: space-around;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+
+        & .formReset {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+
+            & .btn-close {
+                background-color: $corBotoesAvisos !important;
+                opacity: 80%;
+                transition: 300ms;
+
+                &:hover {
+                    opacity: 100%;
+                    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.26);
+                }
+            }
+        }
+
+    }
+}
+
+
+.modal-content {
+    color: $corTexto !important;
+    background: rgb(1, 39, 28);
+    background: linear-gradient(124deg, rgba(1, 39, 28, 1) 0%, rgba(16, 122, 98, 1) 100%);
+    background-repeat: no-repeat;
+}
+
+.btn-close {
+    background-color: $corBotoesAvisos !important;
+    opacity: 80%;
+    transition: 300ms;
+
+    &:hover {
+        opacity: 100%;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.26);
+    }
+}
+
+
+.carousel{
+    width: 100%;
+    margin: auto;
+}
+
+
+.container-cards{
+    margin: 10px;
+    justify-content: space-evenly;
+    & .card-body{
+        text-decoration: none;
+        & div{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+    }
+    & .card-price{
+        color: $corTextoPreco !important;
+        font-weight: 700;
+        font-size: 25px;
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25) !important;
+    }
+}
+
+
+
 
 
 // .loginPC {
@@ -306,7 +420,7 @@ footer {
         margin-top: 10px;
 
     }
-    
+
 }
 
 @media (min-width: 800px) {
@@ -322,28 +436,80 @@ footer {
         background-size: 100%;
         border-radius: 10px;
         border: 2px solid #83838383;
-    
+
         & .bannerLogin {
             justify-content: space-evenly;
             padding: 5px;
             display: flex;
             flex-direction: row;
-            & .imgLoginPC{
+
+            & .imgLoginPC2 {
                 width: 40%;
+                height: auto;
                 margin: 10px;
                 display: flex;
                 border-radius: 5px 0px 0px 5px;
                 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
             }
-            & .imgLoginMobile{
+
+            & .imgLoginPC {
+                display: none;
+            }
+
+            & .imgLoginMobile {
                 display: none;
             }
         }
-        & .formLogin{
+
+        & .formLogin {
             margin: 10px;
         }
     }
+
+    .resetPassword {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+        justify-content: space-around;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.26);
+
+
+
+        padding: 10px;
+        background-image: url(..//img/backgroundGreenMobile.png);
+        background-size: 100%;
+        border-radius: 10px;
+        border: 2px solid #83838383;
+
+        & .bannerPassword {
+            justify-content: space-around;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+
+            & .clas {
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+            }
+        }
+    }
+
+    .carrouselPC{
+        display: flex;
+    }
+    .carrouselMobile{
+        display: none;
+    }
+    .carousel{
+        width: 80%;
+        margin: auto;
+    }
+    
 }
+
 @media (min-width: 992px) {
     .navbar {
         & .divisorIcon-Nav {
@@ -351,4 +517,75 @@ footer {
         }
     }
 
+    .loginPC {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.26);
+        padding: 10px;
+        background-image: url(..//img/backgroundGreenPC.png);
+        background-size: 100%;
+        border-radius: 10px;
+        border: 2px solid #83838383;
+
+        & .bannerLogin {
+            justify-content: space-evenly;
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+
+            & .imgLoginPC {
+                width: 40%;
+                margin: 10px;
+                display: flex;
+                border-radius: 5px 0px 0px 5px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
+            }
+
+            & .imgLoginPC2 {
+                display: none;
+            }
+
+            & .imgLoginMobile {
+                display: none;
+            }
+        }
+
+        & .formLogin {
+            margin: 10px;
+        }
+    }
+
+    .resetPassword {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+        margin-left: 30%;
+        margin-right: 30%;
+        justify-content: space-around;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.26);
+
+
+
+        padding: 10px;
+        background-image: url(..//img/backgroundGreenMobile.png);
+        background-size: 100%;
+        border-radius: 10px;
+        border: 2px solid #83838383;
+
+        & .bannerPassword {
+            justify-content: space-around;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+
+            & .formReset {
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+            }
+        }
+    }
 }

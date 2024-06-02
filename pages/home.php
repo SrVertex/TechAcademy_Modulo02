@@ -19,7 +19,7 @@ foreach ($dadosApi as $jogo) {
             <?php
             foreach ($dadosApi as $jogo) {
             ?>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="<?= $jogo->id?>" aria-label="<?= $jogo->title?>"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="<?= $jogo->id ?>" aria-label="<?= $jogo->title ?>"></button>
             <?php
             }
             ?>
@@ -41,7 +41,7 @@ foreach ($dadosApi as $jogo) {
             ?>
 
                 <div class="carousel-item">
-                    <a href="gamesPage/<?=$jogo->id?>"><img src="<?=$jogo->banner01?>" class="d-block w-100" alt="..."></a>
+                    <a href="gamesPage/<?= $jogo->id ?>"><img src="<?= $jogo->banner01 ?>" class="d-block w-100" alt="..."></a>
                     <div class="carousel-caption d-none d-md-block">
                         <h5>First slide label</h5>
                         <p>Some representative placeholder content for the first slide.</p>
@@ -64,6 +64,68 @@ foreach ($dadosApi as $jogo) {
         </button>
     </div>
 </div>
+
+<h2 class="titleDestaque text-center mt-3">Jogos em Destaque</h2>
+
+<div class="container">
+
+</div>
+
+
+
+
+
+
+<div class="container-cards row row-cols-1 row-cols-md-6 g-4">
+
+    <?php
+    foreach ($dadosApi as $jogo) {
+    ?>
+
+        <div class="col">
+            <div class="card">
+                <img src="<?= $jogo->banner01 ?>" class="card-img-top" alt="...">
+                <a class="card-body" href="">
+                    <h5 class="card-title"><?= $jogo->title ?></h5>
+                    <p class="card-text"><?= $jogo->description ?></p>
+                    <div>
+                        <a href="gamesPage/<?= $jogo->id ?>" class="btn btn-light">Go somewhere</a>
+                        <span class="card-price"><?= $jogo->price ?></span>
+                    </div>
+                </a>
+
+
+
+                <div class="card-body">
+                    <h5 class="card-title"><?= $jogo->title ?></h5>
+                    <p class="card-text"><?= $jogo->description ?></p>
+                    <div>
+                        <a href="gamesPage/<?= $jogo->id ?>" class="btn btn-light">Go somewhere</a>
+                        <span class="card-price"><?= $jogo->price ?></span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    <?php
+    }
+    ?>
+
+
+</div>
+
+
+
+
+
+
+
+<h2 class="titleDestaque text-center mt-3">Jogos em Destaque</h2>
 
 
 

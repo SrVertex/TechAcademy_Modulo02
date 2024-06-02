@@ -2,9 +2,10 @@
 <div class="loginPC">
     <div class="bannerLogin">
         <img src="img/loginPhotoPC.png" class="imgLoginPC" alt="">
+        <img src="img/loginPhotoPC2.png" class="imgLoginPC2" alt="">
         <img src="img/loginPhotoMobile.png" class="imgLoginMobile" alt="">
         <div class="formLogin">
-            <h3>Efetue seu Login</h3>
+            <h3 class="text-center">Efetue seu Login</h3>
 
 
             <div>
@@ -27,9 +28,9 @@
                     </div>
                     <button type="submit" class="btn btn-light">Login</button>
                 </form>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">É novo por aqui? Cadastre-se</a>
-                <a class="dropdown-item" href="#">Esqueceu sua senha?</a>
+                <div class="dropdown-divider mb-3"></div>
+                <a class="textLinks" href="cadastro">É novo por aqui? Cadastre-se</a>
+                <a class="textLinks" href="resetPassword">Esqueceu sua senha?</a>
             </div>
 
 

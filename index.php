@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vapor Store</title>
-
+    <link rel="shortcut icon" href="img/logoTipo02_low.png" type="image/x-icon">
     <base href="http://localhost/VaporStore_web/">
 
 

@@ -42,12 +42,14 @@ body {
   background-color: #ABDDD2;
   border: 2px solid #107a62;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25) !important;
+  transition: 300ms;
 }
 .btn .btn-icon {
   color: #01271c !important;
 }
 .btn:hover {
-  background-color: #ABDDD2;
+  background-color: #DB5939;
+  color: #ffffff;
 }
 
 .navbar-toggler {
@@ -87,6 +89,16 @@ body {
 }
 .navTextActive:hover {
   color: #ffffff !important;
+}
+
+.textLinks {
+  text-decoration: none;
+  color: #ffffff !important;
+  transition: 100ms;
+  padding: 8px;
+}
+.textLinks:hover {
+  color: #ABDDD2 !important;
 }
 
 footer {
@@ -153,7 +165,7 @@ footer .footerDown .groupFooter:hover {
   margin: 20px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.26);
   padding: 10px;
-  background-image: url(..//img/bac);
+  background-image: url(..//img/backgroundGreenMobile.png);
   background-size: 100%;
   border-radius: 10px;
   border: 2px solid #83838383;
@@ -172,6 +184,9 @@ footer .footerDown .groupFooter:hover {
   border-radius: 5px 0px 0px 5px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
 }
+.loginPC .bannerLogin .imgLoginPC2 {
+  display: none;
+}
 .loginPC .bannerLogin .imgLoginMobile {
   display: flex;
   margin: auto;
@@ -182,6 +197,80 @@ footer .footerDown .groupFooter:hover {
 }
 .loginPC .formLogin {
   margin: 10px;
+}
+
+.resetPassword {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  justify-content: space-around;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.26);
+  padding: 10px;
+  background-image: url(..//img/backgroundGreenMobile.png);
+  background-size: 100%;
+  border-radius: 10px;
+  border: 2px solid #83838383;
+}
+.resetPassword .bannerPassword {
+  justify-content: space-around;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.resetPassword .bannerPassword .formReset {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.resetPassword .bannerPassword .formReset .btn-close {
+  background-color: #DB5939 !important;
+  opacity: 80%;
+  transition: 300ms;
+}
+.resetPassword .bannerPassword .formReset .btn-close:hover {
+  opacity: 100%;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.26);
+}
+
+.modal-content {
+  color: #ffffff !important;
+  background: #01271c;
+  background: linear-gradient(124deg, #01271c 0%, #107a62 100%);
+  background-repeat: no-repeat;
+}
+
+.btn-close {
+  background-color: #DB5939 !important;
+  opacity: 80%;
+  transition: 300ms;
+}
+.btn-close:hover {
+  opacity: 100%;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.26);
+}
+
+.carousel {
+  width: 100%;
+  margin: auto;
+}
+
+.container-cards {
+  margin: 10px;
+  justify-content: space-evenly;
+}
+.container-cards .card-body {
+  text-decoration: none;
+}
+.container-cards .card-body div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container-cards .card-price {
+  color: #DB5939 !important;
+  font-weight: 700;
+  font-size: 25px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25) !important;
 }
 
 @media (min-width: 480px) {
@@ -211,12 +300,16 @@ footer .footerDown .groupFooter:hover {
     display: flex;
     flex-direction: row;
   }
-  .loginPC .bannerLogin .imgLoginPC {
+  .loginPC .bannerLogin .imgLoginPC2 {
     width: 40%;
+    height: auto;
     margin: 10px;
     display: flex;
     border-radius: 5px 0px 0px 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
+  }
+  .loginPC .bannerLogin .imgLoginPC {
+    display: none;
   }
   .loginPC .bannerLogin .imgLoginMobile {
     display: none;
@@ -224,10 +317,111 @@ footer .footerDown .groupFooter:hover {
   .loginPC .formLogin {
     margin: 10px;
   }
+
+  .resetPassword {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    justify-content: space-around;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.26);
+    padding: 10px;
+    background-image: url(..//img/backgroundGreenMobile.png);
+    background-size: 100%;
+    border-radius: 10px;
+    border: 2px solid #83838383;
+  }
+  .resetPassword .bannerPassword {
+    justify-content: space-around;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  .resetPassword .bannerPassword .clas {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .carrouselPC {
+    display: flex;
+  }
+
+  .carrouselMobile {
+    display: none;
+  }
+
+  .carousel {
+    width: 80%;
+    margin: auto;
+  }
 }
 @media (min-width: 992px) {
   .navbar .divisorIcon-Nav {
     display: flex;
+  }
+
+  .loginPC {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.26);
+    padding: 10px;
+    background-image: url(..//img/backgroundGreenPC.png);
+    background-size: 100%;
+    border-radius: 10px;
+    border: 2px solid #83838383;
+  }
+  .loginPC .bannerLogin {
+    justify-content: space-evenly;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+  }
+  .loginPC .bannerLogin .imgLoginPC {
+    width: 40%;
+    margin: 10px;
+    display: flex;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
+  }
+  .loginPC .bannerLogin .imgLoginPC2 {
+    display: none;
+  }
+  .loginPC .bannerLogin .imgLoginMobile {
+    display: none;
+  }
+  .loginPC .formLogin {
+    margin: 10px;
+  }
+
+  .resetPassword {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    justify-content: space-around;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.26);
+    padding: 10px;
+    background-image: url(..//img/backgroundGreenMobile.png);
+    background-size: 100%;
+    border-radius: 10px;
+    border: 2px solid #83838383;
+  }
+  .resetPassword .bannerPassword {
+    justify-content: space-around;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  .resetPassword .bannerPassword .formReset {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
   }
 }
 
