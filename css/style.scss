@@ -206,30 +206,93 @@ footer {
 
 .loginPC {
     display: flex;
-    flex-direction: column;
-    margin: 50px;
-    padding: 20px;
-    background-image: url(..//img/loginPhotoPC.png);
-    z-index: -99;
+    flex-direction: row;
+    margin: 20px;
+
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.26);
+
+
+
+    padding: 10px;
+    background-image: url(..//img/bac);
+    background-size: 100%;
+    border-radius: 10px;
+    border: 2px solid #83838383;
 
     & .bannerLogin {
-
-        padding: 10px;
+        justify-content: space-evenly;
+        padding: 5px;
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
         & .imgLoginPC{
-            width: 40%;
+            width: 50%;
+            align-items: center;
+            margin: auto;
+            display: none;
+            border-radius: 5px 0px 0px 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
         }
-        & .sa{
-            background-image: url(..//img/backgroundGreen.png);
-            z-index: 99;
+        & .imgLoginMobile{
+            display: flex;
+            margin: auto;
+            width: 100%;
+            align-items: center;
+            border-radius: 5px 5px 0px 0px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
         }
 
     }
+
+
+
+    & .formLogin{
+        margin: 10px;
+    }
+
+
+
+
 }
 
 
+// .loginPC {
+//     display: flex;
+//     flex-direction: column;
+//     margin: 20px;
+//     margin-left: 20%;
+//     margin-right: 20%;
 
+
+
+//     padding: 10px;
+//     background-image: url(..//img/backgroundGreenPC.png);
+//     border-radius: 10px;
+//     border: 2px solid #83838383;
+
+//     & .bannerLogin {
+//         justify-content: space-evenly;
+//         padding: 5px;
+//         display: flex;
+
+//         & .imgLoginPC{
+//             width: 40%;
+//             margin: 10px;
+//             border-radius: 5px 0px 0px 5px;
+//             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
+//         }
+
+//     }
+
+
+
+//     & .formLogin{
+//         margin: 10px;
+//     }
+
+
+
+
+// }
 
 
 
@@ -243,12 +306,49 @@ footer {
         margin-top: 10px;
 
     }
+    
 }
 
-@media (min-width: 990px) {
+@media (min-width: 800px) {
+    .loginPC {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.26);
+        padding: 10px;
+        background-image: url(..//img/backgroundGreenPC.png);
+        background-size: 100%;
+        border-radius: 10px;
+        border: 2px solid #83838383;
+    
+        & .bannerLogin {
+            justify-content: space-evenly;
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+            & .imgLoginPC{
+                width: 40%;
+                margin: 10px;
+                display: flex;
+                border-radius: 5px 0px 0px 5px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
+            }
+            & .imgLoginMobile{
+                display: none;
+            }
+        }
+        & .formLogin{
+            margin: 10px;
+        }
+    }
+}
+@media (min-width: 992px) {
     .navbar {
         & .divisorIcon-Nav {
             display: flex;
         }
     }
+
 }
