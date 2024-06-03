@@ -1,14 +1,19 @@
 <?php
-
 $api = file_get_contents("http://localhost/VaporStore_web/api/games.php");
 $dadosApi = json_decode($api);
 
-?>
-
-<?php
 foreach ($dadosApi as $jogo) {
 }
 ?>
+
+<?php
+$apiOriginals = file_get_contents("http://localhost/VaporStore_web/api/games_originals.php");
+$dadosApiOriginals = json_decode($apiOriginals);
+
+foreach ($dadosApiOriginals as $jogoOriginals) {
+}
+?>
+
 
 <div class="container-fluid">
 
@@ -65,58 +70,30 @@ foreach ($dadosApi as $jogo) {
     </div>
 </div>
 
-<h2 class="titleDestaque text-center mt-3">Jogos em Destaque</h2>
+<h2 class="titleDestaque text-center mt-5">Jogos em Destaque</h2>
 
-<div class="container">
+<!-- <div class="container-cards row row-cols-1 row-cols-md-6 g-4"> -->
 
-</div>
-
-
-
-
-
-
-<div class="container-cards row row-cols-1 row-cols-md-6 g-4">
-
+<div class="container-cards row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 g-4">
     <?php
     foreach ($dadosApi as $jogo) {
     ?>
-
         <div class="col">
             <div class="card">
-                <img src="<?= $jogo->banner01 ?>" class="card-img-top" alt="...">
-                <a class="card-body" href="">
-                    <h5 class="card-title"><?= $jogo->title ?></h5>
-                    <p class="card-text"><?= $jogo->description ?></p>
-                    <div>
-                        <a href="gamesPage/<?= $jogo->id ?>" class="btn btn-light">Go somewhere</a>
-                        <span class="card-price"><?= $jogo->price ?></span>
-                    </div>
-                </a>
-
-
-
+                <a href=""><img src="<?= $jogo->banner01 ?>" class="card-img-top" alt="..."></a>
                 <div class="card-body">
                     <h5 class="card-title"><?= $jogo->title ?></h5>
                     <p class="card-text"><?= $jogo->description ?></p>
-                    <div>
-                        <a href="gamesPage/<?= $jogo->id ?>" class="btn btn-light">Go somewhere</a>
+                    <div class="car-btn">
+                        <a href="gamesPage/<?= $jogo->id ?>" class="btn btn-light">Pagina do Jogo</a>
                         <span class="card-price"><?= $jogo->price ?></span>
                     </div>
-
                 </div>
-
             </div>
         </div>
-
-
-
-
     <?php
     }
     ?>
-
-
 </div>
 
 
@@ -129,7 +106,10 @@ foreach ($dadosApi as $jogo) {
 
 
 
+<div class="container-fluid">
+    <img src="http://localhost/VaporStore_web/img/banner2.jpg" class="bannerPromo" alt="...">
 
+</div>
 
 
 
