@@ -5,7 +5,7 @@
 
     $id = $p[1] ?? NULL;
 
-    $dadosApi = file_get_contents("http://localhost/VaporStore_web/api/games_originals.php/");
+    $dadosApi = file_get_contents("http://localhost/VaporStore_web/api/games.php/");
     
     $dadosApi = json_decode($dadosApi);
 

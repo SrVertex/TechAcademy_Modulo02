@@ -2,8 +2,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: #ffffff !important;
-  background: #01271c;
-  background: linear-gradient(124deg, #01271c 0%, #107a62 100%);
+  background: #051b14;
+  background: linear-gradient(124deg, #051b14 0%, #1b332e 100%);
   background-repeat: no-repeat;
   box-sizing: border-box;
 }
@@ -249,15 +249,14 @@ footer .footerDown .groupFooter:hover {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.26);
 }
 
-.carousel {
-  width: 100%;
-  margin: auto;
+.containerBox {
+  border-radius: 5px;
+  margin: 10px;
+  margin-bottom: 40px;
+  border: 2px solid #ABDDD2;
 }
 
 .container-cards {
-  background-image: url(..//img/background_mosaics3.png) !important;
-  background-size: 40%;
-  background-repeat: repeat;
   margin: 10px;
   justify-content: space-evenly;
   padding: 10px;
@@ -265,6 +264,7 @@ footer .footerDown .groupFooter:hover {
 .container-cards .card {
   background-color: #01271c;
   color: #ffffff;
+  overflow: hidden;
 }
 .container-cards .card .card-body {
   text-decoration: none;
@@ -272,6 +272,7 @@ footer .footerDown .groupFooter:hover {
 .container-cards .card .card-body .car-btn {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
 }
 .container-cards .card .card-body .car-btn .card-price {
@@ -279,14 +280,44 @@ footer .footerDown .groupFooter:hover {
   font-weight: 700;
   font-size: 25px;
   text-shadow: 0 2px 2px rgba(251, 255, 0, 0.25) !important;
+  transition: 300ms;
+}
+.container-cards .card .card-body .car-btn .card-price:hover {
+  color: #ffffff !important;
+}
+.container-cards .card .card-body .car-btn .card-promo {
+  color: #DB5939 !important;
+  padding: 5px;
+  font-weight: 600;
+  font-size: 22px;
+  text-shadow: 0 2px 2px rgba(251, 255, 0, 0.25) !important;
+  transition: 300ms;
+  text-decoration: line-through;
+  opacity: 80%;
 }
 
 .bannerPromo {
-  width: 80%;
+  width: 90%;
   margin: auto;
+  margin-top: 5px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-radius: 5px;
+}
+
+.promoLabel-none {
+  display: none;
+}
+
+.promoLabel {
+  display: block !important;
+  position: absolute;
+  transform: rotate(-45deg);
+  background-color: #58C25A;
+  top: 20px;
+  left: -40px;
+  padding: 5px 40px 5px 40px;
 }
 
 @media (min-width: 480px) {
@@ -366,11 +397,6 @@ footer .footerDown .groupFooter:hover {
 
   .carrouselMobile {
     display: none;
-  }
-
-  .carousel {
-    width: 60%;
-    margin: auto;
   }
 }
 @media (min-width: 992px) {

@@ -3,8 +3,8 @@
     header("Content-type: application/json; charset=utf-8");
 
 
-    $game[1] = array(
-        "id" => 1,
+    $original[1] = array(
+        "id" => 12,
         "title" => "Rocket On The Rocks",
         "description" => "Ghost of Tsushima é um jogo de ação e aventura da Sucker Punch Productions, ambientado no Japão feudal durante a invasão mongol.",
         "banner01" => "http://localhost/VaporStore_web/img/banner_GhostOfTsushima.png",
@@ -14,6 +14,7 @@
         "screenShot04" => "BASE",
         "video01" => "BASE",
         "category" => "Ação",
+        
 
         "CPU_Min" => "i5 1156 ou Phenom II",
         "GPU_Min" => "Intel HD Graffics ou GT210",
@@ -36,7 +37,7 @@
         "descriptionCreator" => "Desde 2019, conquistamos diversos Fãs pelo mundo, que apreciam nossos trabalhos e aclamam todos nossos Modelos, 3ds, e trabalhos de conteudo adicional Para Farming Simulator."
     );
 
-    $game[2] = array(
+    $original[2] = array(
         "id" => 2,
         "title" => "Rocket On The Rocks",
         "description" => "Ghost of Tsushima é um jogo de ação e aventura da Sucker Punch Productions, ambientado no Japão feudal durante a invasão mongol.",
@@ -69,7 +70,7 @@
         "descriptionCreator" => "Desde 2019, conquistamos diversos Fãs pelo mundo, que apreciam nossos trabalhos e aclamam todos nossos Modelos, 3ds, e trabalhos de conteudo adicional Para Farming Simulator."
     );
 
-    $game[3] = array(
+    $original[3] = array(
         "id" => 3,
         "title" => "Rocket On The Rocks",
         "description" => "Ghost of Tsushima é um jogo de ação e aventura da Sucker Punch Productions, ambientado no Japão feudal durante a invasão mongol.",
@@ -119,7 +120,7 @@
 
 
 
-    echo json_encode($game);
+    echo json_encode($original);
 
 
 
