@@ -1,4 +1,50 @@
 body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #2c2c2c;
+  margin: 0;
+}
+
+.carousel-container {
+  position: relative;
+  width: 80%;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: #ffffff !important;
@@ -101,9 +147,6 @@ body {
   color: #ABDDD2 !important;
 }
 
-footer {
-  margin: 10px;
-}
 footer .footerBase {
   display: flex;
   align-items: center;
@@ -262,7 +305,7 @@ footer .footerDown .groupFooter:hover {
   padding: 10px;
 }
 .container-cards .card {
-  background-color: #01271c;
+  background-color: #203b35;
   color: #ffffff;
   overflow: hidden;
 }
@@ -320,11 +363,25 @@ footer .footerDown .groupFooter:hover {
   padding: 5px 40px 5px 40px;
 }
 
+.containerStore {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: 480px) {
   footer {
-    margin-left: 10%;
-    margin-right: 10%;
+    backdrop-filter: blur(100px);
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  .footerBox {
+    margin: auto;
+    width: 70%;
     margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 @media (min-width: 800px) {
@@ -464,6 +521,12 @@ footer .footerDown .groupFooter:hover {
     display: flex;
     flex-direction: column;
     margin: auto;
+  }
+
+  .containerBox {
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
   }
 }
 

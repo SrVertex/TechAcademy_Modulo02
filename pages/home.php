@@ -81,7 +81,7 @@ foreach ($dadosApiPromo as $jogoPromo) {
     <h2 class="titleDestaque text-center mt-5 mb-0">Originais Vapor Store</h2>
 
 
-    <div class="container-cards row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 g-4 x-4">
+    <div class="container-cards row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xxl-3 row-cols-fluid-4 g-4 x-4">
 
         <?php
         foreach ($dadosApiPromo as $jogoOriginals) {
@@ -155,7 +155,7 @@ foreach ($dadosApiPromo as $jogoPromo) {
 
     <!-- <div class="container-cards row row-cols-1 row-cols-md-6 g-4"> -->
 
-    <div class="container-cards row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 g-4 x-4">
+    <div class="container-cards row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xxl-2 g-4 x-4">
         <?php
         foreach ($dadosApi as $jogo) {
         ?>

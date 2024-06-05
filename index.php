@@ -183,6 +183,7 @@ foreach ($dadosApi as $jogo) {
 
 
     <footer>
+        <div class="footerBox">
         <div class="footerBase">
             <a href="home"><img class="logoFooter" src="img/logoTipo02_low.png" alt="Vapor Store"></a>
             <p>© 2024 SrVertex Corporation. Todos os direitos reservados. Todas as marcas comerciais são propriedade dos respetivos proprietários nos E.U.A. e outros países.
@@ -220,6 +221,8 @@ foreach ($dadosApi as $jogo) {
                 <a href="#">SrVertex</a>
             </div>
         </div>
+        </div>
+
     </footer>
 
 
@@ -227,7 +230,7 @@ foreach ($dadosApi as $jogo) {
 
 
 
-
+    <script src="scripts.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
