@@ -11,52 +11,11 @@ $corTexto: #ffffff;
 $corTextoHover: #ABDDD2;
 $corTextoEscuro: #182E29;
 $corTextoPreco: #DB5939;
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #2c2c2c;
-    margin: 0;
-}
 
-.carousel-container {
-    position: relative;
-    width: 80%;
-    overflow: hidden;
-}
-
-.carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel img {
-    width: 100%;
-    flex-shrink: 0;
-}
-
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    font-size: 2rem;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
+$corTextoFunction: #adadadaf;
+$corTextoAnaliseBoa: #87ddff;
+$corTextoAnaliseNeutra: #ffde83;
+$corTextoAnaliseRuim: #ff8383;
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -463,17 +422,123 @@ padding: 5px 40px 5px 40px;
 }
 
 
-
+.containerHeader{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    .btnCreator{
+        background-color: $corBotoesEscuros;
+        color: $corTextoHover;
+        text-align: center;
+        padding: auto;
+        align-content: center;
+        border-radius: 0px;
+        font-weight: 700;
+        &:hover{
+            background-color: $corBotoesAvisos;
+            color: $corTexto;
+            opacity: 90%;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: $corTextoHover;
+        transition: 200ms;
+        &:hover{
+            color: $corPrimaria;
+            text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25) !important;
+        }
+    }
+}
 
 .containerStore{
     width: 70%;
     margin: auto;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
+    .containerStore-base{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        justify-content: space-between;
+        .containerStore-base-carousel{
+
+            width: 80%;
+        }
+        .containerStore-base-info{
+            width: 30%;
+            margin-left: 10px;
+            img{
+                width: 100%;
+            }
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            .gameDescription{
+                margin-top: 5px;
+                font-size: 16px;
+            }
+            .fuctions{
+                display: flex;
+                
+                flex-direction: row;
+                text-decoration: none;
+                align-items: center;
+                .titleFuncion{
+                    color: $corTextoFunction;
+                    margin-right: 10px;
+                    font-size: 12px;
+                }
+                .analiseBoa{
+                    color: $corTextoAnaliseBoa;
+                    font-size: 12px;
+                }
+                .analiseNeutra{
+                    color: $corTextoAnaliseNeutra;
+                    font-size: 12px;
+                }
+                .analiseRuim{
+                    color: $corTextoAnaliseRuim;
+                    font-size: 12px;
+                }
+                .creatorLink{
+                    text-decoration: none;
+                    color: $corTexto;
+                    font-size: 12px;
+                    &:hover{
+                        color: $corBotoesHover;
+                    }
+                }
+            }
+        }
+
+    }
 
 }
 
+.containerStore-main{
+    width: 70%;
+    margin: auto;
 
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    .containerStore-main-left{
+        width: 70%;
+        height: 100px;
+        background-color: $corPrimaria;
+    }
+    .containerStore-main-right{
+        width: 30%;
+        height: 100px;
+        background-color: $corFundoClara;
+    }
+}
 
 
 
