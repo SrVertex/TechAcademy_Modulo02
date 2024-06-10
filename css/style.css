@@ -363,6 +363,7 @@ footer .footerDown .groupFooter:hover {
   justify-content: space-between;
 }
 .containerStore .containerStore-base .containerStore-base-carousel {
+  background-color: #203b35;
   width: 80%;
 }
 .containerStore .containerStore-base .containerStore-base-info {
@@ -428,6 +429,23 @@ footer .footerDown .groupFooter:hover {
   width: 30%;
   height: 100px;
   background-color: #107a62;
+}
+
+.carousel-indicators img {
+  width: 120px;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.carousel-indicators button {
+  width: max-content !important;
+}
+
+.carousel-indicators {
+  position: unset;
+  display: flex;
+  margin-bottom: 3rem;
 }
 
 @media (min-width: 480px) {

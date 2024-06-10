@@ -466,7 +466,7 @@ padding: 5px 40px 5px 40px;
         margin: auto;
         justify-content: space-between;
         .containerStore-base-carousel{
-
+            background-color: $corBotoesEscuros;
             width: 80%;
         }
         .containerStore-base-info{
@@ -546,13 +546,22 @@ padding: 5px 40px 5px 40px;
 
 
 
+.carousel-indicators img {
+    width: 120px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
 
+.carousel-indicators button {
+    width: max-content !important;
+}
 
-
-
-
-
-
+.carousel-indicators {
+    position: unset; 
+    display: flex;
+    margin-bottom: 3rem;
+}
 
 
 
