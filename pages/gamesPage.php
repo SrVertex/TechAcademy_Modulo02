@@ -145,23 +145,23 @@ $jogo = $dadosApi->$id;
                 <div class="cardRequisitos-Left">
                     <p><span>MINIMOS:</span></p>
                     <p><span>Requer um processador e sistema operacional de 64 bits</span></p>
-                    <p>SO: <span><?=$jogo->SO_Min?></span> </p>
-                    <p>Processador: <span><?=$jogo->CPU_Min?></span></p>
-                    <p>Memória: <span><?=$jogo->memory_Min?></span> </p>
-                    <p>Placa e video: <span><?=$jogo->GPU_Min?></span></p>
-                    <p>Armazenamento: <span><?=$jogo->storage_Min?></span></p>
-                    <p>Outras Observações: <span><?=$jogo->OBS_Min?></span> </p>
+                    <p>SO: <span><?= $jogo->SO_Min ?></span> </p>
+                    <p>Processador: <span><?= $jogo->CPU_Min ?></span></p>
+                    <p>Memória: <span><?= $jogo->memory_Min ?></span> </p>
+                    <p>Placa e video: <span><?= $jogo->GPU_Min ?></span></p>
+                    <p>Armazenamento: <span><?= $jogo->storage_Min ?></span></p>
+                    <p>Outras Observações: <span><?= $jogo->OBS_Min ?></span> </p>
 
                 </div>
                 <div class="cardRequisitos-Right">
                     <p><span>RECOMENDADOS:</span></p>
                     <p><span>Requer um processador e sistema operacional de 64 bits</span></p>
-                    <p>SO: <span><?=$jogo->SO_Recomendate?></span> </p>
-                    <p>Processador: <span><?=$jogo->CPU_Recomendate?></span></p>
-                    <p>Memória: <span><?=$jogo->memory_Recomendate?></span> </p>
-                    <p>Placa e video: <span><?=$jogo->GPU_Recomendate?></span></p>
-                    <p>Armazenamento: <span><?=$jogo->storage_Recomendate?></span></p>
-                    <p>Outras Observações: <span><?=$jogo->OBS_Recomendate?></span> </p>
+                    <p>SO: <span><?= $jogo->SO_Recomendate ?></span> </p>
+                    <p>Processador: <span><?= $jogo->CPU_Recomendate ?></span></p>
+                    <p>Memória: <span><?= $jogo->memory_Recomendate ?></span> </p>
+                    <p>Placa e video: <span><?= $jogo->GPU_Recomendate ?></span></p>
+                    <p>Armazenamento: <span><?= $jogo->storage_Recomendate ?></span></p>
+                    <p>Outras Observações: <span><?= $jogo->OBS_Recomendate ?></span> </p>
 
                 </div>
             </div>
@@ -185,16 +185,105 @@ $jogo = $dadosApi->$id;
             <div class="divider"></div>
             <h5>ANALISES DE USUARIOS</h5>
             <div class="analises">
+
+                <!-- analises01 -->
+
                 <div class="cardAnalises">
-                    <div>
+                    <div class="cardAnalises-user">
                         <img src="<?= $jogo->analise1_img ?>" alt="">
+                        <span><?= $jogo->analise1_userName ?></span>
                     </div>
-                    <div>
-                        <div>
+                    <div class="cardAnalises-description">
+
+                        <div class="likeCard">
+                            <?= $jogo->analise1_recomendacaoBoa ?>
+                            <?= $jogo->analise1_recomendacaoRuim ?>
                             <p><?= $jogo->analise1_recomendacao ?></p>
+                            <p><?= $jogo->analise1_naoRecomendacao ?></p>
+                        </div>
+                        <div>
+                            <span>PUBLICADA: <?= $jogo->analise1_data ?></span>
+                            <p class="analiseDescricao"><?= $jogo->analise1_descricao ?></p>
+                            <div class="divider"></div>
                         </div>
                     </div>
                 </div>
+
+                <!-- analises02 -->
+
+                <div class="divider"></div>
+
+                <div class="cardAnalises">
+                    <div class="cardAnalises-user">
+                        <img src="<?= $jogo->analise2_img ?>" alt="">
+                        <span><?= $jogo->analise2_userName ?></span>
+                    </div>
+                    <div class="cardAnalises-description">
+
+                        <div class="likeCard">
+                            <?= $jogo->analise2_recomendacaoBoa ?>
+                            <?= $jogo->analise2_recomendacaoRuim ?>
+                            <p><?= $jogo->analise2_recomendacao ?></p>
+                            <p><?= $jogo->analise2_naoRecomendacao ?></p>
+                        </div>
+                        <div>
+                            <span>PUBLICADA: <?= $jogo->analise2_data ?></span>
+                            <p class="analiseDescricao"><?= $jogo->analise2_descricao ?></p>
+                            <div class="divider"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- analises03 -->
+
+                <div class="divider"></div>
+
+                <div class="cardAnalises">
+                    <div class="cardAnalises-user">
+                        <img src="<?= $jogo->analise3_img ?>" alt="">
+                        <span><?= $jogo->analise3_userName ?></span>
+                    </div>
+                    <div class="cardAnalises-description">
+
+                        <div class="likeCard">
+                            <?= $jogo->analise3_recomendacaoBoa ?>
+                            <?= $jogo->analise3_recomendacaoRuim ?>
+                            <p><?= $jogo->analise3_recomendacao ?></p>
+                            <p><?= $jogo->analise3_naoRecomendacao ?></p>
+                        </div>
+                        <div>
+                            <span>PUBLICADA: <?= $jogo->analise3_data ?></span>
+                            <p class="analiseDescricao"><?= $jogo->analise3_descricao ?></p>
+                            <div class="divider"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- analises04 -->
+
+                <div class="divider"></div>
+
+                <div class="cardAnalises">
+                    <div class="cardAnalises-user">
+                        <img src="<?= $jogo->analise4_img ?>" alt="">
+                        <span><?= $jogo->analise4_userName ?></span>
+                    </div>
+                    <div class="cardAnalises-description">
+
+                        <div class="likeCard">
+                            <?= $jogo->analise4_recomendacaoBoa ?>
+                            <?= $jogo->analise4_recomendacaoRuim ?>
+                            <p><?= $jogo->analise4_recomendacao ?></p>
+                            <p><?= $jogo->analise4_naoRecomendacao ?></p>
+                        </div>
+                        <div>
+                            <span>PUBLICADA: <?= $jogo->analise4_data ?></span>
+                            <p class="analiseDescricao"><?= $jogo->analise4_descricao ?></p>
+                            <div class="divider"></div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

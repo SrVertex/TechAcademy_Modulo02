@@ -525,6 +525,53 @@ footer .footerDown .groupFooter:hover {
 .analises .cardAnalises {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.062);
+  margin-right: 10px;
+}
+.analises .cardAnalises .cardAnalises-user {
+  display: flex;
+  flex-direction: row;
+  width: 35%;
+  padding: 5px;
+}
+.analises .cardAnalises .cardAnalises-user img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #203b35;
+}
+.analises .cardAnalises .cardAnalises-description {
+  width: 60%;
+  font-size: 18px;
+}
+.analises .cardAnalises .cardAnalises-description span {
+  font-size: 12px;
+}
+.analises .cardAnalises .cardAnalises-description .analiseDescricao {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.analises .cardAnalises .cardAnalises-description .likeCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  background-color: rgba(0, 0, 0, 0.199);
+}
+.analises .cardAnalises .cardAnalises-description .likeCard p {
+  margin-bottom: 0px;
+}
+.analises .cardAnalises .cardAnalises-description .likeCard .analiseBoa {
+  margin-right: 5px;
+  padding: 5px;
+  background-color: #87ddff;
+  color: #203b35;
+}
+.analises .cardAnalises .cardAnalises-description .likeCard .analiseRuim {
+  margin-right: 5px;
+  padding: 5px;
+  background-color: #DB5939;
+  color: #ffffff;
 }
 
 .carousel-indicators img {
