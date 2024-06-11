@@ -150,7 +150,6 @@ body {
 footer {
 
 
-
     .footerBase {
         display: flex;
 
@@ -523,14 +522,13 @@ padding: 5px 40px 5px 40px;
 .containerStore-main{
     width: 70%;
     margin: auto;
-
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     text-align: center;
     .containerStore-main-left{
         width: 70%;
-        height: 100px;
         text-align: left;
         align-items: center;
 
@@ -592,17 +590,57 @@ padding: 5px 40px 5px 40px;
             height: 1px;
             background: rgb(16,122,98);
             background: linear-gradient(90deg, rgba(16,122,98,1) 0%, rgba(148,148,148,0) 100%);
+
+        }
+        .sobre{
+            display: flex;
+            flex-direction: column;
+            .cardRequisitos{
+                display: flex;
+                flex-direction: row;
+
+                &-Left{
+                    font-size: 12px;
+                    color: #b4b4b4;
+                    margin-right: 10px;
+                    span{
+                        color: $corTexto;
+                    }
+                }
+                .cardRequisitos-Right{
+                    font-size: 12px;
+                    color: #b4b4b4;
+                    span{
+                        color: $corTexto;
+                    }
+                }
+
+            }
+            .creatorLink{
+                text-decoration: none;
+                color: $corTexto;
+                font-size: 12px;
+                &:hover{
+                    color: $corBotoesHover;
+                }
+            }
         }
 
     }
     .containerStore-main-right{
         width: 30%;
-        height: 100px;
         background-color: $corFundoClara;
     }
 }
 
-
+.analises{
+    display: flex;
+    flex-direction: column;
+    .cardAnalises{
+        display: flex;
+        flex-direction: row;
+    }
+}
 
 
 

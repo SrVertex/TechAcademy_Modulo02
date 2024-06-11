@@ -133,14 +133,73 @@ $jogo = $dadosApi->$id;
             </div>
         </div>
 
-    <div>
-        <div class="divider"></div>
-        <h5>Sobre este jogo</h5>
-        
-    </div>
+        <div class="sobre">
+            <div class="divider"></div>
+            <h5>SOBRE ESTE JOGO</h5>
+            <p><?= $jogo->descriptionFull ?></p>
+        </div>
+        <div class="sobre">
+            <div class="divider"></div>
+            <h5>REQUISITOS DE SISTEMA</h5>
+            <div class="cardRequisitos">
+                <div class="cardRequisitos-Left">
+                    <p><span>MINIMOS:</span></p>
+                    <p><span>Requer um processador e sistema operacional de 64 bits</span></p>
+                    <p>SO: <span><?=$jogo->SO_Min?></span> </p>
+                    <p>Processador: <span><?=$jogo->CPU_Min?></span></p>
+                    <p>Memória: <span><?=$jogo->memory_Min?></span> </p>
+                    <p>Placa e video: <span><?=$jogo->GPU_Min?></span></p>
+                    <p>Armazenamento: <span><?=$jogo->storage_Min?></span></p>
+                    <p>Outras Observações: <span><?=$jogo->OBS_Min?></span> </p>
 
+                </div>
+                <div class="cardRequisitos-Right">
+                    <p><span>RECOMENDADOS:</span></p>
+                    <p><span>Requer um processador e sistema operacional de 64 bits</span></p>
+                    <p>SO: <span><?=$jogo->SO_Recomendate?></span> </p>
+                    <p>Processador: <span><?=$jogo->CPU_Recomendate?></span></p>
+                    <p>Memória: <span><?=$jogo->memory_Recomendate?></span> </p>
+                    <p>Placa e video: <span><?=$jogo->GPU_Recomendate?></span></p>
+                    <p>Armazenamento: <span><?=$jogo->storage_Recomendate?></span></p>
+                    <p>Outras Observações: <span><?=$jogo->OBS_Recomendate?></span> </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="sobre">
+            <div class="divider"></div>
+            <h5>POLITICA DE PRIVACIDADE</h5>
+            <a class="creatorLink" href="<?= $jogo->privacity ?>"><?= $jogo->privacity ?></a>
+        </div>
+        <div class="sobre">
+            <div class="divider"></div>
+            <h5>ACORDO DE USUARIO</h5>
+            <a class="creatorLink" href="<?= $jogo->userAccept ?>"><?= $jogo->userAccept ?></a>
+        </div>
+        <div class="sobre">
+            <div class="divider"></div>
+            <h5>RESTRICAO DE IDADE</h5>
+            <p class="creatorLink"><?= $jogo->pegiInfo ?></p>
+        </div>
+        <div class="sobre">
+            <div class="divider"></div>
+            <h5>ANALISES DE USUARIOS</h5>
+            <div class="analises">
+                <div class="cardAnalises">
+                    <div>
+                        <img src="<?= $jogo->analise1_img ?>" alt="">
+                    </div>
+                    <div>
+                        <div>
+                            <p><?= $jogo->analise1_recomendacao ?></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="containerStore-main-right">
+        <p>tecte</p>
         <p>tecte</p>
     </div>
 </div>
@@ -149,3 +208,4 @@ $jogo = $dadosApi->$id;
 
 
 <div class="containerStore-footer">
+</div>
