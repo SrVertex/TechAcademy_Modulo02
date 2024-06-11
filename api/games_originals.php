@@ -8,7 +8,7 @@
         "title" => "Rocket On The Rocks",
         "description" => "Ghost of Tsushima é um jogo de ação e aventura da Sucker Punch Productions, ambientado no Japão feudal durante a invasão mongol.",
         "descriptionFull" => "Ghos Tsushima é um jogo de ação e aventura da Sucker Punch Productions, ambientado no Japão feudal durante a invasão mongol.",
-        
+         
         "banner01" => "http://localhost/VaporStore_web/img/banner_GhostOfTsushima.png",
 
         "screenShot01" => "http://localhost/VaporStore_web/img/banner_Cyberpunk.png",
