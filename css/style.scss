@@ -525,13 +525,75 @@ padding: 5px 40px 5px 40px;
     margin: auto;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     text-align: center;
     .containerStore-main-left{
         width: 70%;
         height: 100px;
-        background-color: $corPrimaria;
+        text-align: left;
+        align-items: center;
+
+        flex-wrap: wrap;
+        .areaBuy{
+
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            margin: auto;
+            margin: 5px;
+            padding: 5px;
+            flex-wrap: wrap;
+            backdrop-filter: blur(100px) !important;
+            background: rgb(255,255,255);
+            background: linear-gradient(196deg, rgba(255, 255, 255, 0.336) 0%, rgba(148, 148, 148, 0.233) 100%);
+            h3{
+                margin: auto;
+                
+            }
+            .buttonBuy{
+                background-color: $corFundoEscura;
+                display: flex;
+                margin: auto;
+                border-radius: 5px 5px 5px 5px;
+                justify-content: space-between;
+                span{
+                    padding: 10px;
+                    border-radius: 5px 5px 5px 5px;
+                    text-align: center;
+                    align-items: center;
+                    align-content: center;
+                }
+                .buy{
+                    border-radius: 5px 5px 5px 5px;
+                    text-align: center;
+                    align-items: center;
+                    align-content: center;
+                    margin: 5px;
+                    padding: 5px;
+                    text-decoration: none;
+                    color: $corTexto;
+                    background-color: $corBotoesAvisos !important;
+                    font-weight: 600;
+                    transition: 300ms;
+                    &:hover{
+                        background-color: $corSecundaria !important;
+                        color: $corTextoEscuro;
+                    }
+
+                }
+            }
+        }
+        .divider{
+            margin-top: 20px;
+            margin-bottom: 5px;
+            width: 100%;
+            height: 1px;
+            background: rgb(16,122,98);
+            background: linear-gradient(90deg, rgba(16,122,98,1) 0%, rgba(148,148,148,0) 100%);
+        }
+
     }
     .containerStore-main-right{
         width: 30%;

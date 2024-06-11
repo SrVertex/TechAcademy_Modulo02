@@ -124,21 +124,28 @@ $jogo = $dadosApi->$id;
 </div>
 <div class="containerStore-main">
     <div class="containerStore-main-left">
-        <p>tecte</p>
+        <div class="areaBuy">
+            <h3>Comprar <?= $jogo->title ?></h3>
+            <div class="buttonBuy">
+                <span><?= $jogo->price ?></span>
+
+                <a href="" class="buy">Comprar</a>
+            </div>
+        </div>
+
+    <div>
+        <div class="divider"></div>
+        <h5>Sobre este jogo</h5>
+        
+    </div>
+
     </div>
     <div class="containerStore-main-right">
         <p>tecte</p>
     </div>
 </div>
 
-<div class="containerStore-main">
-    <div class="containerStore-main-left">
-        <p>tecte</p>
-    </div>
-    <div class="containerStore-main-right">
-        <p>tecte</p>
-    </div>
-</div>
+
 
 
 <div class="containerStore-footer">

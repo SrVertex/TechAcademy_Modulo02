@@ -416,14 +416,71 @@ footer .footerDown .groupFooter:hover {
   width: 70%;
   margin: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
   text-align: center;
 }
 .containerStore-main .containerStore-main-left {
   width: 70%;
   height: 100px;
-  background-color: #58C25A;
+  text-align: left;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.containerStore-main .containerStore-main-left .areaBuy {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin: auto;
+  margin: 5px;
+  padding: 5px;
+  flex-wrap: wrap;
+  backdrop-filter: blur(100px) !important;
+  background: white;
+  background: linear-gradient(196deg, rgba(255, 255, 255, 0.336) 0%, rgba(148, 148, 148, 0.233) 100%);
+}
+.containerStore-main .containerStore-main-left .areaBuy h3 {
+  margin: auto;
+}
+.containerStore-main .containerStore-main-left .areaBuy .buttonBuy {
+  background-color: #01271c;
+  display: flex;
+  margin: auto;
+  border-radius: 5px 5px 5px 5px;
+  justify-content: space-between;
+}
+.containerStore-main .containerStore-main-left .areaBuy .buttonBuy span {
+  padding: 10px;
+  border-radius: 5px 5px 5px 5px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+.containerStore-main .containerStore-main-left .areaBuy .buttonBuy .buy {
+  border-radius: 5px 5px 5px 5px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  margin: 5px;
+  padding: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #DB5939 !important;
+  font-weight: 600;
+  transition: 300ms;
+}
+.containerStore-main .containerStore-main-left .areaBuy .buttonBuy .buy:hover {
+  background-color: #FFD51D !important;
+  color: #182E29;
+}
+.containerStore-main .containerStore-main-left .divider {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  width: 100%;
+  height: 1px;
+  background: #107a62;
+  background: linear-gradient(90deg, #107a62 0%, rgba(148, 148, 148, 0) 100%);
 }
 .containerStore-main .containerStore-main-right {
   width: 30%;
