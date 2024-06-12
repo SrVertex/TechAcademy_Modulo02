@@ -7,7 +7,11 @@
         "id" => 1,
         "title" => "Rocket On The Rocks",
         "description" => "Ghost of Tsushima é um jogo de ação e aventura da Sucker Punch Productions, ambientado no Japão feudal durante a invasão mongol.",
-        "descriptionFull" => "Ghos Tsushima é um jogo de ação e aventura da Sucker Punch Productions, ambientado no Japão feudal durante a invasão mongol.",
+        "descriptionFull" => "Experimente a jornada de Jin Sakai pela primeira vez no PC e desfrute da experiência completa de Ghost of Tsushima na Versão do Diretor.
+
+No final do século XIII, o império mongol devastou nações em sua campanha para conquistar o Oriente. A Ilha de Tsushima é tudo que resta entre a ilha principal do Japão e a imensa frota invasora dos mongóis liderada por um general ardiloso e implacável, Khotun Khan.
+
+Enquanto a ilha é devastada pela primeira onda de ataques mongóis, surge Jin Sakai, um corajoso guerreiro samurai que é um dos últimos sobreviventes de seu clã. Ele está decidido a fazer o que for preciso, custe o que custar, para proteger seu povo e recuperar seu lar. Para isso, será necessário deixar de lado as tradições que o moldaram como guerreiro e forjar um novo caminho, o do Fantasma, travando uma guerra atípica pela liberdade de Tsushima.",
          
         "banner01" => "http://localhost/VaporStore_web/img/banner_GhostOfTsushima.png",
 
@@ -18,6 +22,16 @@
         "video01" => "BASE",
         "category" => "Ação",
         "categoryLink" => "action",
+        "modoJogo" => "Um jogador",
+        "multiplayer" => "Sem suporte Multiplayer",
+        "controls" => "Teclado",
+
+
+
+
+
+
+
 
         "CPU_Min" => "i5 1156 ou Phenom II",
         "GPU_Min" => "Intel HD Graffics ou GT210",

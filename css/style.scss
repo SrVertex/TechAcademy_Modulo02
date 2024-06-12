@@ -531,7 +531,7 @@ padding: 5px 40px 5px 40px;
         width: 70%;
         text-align: left;
         align-items: center;
-
+        margin-right: 10px;
         flex-wrap: wrap;
         .areaBuy{
 
@@ -629,7 +629,40 @@ padding: 5px 40px 5px 40px;
     }
     .containerStore-main-right{
         width: 30%;
-        background-color: $corFundoClara;
+        section{
+            background-color: rgba(0, 0, 0, 0.151);
+            padding: 10px;
+            margin-bottom: 10px;
+            & .jogoFunctions{
+                display: flex;
+                flex-direction: column;
+
+                text-align: left;
+                & .jogoFunctions_layer{
+                    display: flex;
+                    align-items: center;
+                    & span{
+                        background-color: $corFundo;
+                        width: 100%;
+                        margin: 1px;
+                        padding: 5px;
+                        font-size: 14px;
+                        color: $corTextoHover;
+                        &:hover{
+                           background-color: $corFundoClara;
+                           color: $corTexto; 
+                        }
+                    }
+                    & i{
+                        background-color: $corFundoEscura;
+                        padding: 4px;
+                        margin: 1px;
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+
     }
 }
 

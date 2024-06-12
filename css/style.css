@@ -425,6 +425,7 @@ footer .footerDown .groupFooter:hover {
   width: 70%;
   text-align: left;
   align-items: center;
+  margin-right: 10px;
   flex-wrap: wrap;
 }
 .containerStore-main .containerStore-main-left .areaBuy {
@@ -515,7 +516,38 @@ footer .footerDown .groupFooter:hover {
 }
 .containerStore-main .containerStore-main-right {
   width: 30%;
+}
+.containerStore-main .containerStore-main-right section {
+  background-color: rgba(0, 0, 0, 0.151);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.containerStore-main .containerStore-main-right section .jogoFunctions {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.containerStore-main .containerStore-main-right section .jogoFunctions .jogoFunctions_layer {
+  display: flex;
+  align-items: center;
+}
+.containerStore-main .containerStore-main-right section .jogoFunctions .jogoFunctions_layer span {
+  background-color: #004733;
+  width: 100%;
+  margin: 1px;
+  padding: 5px;
+  font-size: 14px;
+  color: #ABDDD2;
+}
+.containerStore-main .containerStore-main-right section .jogoFunctions .jogoFunctions_layer span:hover {
   background-color: #107a62;
+  color: #ffffff;
+}
+.containerStore-main .containerStore-main-right section .jogoFunctions .jogoFunctions_layer i {
+  background-color: #01271c;
+  padding: 4px;
+  margin: 1px;
+  margin-right: 0px;
 }
 
 .analises {

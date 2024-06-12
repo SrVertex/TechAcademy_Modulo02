@@ -288,8 +288,36 @@ $jogo = $dadosApi->$id;
         </div>
     </div>
     <div class="containerStore-main-right">
-        <p>tecte</p>
-        <p>tecte</p>
+        <section>
+            <div class="jogoFunctions">
+                <div class="jogoFunctions_layer">
+                    <i class="bi bi-person-fill"></i>
+                    <span><?= $jogo->modoJogo ?></span>
+                </div>
+                <div class="jogoFunctions_layer">
+                <i class="bi bi-people-fill"></i>
+                    <span><?= $jogo->multiplayer ?></span>
+                </div>
+                <div class="jogoFunctions_layer">
+                <i class="bi bi-controller"></i>
+                    <span><?= $jogo->controls ?></span>
+                </div>
+                <div class="jogoFunctions_layer">
+                <i class="bi bi-tags-fill"></i>
+                    <span><?= $jogo->category ?></span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="idiomas">
+                <p>Idiomas: </p>
+                <ul>
+                    <li>
+                        
+                    </li>
+                </ul>
+            </div>
+        </section>
     </div>
 </div>
 
