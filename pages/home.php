@@ -22,38 +22,40 @@ foreach ($dadosApiPromo as $jogoPromo) {
 }
 ?>
 
+<h1 class="text-center">Loja</h1>
+
 <div class="container-fluid">
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <?php
-            foreach ($dadosApi as $jogo) {
+            foreach ($dadosApiOriginals as $jogoOriginals) {
             ?>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="<?= $jogo->id ?>" aria-label="<?= $jogo->title ?>"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="<?= $jogoOriginals->id ?>" aria-label="<?= $jogoOriginals->title ?>"></button>
             <?php
             }
             ?>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active" data-bs-interval="2000">
 
                 <img src="http://localhost/VaporStore_web/img/banners/banner_welcome.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>Bem Vindo</h5>
+                    <p>Aventure-se em nosso catalogo de jogos</p>
                 </div>
             </div>
 
             <?php
-            foreach ($dadosApi as $jogo) {
+            foreach ($dadosApiOriginals as $jogoOriginals) {
             ?>
 
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="4000">
 
-                    <a href="gamesPage/<?= $jogo->id ?>"><img src="<?= $jogo->banner01 ?>" class="d-block w-100" alt="..."></a>
+                    <a href="gamesPage/<?= $jogoOriginals->id ?>"><img src="<?= $jogoOriginals->banner02 ?>" class="d-block w-100" alt="..."></a>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <h5><?= $jogoOriginals->title ?></h5>
+                        <p><?= $jogoOriginals->description ?></p>
                     </div>
                 </div>
 
@@ -84,10 +86,10 @@ foreach ($dadosApiPromo as $jogoPromo) {
     <div class="container-cards row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xxl-3 row-cols-fluid-4 g-4 x-4">
 
         <?php
-        foreach ($dadosApiPromo as $jogoOriginals) {
+        foreach ($dadosApiOriginals as $jogoOriginals) {
         ?>
             <div class="col">
-                <div class="card" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+                <div class="card" data-aos="fade-up" data-aos-duration="500">
 
                     <a href="gamesPage/<?= $jogoOriginals->id ?>"><img src="<?= $jogoOriginals->banner01 ?>" class="card-img-top" alt="<?= $jogoOriginals->title ?>"></a>
                     <div class="card-body">
@@ -118,16 +120,16 @@ foreach ($dadosApiPromo as $jogoPromo) {
 
 
     <div class="container-fluid bannerPromo ">
-        <img src="http://localhost/VaporStore_web/img/banner2.jpg" class="bannerPromo" alt="...">
+        <img src="http://localhost/VaporStore_web/img/banner2.jpg" class="bannerPromo" alt="..." data-aos="fade-up" data-aos-duration="500">
 
     </div>
 
-    <div class="container-cards row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 g-4 x-4">
+    <div class="container-cards row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xxl-3 row-cols-fluid-4 g-4 x-4">
         <?php
         foreach ($dadosApiPromo as $jogoPromo) {
         ?>
             <div class="col">
-                <div class="card">
+                <div class="card" data-aos="fade-up" data-aos-duration="500">
                     <a href=""><img src="<?= $jogoPromo->banner01 ?>" class="card-img-top" alt="<?= $jogoOriginals->title ?>"></a>
                     <div class="card-body">
                         <h5 class="card-title"><?= $jogoPromo->title ?></h5>
@@ -155,13 +157,13 @@ foreach ($dadosApiPromo as $jogoPromo) {
 
     <!-- <div class="container-cards row row-cols-1 row-cols-md-6 g-4"> -->
 
-    <div class="container-cards row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xxl-2 g-4 x-4">
+    <div class="container-cards row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xxl-3 row-cols-fluid-4 g-4 x-4">
         <?php
         foreach ($dadosApi as $jogo) {
         ?>
             <div class="col">
-                <div class="card">
-                <span class=" <?= $jogo->promoLabel?> promoLabel-none">Promocao</span>
+                <div class="card" data-aos="fade-up" data-aos-duration="500">
+                    <span class=" <?= $jogo->promoLabel ?> promoLabel-none">Promocao</span>
                     <a href="games_ThirdParty/<?= $jogo->id ?>"><img src="<?= $jogo->banner02 ?>" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                         <h5 class="card-title"><?= $jogo->title ?></h5>
@@ -179,4 +181,3 @@ foreach ($dadosApiPromo as $jogoPromo) {
         ?>
     </div>
 </div>
-

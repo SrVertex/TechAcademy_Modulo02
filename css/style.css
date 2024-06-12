@@ -655,7 +655,7 @@ footer .footerDown .groupFooter:hover {
   width: max-content !important;
 }
 
-.carousel-indicators {
+.carousel-indicators-screens {
   position: unset;
   display: flex;
   margin-bottom: 3rem;

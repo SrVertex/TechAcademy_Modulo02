@@ -1,39 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarja de Promoção</title>
-    <style>
-        .promotion-container {
-            position: relative;
-            display: inline-block;
-        }
+<?php
+$apiOriginals = file_get_contents("http://localhost/VaporStore_web/api/games_originals.php");
+$dadosApiOriginals = json_decode($apiOriginals);
 
-        .promotion-container img {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
+foreach ($dadosApiOriginals as $jogoOriginals) {
+}
+?>
 
-        .promotion-tag {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            padding: 5px 10px;
-            background-color: red;
-            color: white;
-            font-size: 1.2em;
-            font-weight: bold;
-            z-index: 1;
-            border-radius: 5px;
-        }
-    </style>
-</head>
-<body>
-    <div class="promotion-container">
-        <img src="img/banner.jpg" alt="Produto">
-        <div class="promotion-tag">Promoção</div>
+<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+  Link with href
+</a>
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+  Button with data-bs-target
+</button>
+
+<div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
     </div>
-</body>
-</html>
+    <div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

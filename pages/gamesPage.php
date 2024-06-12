@@ -63,7 +63,7 @@ $jogo = $dadosApi->$id;
 
 
 
-                <div class="carousel-indicators">
+                <div class="carousel-indicators carousel-indicators-screens">
                     <button type="button" class="active" data-bs-target="#carouselExampleFade" data-bs-slide-to="0">
                         <img src="<?= $jogo->screenShot01 ?>" alt="">
                     </button>
@@ -97,7 +97,7 @@ $jogo = $dadosApi->$id;
         <div class="containerStore-base-info">
             <div>
                 <img src="<?= $jogo->banner01 ?>"" alt=" <?= $jogo->title ?>">
-                <p class="gameDescription"><?= $jogo->description ?></p>
+                <p class="gameDescription"><?= $jogo->descriptionMid ?></p>
             </div>
             <a class="fuctions" href="">
                 <span class="titleFuncion">TODAS AS ANÁLISES: </span>
