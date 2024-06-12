@@ -262,6 +262,7 @@ footer .footerDown .groupFooter:hover {
   background-color: #203b35;
   color: #ffffff;
   overflow: hidden;
+  box-shadow: 4px 5px rgba(0, 0, 0, 0.137);
 }
 .container-cards .card .card-body {
   text-decoration: none;
@@ -435,11 +436,13 @@ footer .footerDown .groupFooter:hover {
   align-content: center;
   margin: auto;
   margin: 5px;
+  margin-bottom: 15px;
   padding: 5px;
   flex-wrap: wrap;
   backdrop-filter: blur(100px) !important;
   background: white;
-  background: linear-gradient(196deg, rgba(255, 255, 255, 0.336) 0%, rgba(148, 148, 148, 0.233) 100%);
+  background: linear-gradient(196deg, rgba(255, 255, 255, 0.253) 0%, rgba(148, 148, 148, 0.103) 100%);
+  box-shadow: 4px 5px rgba(0, 0, 0, 0.137);
 }
 .containerStore-main .containerStore-main-left .areaBuy h3 {
   margin: auto;
@@ -447,9 +450,13 @@ footer .footerDown .groupFooter:hover {
 .containerStore-main .containerStore-main-left .areaBuy .buttonBuy {
   background-color: #01271c;
   display: flex;
+  position: relative;
+  top: 25px;
+  border: 1px solid #ABDDD2;
   margin: auto;
   border-radius: 5px 5px 5px 5px;
   justify-content: space-between;
+  box-shadow: 4px 5px rgba(0, 0, 0, 0.137);
 }
 .containerStore-main .containerStore-main-left .areaBuy .buttonBuy span {
   padding: 10px;
@@ -548,6 +555,37 @@ footer .footerDown .groupFooter:hover {
   padding: 4px;
   margin: 1px;
   margin-right: 0px;
+}
+.containerStore-main .containerStore-main-right .idiomas div {
+  background-color: #203b35;
+  padding: auto;
+  margin: auto;
+}
+.containerStore-main .containerStore-main-right .containerStore-base-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.containerStore-main .containerStore-main-right .containerStore-base-info .fuctions {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-between;
+}
+.containerStore-main .containerStore-main-right .containerStore-base-info .fuctions .titleFuncion {
+  color: #adadadaf;
+  margin-right: 10px;
+  font-size: 12px;
+  justify-content: space-between;
+}
+.containerStore-main .containerStore-main-right .containerStore-base-info .fuctions .creatorLink {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+}
+.containerStore-main .containerStore-main-right .containerStore-base-info .fuctions .creatorLink:hover {
+  color: #81a2d4;
 }
 
 .analises {

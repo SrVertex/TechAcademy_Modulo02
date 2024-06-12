@@ -87,9 +87,9 @@ foreach ($dadosApiPromo as $jogoPromo) {
         foreach ($dadosApiPromo as $jogoOriginals) {
         ?>
             <div class="col">
-                <div class="card">
+                <div class="card" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
 
-                    <a href=""><img src="<?= $jogoOriginals->banner01 ?>" class="card-img-top" alt="<?= $jogoOriginals->title ?>"></a>
+                    <a href="gamesPage/<?= $jogoOriginals->id ?>"><img src="<?= $jogoOriginals->banner01 ?>" class="card-img-top" alt="<?= $jogoOriginals->title ?>"></a>
                     <div class="card-body">
                         <h5 class="card-title"><?= $jogoOriginals->title ?></h5>
                         <p class="card-text"><?= $jogoOriginals->description ?></p>

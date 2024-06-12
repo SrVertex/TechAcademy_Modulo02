@@ -129,7 +129,7 @@ $jogo = $dadosApi->$id;
             <div class="buttonBuy">
                 <span><?= $jogo->price ?></span>
 
-                <a href="" class="buy">Comprar</a>
+                <a href="<?= $jogo->gameLink ?>" class="buy">Comprar</a>
             </div>
         </div>
 
@@ -178,8 +178,8 @@ $jogo = $dadosApi->$id;
         </div>
         <div class="sobre">
             <div class="divider"></div>
-            <h5>RESTRICAO DE IDADE</h5>
-            <p class="creatorLink"><?= $jogo->pegiInfo ?></p>
+            <h5>PLATAFORMA: </h5>
+            <p class="creatorLink"><?= $jogo->plataform ?></p>
         </div>
         <div class="sobre">
             <div class="divider"></div>
@@ -283,7 +283,7 @@ $jogo = $dadosApi->$id;
                         </div>
                     </div>
                 </div>
-
+                <div class="divider"></div>
             </div>
         </div>
     </div>
@@ -295,30 +295,54 @@ $jogo = $dadosApi->$id;
                     <span><?= $jogo->modoJogo ?></span>
                 </div>
                 <div class="jogoFunctions_layer">
-                <i class="bi bi-people-fill"></i>
+                    <i class="bi bi-people-fill"></i>
                     <span><?= $jogo->multiplayer ?></span>
                 </div>
                 <div class="jogoFunctions_layer">
-                <i class="bi bi-controller"></i>
+                    <i class="bi bi-controller"></i>
                     <span><?= $jogo->controls ?></span>
                 </div>
                 <div class="jogoFunctions_layer">
-                <i class="bi bi-tags-fill"></i>
+                    <i class="bi bi-tags-fill"></i>
                     <span><?= $jogo->category ?></span>
                 </div>
             </div>
         </section>
         <section>
             <div class="idiomas">
-                <p>Idiomas: </p>
-                <ul>
-                    <li>
-                        
-                    </li>
-                </ul>
+                <h6>CLASSIFICACAO INDICATIVA:</h6>
+                <div><?= $jogo->pegiInfo ?></div>
             </div>
         </section>
+        <section>
+            <div class="containerStore-base-info">
+                <div class="fuctions">
+                    <span class="titleFuncion">TITULO: </span>
+                    <a class="creatorLink" href=""><?= $jogo->title ?></a>
+                </div>
+                <div class="fuctions">
+                    <span class="titleFuncion">GENERO: </span>
+                    <a class="creatorLink" href="categoryLink"><?= $jogo->category ?></a>
+                </div>
+                <div class="fuctions">
+                    <span class="titleFuncion">DESENVOLVEDOR: </span>
+                    <a class="creatorLink" href="creatorPage"><?= $jogo->creator ?></a>
+                </div>
+                <div class="fuctions">
+                    <span class="titleFuncion">DISTRIBUIDORA: </span>
+                    <a class="creatorLink" href="<?= $jogo->distributorSite ?>"><?= $jogo->distributor ?></a>
+                </div>
+                <div class="fuctions">
+                    <span class="titleFuncion">LANÇAMENTO: </span>
+                    <a class="creatorLink" href=""><?= $jogo->realeaseDate ?></a>
+                </div>
+            </div>
+        </section>
+        <section>
+
+        </section>
     </div>
+    
 </div>
 
 

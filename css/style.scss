@@ -359,6 +359,7 @@ footer {
         background-color: $corBotoesEscuros;
         color: $corTexto;
         overflow: hidden;
+        box-shadow: 4px 5px rgba(0, 0, 0, 0.137);
         & .card-body{
             text-decoration: none;
             & .car-btn{
@@ -541,11 +542,13 @@ padding: 5px 40px 5px 40px;
             align-content: center;
             margin: auto;
             margin: 5px;
+            margin-bottom: 15px;
             padding: 5px;
             flex-wrap: wrap;
             backdrop-filter: blur(100px) !important;
             background: rgb(255,255,255);
-            background: linear-gradient(196deg, rgba(255, 255, 255, 0.336) 0%, rgba(148, 148, 148, 0.233) 100%);
+            background: linear-gradient(196deg, rgba(255, 255, 255, 0.253) 0%, rgba(148, 148, 148, 0.103) 100%);
+            box-shadow: 4px 5px rgba(0, 0, 0, 0.137);
             h3{
                 margin: auto;
                 
@@ -553,9 +556,13 @@ padding: 5px 40px 5px 40px;
             .buttonBuy{
                 background-color: $corFundoEscura;
                 display: flex;
+                position: relative;
+                top: 25px;
+                border: 1px solid $corBotoes;
                 margin: auto;
                 border-radius: 5px 5px 5px 5px;
                 justify-content: space-between;
+                box-shadow: 4px 5px rgba(0, 0, 0, 0.137);
                 span{
                     padding: 10px;
                     border-radius: 5px 5px 5px 5px;
@@ -564,6 +571,7 @@ padding: 5px 40px 5px 40px;
                     align-content: center;
                 }
                 .buy{
+                    
                     border-radius: 5px 5px 5px 5px;
                     text-align: center;
                     align-items: center;
@@ -662,7 +670,48 @@ padding: 5px 40px 5px 40px;
                 }
             }
         }
+        .idiomas{
+            div{
+                background-color: $corBotoesEscuros;
+                padding: auto;
+                margin: auto;
+            }
+        }
+        .containerStore-base-info{
+            width: 100%;
 
+            display: flex;
+
+            flex-direction: column;
+
+            .fuctions{
+                display: flex;
+                
+                flex-direction: row;
+                text-decoration: none;
+                align-items: center;
+                justify-content: space-between;
+
+                
+
+                .titleFuncion{
+                    color: $corTextoFunction;
+                    margin-right: 10px;
+                    font-size: 12px;
+                    justify-content: space-between;
+
+                }
+
+                .creatorLink{
+                    text-decoration: none;
+                    color: $corTexto;
+                    font-size: 12px;
+                    &:hover{
+                        color: $corBotoesHover;
+                    }
+                }
+            }
+        }
     }
 }
 
