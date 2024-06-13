@@ -22,9 +22,9 @@ foreach ($dadosApiPromo as $jogoPromo) {
 }
 ?>
 
-<h1 class="text-center">Loja</h1>
+<!-- <h1 class="text-center">Loja</h1> -->
 
-<div class="container-fluid">
+<div class=" containerCarrousel">
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -37,7 +37,7 @@ foreach ($dadosApiPromo as $jogoPromo) {
             ?>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="2000">
+            <div class="carousel-item active" data-bs-interval="1500">
 
                 <img src="http://localhost/VaporStore_web/img/banners/banner_welcome.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">

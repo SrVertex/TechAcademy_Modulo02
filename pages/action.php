@@ -15,10 +15,10 @@
                 echo '<div class="car-btn">';
                 echo '<a href="gamesPage/' . $jogoOriginals->id . '" class="btn btn-light">Pagina do Jogo</a>';
                 echo '<span class="card-price">' . $jogoOriginals->price . '</span>';
-                echo '</div>'; // End of car-btn
-                echo '</div>'; // End of card-body
-                echo '</div>'; // End of card
-                echo '</div>'; // End of col
+                echo '</div>';
+                echo '</div>';
+                echo '</div>';
+                echo '</div>';
             }
         }
         ?>

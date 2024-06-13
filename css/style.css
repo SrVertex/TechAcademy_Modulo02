@@ -156,6 +156,14 @@ footer .footerDown .groupFooter:hover {
   margin: 10px;
 }
 
+.containerCarrousel {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100%;
+}
+
 .loginPC {
   display: flex;
   flex-direction: row;
