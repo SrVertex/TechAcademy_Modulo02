@@ -79,33 +79,32 @@ foreach ($dadosApiPromo as $jogoPromo) {
 
 <!-- <div class="container-cards row row-cols-1 row-cols-md-6 g-4"> -->
 
-<div class="containerBox">
-    <h2 class="titleDestaque text-center mt-5 mb-0">Originais Vapor Store</h2>
+
+<h2 class="titleDestaque text-center mt-5 mb-0">Originais Vapor Store</h2>
 
 
-    <div class="container-cards row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xxl-3 row-cols-fluid-4 g-4 x-4">
+<div class="container-cards row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xxl-3 row-cols-fluid-4 g-4 x-4">
 
-        <?php
-        foreach ($dadosApiOriginals as $jogoOriginals) {
-        ?>
-            <div class="col">
-                <div class="card" data-aos="fade-up" data-aos-duration="500">
+    <?php
+    foreach ($dadosApiOriginals as $jogoOriginals) {
+    ?>
+        <div class="col">
+            <div class="card" data-aos="fade-up" data-aos-duration="500">
 
-                    <a href="gamesPage/<?= $jogoOriginals->id ?>"><img src="<?= $jogoOriginals->banner01 ?>" class="card-img-top" alt="<?= $jogoOriginals->title ?>"></a>
-                    <div class="card-body">
-                        <h5 class="card-title"><?= $jogoOriginals->title ?></h5>
-                        <p class="card-text"><?= $jogoOriginals->description ?></p>
-                        <div class="car-btn">
-                            <a href="gamesPage/<?= $jogoOriginals->id ?>" class="btn btn-light">Pagina do Jogo</a>
-                            <span class="card-price"><?= $jogoOriginals->price ?></span>
-                        </div>
+                <a href="gamesPage/<?= $jogoOriginals->id ?>"><img src="<?= $jogoOriginals->banner01 ?>" class="card-img-top" alt="<?= $jogoOriginals->title ?>"></a>
+                <div class="card-body">
+                    <h5 class="card-title"><?= $jogoOriginals->title ?></h5>
+                    <p class="card-text"><?= $jogoOriginals->description ?></p>
+                    <div class="car-btn">
+                        <a href="gamesPage/<?= $jogoOriginals->id ?>" class="btn btn-light">Pagina do Jogo</a>
+                        <span class="card-price"><?= $jogoOriginals->price ?></span>
                     </div>
                 </div>
             </div>
-        <?php
-        }
-        ?>
-    </div>
+        </div>
+    <?php
+    }
+    ?>
 </div>
 
 
@@ -113,38 +112,35 @@ foreach ($dadosApiPromo as $jogoPromo) {
 
 
 
-<div class="containerBox">
-
-    <h2 class="titleDestaque text-center mt-4">Lançamentos</h2>
+<h2 class="titleDestaque text-center mt-4">Lançamentos</h2>
 
 
 
-    <div class="container-fluid bannerPromo ">
-        <img src="http://localhost/VaporStore_web/img/banner2.jpg" class="bannerPromo" alt="..." data-aos="fade-up" data-aos-duration="500">
+<div>
+    <img src="http://localhost/VaporStore_web/img/banner2.jpg" class="bannerPromo" alt="..." data-aos="fade-up" data-aos-duration="500">
 
-    </div>
+</div>
 
-    <div class="container-cards row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xxl-3 row-cols-fluid-4 g-4 x-4">
-        <?php
-        foreach ($dadosApiPromo as $jogoPromo) {
-        ?>
-            <div class="col">
-                <div class="card" data-aos="fade-up" data-aos-duration="500">
-                    <a href=""><img src="<?= $jogoPromo->banner01 ?>" class="card-img-top" alt="<?= $jogoOriginals->title ?>"></a>
-                    <div class="card-body">
-                        <h5 class="card-title"><?= $jogoPromo->title ?></h5>
-                        <p class="card-text"><?= $jogoPromo->description ?></p>
-                        <div class="car-btn">
-                            <a href="games_lancamentos/<?= $jogoPromo->id ?>" class="btn btn-light">Pagina do Jogo</a>
-                            <span class="card-price"><?= $jogoPromo->price ?></span>
-                        </div>
+<div class="container-cards row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xxl-3 row-cols-fluid-4 g-4 x-4">
+    <?php
+    foreach ($dadosApiPromo as $jogoPromo) {
+    ?>
+        <div class="col">
+            <div class="card" data-aos="fade-up" data-aos-duration="500">
+                <a href=""><img src="<?= $jogoPromo->banner01 ?>" class="card-img-top" alt="<?= $jogoOriginals->title ?>"></a>
+                <div class="card-body">
+                    <h5 class="card-title"><?= $jogoPromo->title ?></h5>
+                    <p class="card-text"><?= $jogoPromo->description ?></p>
+                    <div class="car-btn">
+                        <a href="games_lancamentos/<?= $jogoPromo->id ?>" class="btn btn-light">Pagina do Jogo</a>
+                        <span class="card-price"><?= $jogoPromo->price ?></span>
                     </div>
                 </div>
             </div>
-        <?php
-        }
-        ?>
-    </div>
+        </div>
+    <?php
+    }
+    ?>
 </div>
 
 
@@ -152,32 +148,30 @@ foreach ($dadosApiPromo as $jogoPromo) {
 
 
 
-<div class="containerBox">
-    <h2 class="titleDestaque text-center mt-5 mb-0">Jogos de Terceiros</h2>
+<h2 class="titleDestaque text-center mt-5 mb-0">Jogos de Terceiros</h2>
 
-    <!-- <div class="container-cards row row-cols-1 row-cols-md-6 g-4"> -->
+<!-- <div class="container-cards row row-cols-1 row-cols-md-6 g-4"> -->
 
-    <div class="container-cards row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xxl-3 row-cols-fluid-4 g-4 x-4">
-        <?php
-        foreach ($dadosApi as $jogo) {
-        ?>
-            <div class="col">
-                <div class="card" data-aos="fade-up" data-aos-duration="500">
-                    <span class=" <?= $jogo->promoLabel ?> promoLabel-none">Promocao</span>
-                    <a href="games_ThirdParty/<?= $jogo->id ?>"><img src="<?= $jogo->banner02 ?>" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title"><?= $jogo->title ?></h5>
-                        <p class="card-text"><?= $jogo->description ?></p>
-                        <div class="car-btn">
-                            <a href="games_ThirdParty/<?= $jogo->id ?>" class="btn btn-light">Pagina do Jogo</a>
-                            <span class="card-price"><?= $jogo->price ?></span>
-                            <span class="card-promo"><?= $jogo->promo ?></span>
-                        </div>
+<div class="container-cards row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xxl-3 row-cols-fluid-4 g-4 x-4">
+    <?php
+    foreach ($dadosApi as $jogo) {
+    ?>
+        <div class="col">
+            <div class="card" data-aos="fade-up" data-aos-duration="500">
+                <span class=" <?= $jogo->promoLabel ?> promoLabel-none">Promocao</span>
+                <a href="games_ThirdParty/<?= $jogo->id ?>"><img src="<?= $jogo->banner02 ?>" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title"><?= $jogo->title ?></h5>
+                    <p class="card-text"><?= $jogo->description ?></p>
+                    <div class="car-btn">
+                        <a href="games_ThirdParty/<?= $jogo->id ?>" class="btn btn-light">Pagina do Jogo</a>
+                        <span class="card-price"><?= $jogo->price ?></span>
+                        <span class="card-promo"><?= $jogo->promo ?></span>
                     </div>
                 </div>
             </div>
-        <?php
-        }
-        ?>
-    </div>
+        </div>
+    <?php
+    }
+    ?>
 </div>
