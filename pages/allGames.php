@@ -32,3 +32,14 @@ foreach ($dadosApiOriginals as $jogoOriginals) {
     }
     ?>
 </div>
+
+
+
+
+
+
+
+
+<div class="spacing">
+    
+    </div>

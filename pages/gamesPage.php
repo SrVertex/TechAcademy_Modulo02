@@ -17,7 +17,7 @@ $jogo = $dadosApi->$id;
         <h3><?= $jogo->title ?></h3>
     </div>
 
-    <a href="login" class="btn btn-light btnCreator">Pagina do Criador</a>
+    <a href="creatorPage/<?= $jogo->id ?>" class="btn btn-light btnCreator">Pagina do Criador</a>
 
 
 </div>
@@ -346,7 +346,3 @@ $jogo = $dadosApi->$id;
 </div>
 
 
-
-
-<div class="containerStore-footer">
-</div>

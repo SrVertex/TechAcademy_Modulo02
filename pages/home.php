@@ -89,8 +89,8 @@ foreach ($dadosApiPromo as $jogoPromo) {
     foreach ($dadosApiOriginals as $jogoOriginals) {
     ?>
         <div class="col">
-            <div class="card" data-aos="fade-up" data-aos-duration="500">
-
+        <div class="card" data-aos="fade-up" data-aos-duration="500">
+        <span class=" <?= $jogoOriginals->promoLabel ?> promoLabel-none">Promocao</span>
                 <a href="gamesPage/<?= $jogoOriginals->id ?>"><img src="<?= $jogoOriginals->banner01 ?>" class="card-img-top" alt="<?= $jogoOriginals->title ?>"></a>
                 <div class="card-body">
                     <h5 class="card-title"><?= $jogoOriginals->title ?></h5>
@@ -98,6 +98,7 @@ foreach ($dadosApiPromo as $jogoPromo) {
                     <div class="car-btn">
                         <a href="gamesPage/<?= $jogoOriginals->id ?>" class="btn btn-light">Pagina do Jogo</a>
                         <span class="card-price"><?= $jogoOriginals->price ?></span>
+                        <span class="card-promo"><?= $jogoOriginals->promo ?></span>
                     </div>
                 </div>
             </div>
@@ -126,7 +127,8 @@ foreach ($dadosApiPromo as $jogoPromo) {
     foreach ($dadosApiPromo as $jogoPromo) {
     ?>
         <div class="col">
-            <div class="card" data-aos="fade-up" data-aos-duration="500">
+        <div class="card" data-aos="fade-up" data-aos-duration="500">
+        <span class=" <?= $jogoPromo->promoLabel ?> promoLabel-none">Promocao</span>
                 <a href=""><img src="<?= $jogoPromo->banner01 ?>" class="card-img-top" alt="<?= $jogoOriginals->title ?>"></a>
                 <div class="card-body">
                     <h5 class="card-title"><?= $jogoPromo->title ?></h5>
@@ -134,6 +136,7 @@ foreach ($dadosApiPromo as $jogoPromo) {
                     <div class="car-btn">
                         <a href="games_lancamentos/<?= $jogoPromo->id ?>" class="btn btn-light">Pagina do Jogo</a>
                         <span class="card-price"><?= $jogoPromo->price ?></span>
+                        <span class="card-promo"><?= $jogoPromo->promo ?></span>
                     </div>
                 </div>
             </div>

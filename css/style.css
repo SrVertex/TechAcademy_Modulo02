@@ -303,7 +303,7 @@ footer .footerDown .groupFooter:hover {
 }
 
 .bannerPromo {
-  width: 90%;
+  width: 100%;
   margin: auto;
   margin-top: 5px;
   display: flex;
@@ -596,6 +596,38 @@ footer .footerDown .groupFooter:hover {
   color: #81a2d4;
 }
 
+.sobre {
+  display: flex;
+  flex-direction: column;
+}
+.sobre .cardRequisitos {
+  display: flex;
+  flex-direction: row;
+}
+.sobre .cardRequisitos-Left {
+  font-size: 12px;
+  color: #b4b4b4;
+  margin-right: 10px;
+}
+.sobre .cardRequisitos-Left span {
+  color: #ffffff;
+}
+.sobre .cardRequisitos .cardRequisitos-Right {
+  font-size: 12px;
+  color: #b4b4b4;
+}
+.sobre .cardRequisitos .cardRequisitos-Right span {
+  color: #ffffff;
+}
+.sobre .creatorLink {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+}
+.sobre .creatorLink:hover {
+  color: #81a2d4;
+}
+
 .analises {
   display: flex;
   flex-direction: column;
@@ -652,6 +684,54 @@ footer .footerDown .groupFooter:hover {
   color: #ffffff;
 }
 
+.creatorPage {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  background-color: #004733;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 800px;
+}
+.creatorPage .sobre {
+  display: flex;
+  flex-direction: column;
+}
+.creatorPage .sobre .cardRequisitos {
+  display: flex;
+  flex-direction: row;
+}
+.creatorPage .sobre .cardRequisitos-Left {
+  font-size: 12px;
+  color: #b4b4b4;
+  margin-right: 10px;
+}
+.creatorPage .sobre .cardRequisitos-Left span {
+  color: #ffffff;
+}
+.creatorPage .sobre .cardRequisitos .cardRequisitos-Right {
+  font-size: 12px;
+  color: #b4b4b4;
+}
+.creatorPage .sobre .cardRequisitos .cardRequisitos-Right span {
+  color: #ffffff;
+}
+.creatorPage .sobre .creatorLink {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+}
+.creatorPage .sobre .creatorLink:hover {
+  color: #81a2d4;
+}
+
+.spacing {
+  margin-bottom: 400px;
+}
+
 .carousel-indicators img {
   width: 120px;
   height: auto;
@@ -669,6 +749,78 @@ footer .footerDown .groupFooter:hover {
   margin-bottom: 3rem;
 }
 
+.bibliotecaBase {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bibliotecaBase .bibliotecaBase-left {
+  width: 45%;
+}
+.bibliotecaBase .bibliotecaBase-left h1 {
+  margin: 10px;
+  margin-left: 20px;
+}
+.bibliotecaBase .bibliotecaBase-left ul {
+  background-color: #004733;
+  padding: 5px;
+  border-radius: 0 5px 5px 0;
+}
+.bibliotecaBase .bibliotecaBase-left ul li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 5px;
+}
+.bibliotecaBase .bibliotecaBase-left ul li img {
+  width: 30px;
+}
+.bibliotecaBase .bibliotecaBase-left ul li .bibliotecaBase-gameTitle {
+  color: #ffffff !important;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.bibliotecaBase .bibliotecaBase-left ul li .bibliotecaBase-gameTitle:hover {
+  color: #ABDDD2 !important;
+}
+.bibliotecaBase .bibliotecaBase-right {
+  width: 45%;
+}
+.bibliotecaBase .bibliotecaBase-right h1 {
+  margin: 10px;
+  margin-right: 20px;
+  text-align: right;
+}
+.bibliotecaBase .bibliotecaBase-right ul {
+  background-color: #004733;
+  padding: 5px;
+  border-radius: 0 5px 5px 0;
+}
+.bibliotecaBase .bibliotecaBase-right ul li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 5px;
+}
+.bibliotecaBase .bibliotecaBase-right ul li img {
+  width: 30px;
+}
+.bibliotecaBase .bibliotecaBase-right ul li .bibliotecaBase-gameTitle {
+  color: #ffffff !important;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.bibliotecaBase .bibliotecaBase-right ul li .bibliotecaBase-gameTitle:hover {
+  color: #ABDDD2 !important;
+}
+
+.jogadosRecentemente {
+  margin: 10px;
+  margin-left: 20px;
+}
+
 @media (min-width: 480px) {
   footer {
     backdrop-filter: blur(100px);
@@ -681,6 +833,18 @@ footer .footerDown .groupFooter:hover {
     margin-top: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  .bibliotecaBase {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .bibliotecaBase .bibliotecaBase-left {
+    width: 45%;
+  }
+  .bibliotecaBase .bibliotecaBase-right {
+    width: 45%;
   }
 }
 @media (min-width: 800px) {
