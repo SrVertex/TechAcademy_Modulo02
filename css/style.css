@@ -327,7 +327,7 @@ footer .footerDown .groupFooter:hover {
 }
 
 .containerHeader {
-  width: 70%;
+  width: 95%;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -359,25 +359,29 @@ footer .footerDown .groupFooter:hover {
 }
 
 .containerStore {
-  width: 70%;
+  width: 95%;
   margin: auto;
   margin-bottom: 50px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 .containerStore .containerStore-base {
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   margin: auto;
   justify-content: space-between;
+  width: 95%;
 }
 .containerStore .containerStore-base .containerStore-base-carousel {
   background-color: #203b35;
   width: 80%;
+  margin: auto;
+  overflow: hidden;
 }
 .containerStore .containerStore-base .containerStore-base-info {
-  width: 30%;
+  width: 85%;
   margin-left: 10px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -388,12 +392,14 @@ footer .footerDown .groupFooter:hover {
 .containerStore .containerStore-base .containerStore-base-info .gameDescription {
   margin-top: 5px;
   font-size: 16px;
+  text-align: center;
 }
 .containerStore .containerStore-base .containerStore-base-info .fuctions {
   display: flex;
   flex-direction: row;
   text-decoration: none;
   align-items: center;
+  align-self: center;
 }
 .containerStore .containerStore-base .containerStore-base-info .fuctions .titleFuncion {
   color: #adadadaf;
@@ -422,16 +428,16 @@ footer .footerDown .groupFooter:hover {
 }
 
 .containerStore-main {
-  width: 70%;
+  width: 95%;
   margin: auto;
   margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column-reverse;
   text-align: center;
 }
 .containerStore-main .containerStore-main-left {
-  width: 70%;
+  width: 100%;
   text-align: left;
   align-items: center;
   margin-right: 10px;
@@ -530,7 +536,7 @@ footer .footerDown .groupFooter:hover {
   color: #81a2d4;
 }
 .containerStore-main .containerStore-main-right {
-  width: 30%;
+  width: 100%;
 }
 .containerStore-main .containerStore-main-right section {
   background-color: rgba(0, 0, 0, 0.151);
@@ -752,22 +758,25 @@ footer .footerDown .groupFooter:hover {
 .bibliotecaBase {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  flex-wrap: nowrap;
 }
 .bibliotecaBase .bibliotecaBase-left {
-  width: 45%;
+  width: 70%;
 }
 .bibliotecaBase .bibliotecaBase-left h1 {
   margin: 10px;
-  margin-left: 20px;
+  text-align: center;
 }
 .bibliotecaBase .bibliotecaBase-left ul {
   background-color: #004733;
   padding: 5px;
-  border-radius: 0 5px 5px 0;
+  border-radius: 5px;
 }
 .bibliotecaBase .bibliotecaBase-left ul li {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   list-style: none;
   margin: 5px;
@@ -785,20 +794,20 @@ footer .footerDown .groupFooter:hover {
   color: #ABDDD2 !important;
 }
 .bibliotecaBase .bibliotecaBase-right {
-  width: 45%;
+  width: 70%;
 }
 .bibliotecaBase .bibliotecaBase-right h1 {
   margin: 10px;
-  margin-right: 20px;
-  text-align: right;
+  text-align: center;
 }
 .bibliotecaBase .bibliotecaBase-right ul {
   background-color: #004733;
   padding: 5px;
-  border-radius: 0 5px 5px 0;
+  border-radius: 5px;
 }
 .bibliotecaBase .bibliotecaBase-right ul li {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   list-style: none;
   margin: 5px;
@@ -821,6 +830,16 @@ footer .footerDown .groupFooter:hover {
   margin-left: 20px;
 }
 
+@media (max-width: 250px) {
+  .containerHeader {
+    flex-direction: column;
+  }
+
+  .containerStore-base-carousel {
+    width: 40%;
+    margin: auto;
+  }
+}
 @media (min-width: 480px) {
   footer {
     backdrop-filter: blur(100px);
@@ -843,8 +862,52 @@ footer .footerDown .groupFooter:hover {
   .bibliotecaBase .bibliotecaBase-left {
     width: 45%;
   }
+  .bibliotecaBase .bibliotecaBase-left h1 {
+    margin: 10px;
+    margin-left: 20px;
+    text-align: left;
+  }
+  .bibliotecaBase .bibliotecaBase-left ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin: 5px;
+  }
+  .bibliotecaBase .bibliotecaBase-left ul li img {
+    width: 30px;
+  }
   .bibliotecaBase .bibliotecaBase-right {
     width: 45%;
+  }
+  .bibliotecaBase .bibliotecaBase-right h1 {
+    margin: 10px;
+    margin-right: 20px;
+    text-align: right;
+  }
+  .bibliotecaBase .bibliotecaBase-right ul {
+    background-color: #004733;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+  }
+  .bibliotecaBase .bibliotecaBase-right ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin: 5px;
+  }
+  .bibliotecaBase .bibliotecaBase-right ul li img {
+    width: 30px;
+  }
+  .bibliotecaBase .bibliotecaBase-right ul li .bibliotecaBase-gameTitle {
+    color: #ffffff !important;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  .bibliotecaBase .bibliotecaBase-right ul li .bibliotecaBase-gameTitle:hover {
+    color: #ABDDD2 !important;
   }
 }
 @media (min-width: 800px) {
@@ -917,6 +980,280 @@ footer .footerDown .groupFooter:hover {
 
   .carrouselMobile {
     display: none;
+  }
+
+  .containerHeader {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+  .containerHeader .btnCreator {
+    background-color: #203b35;
+    color: #ABDDD2;
+    text-align: center;
+    padding: auto;
+    align-content: center;
+    border-radius: 0px;
+    font-weight: 700;
+  }
+  .containerHeader .btnCreator:hover {
+    background-color: #DB5939;
+    color: #ffffff;
+    opacity: 90%;
+  }
+  .containerHeader a {
+    text-decoration: none;
+    color: #ABDDD2;
+    transition: 200ms;
+  }
+  .containerHeader a:hover {
+    color: #58C25A;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25) !important;
+  }
+
+  .containerStore {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .containerStore .containerStore-base {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+  }
+  .containerStore .containerStore-base .containerStore-base-carousel {
+    background-color: #203b35;
+    width: 80%;
+    margin: 0;
+  }
+  .containerStore .containerStore-base .containerStore-base-info {
+    width: 30%;
+    margin: 0;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .containerStore .containerStore-base .containerStore-base-info img {
+    width: 100%;
+  }
+  .containerStore .containerStore-base .containerStore-base-info .gameDescription {
+    margin-top: 5px;
+    font-size: 16px;
+    text-align: left;
+  }
+  .containerStore .containerStore-base .containerStore-base-info .fuctions {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+    align-self: self-start;
+  }
+  .containerStore .containerStore-base .containerStore-base-info .fuctions .titleFuncion {
+    color: #adadadaf;
+    margin-right: 10px;
+    font-size: 12px;
+  }
+  .containerStore .containerStore-base .containerStore-base-info .fuctions .analiseBoa {
+    color: #87ddff;
+    font-size: 12px;
+  }
+  .containerStore .containerStore-base .containerStore-base-info .fuctions .analiseNeutra {
+    color: #ffde83;
+    font-size: 12px;
+  }
+  .containerStore .containerStore-base .containerStore-base-info .fuctions .analiseRuim {
+    color: #ff8383;
+    font-size: 12px;
+  }
+  .containerStore .containerStore-base .containerStore-base-info .fuctions .creatorLink {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+  }
+  .containerStore .containerStore-base .containerStore-base-info .fuctions .creatorLink:hover {
+    color: #81a2d4;
+  }
+
+  .containerStore-main {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: center;
+  }
+  .containerStore-main .containerStore-main-left {
+    width: 70%;
+    text-align: left;
+    align-items: center;
+    margin-right: 10px;
+    flex-wrap: wrap;
+  }
+  .containerStore-main .containerStore-main-left .areaBuy {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: auto;
+    margin: 5px;
+    margin-bottom: 15px;
+    padding: 5px;
+    flex-wrap: wrap;
+    backdrop-filter: blur(100px) !important;
+    background: white;
+    background: linear-gradient(196deg, rgba(255, 255, 255, 0.253) 0%, rgba(148, 148, 148, 0.103) 100%);
+    box-shadow: 4px 5px rgba(0, 0, 0, 0.137);
+  }
+  .containerStore-main .containerStore-main-left .areaBuy h3 {
+    margin: auto;
+  }
+  .containerStore-main .containerStore-main-left .areaBuy .buttonBuy {
+    background-color: #01271c;
+    display: flex;
+    position: relative;
+    top: 25px;
+    border: 1px solid #ABDDD2;
+    margin: auto;
+    border-radius: 5px 5px 5px 5px;
+    justify-content: space-between;
+    box-shadow: 4px 5px rgba(0, 0, 0, 0.137);
+  }
+  .containerStore-main .containerStore-main-left .areaBuy .buttonBuy span {
+    padding: 10px;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+  .containerStore-main .containerStore-main-left .areaBuy .buttonBuy .buy {
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #DB5939 !important;
+    font-weight: 600;
+    transition: 300ms;
+  }
+  .containerStore-main .containerStore-main-left .areaBuy .buttonBuy .buy:hover {
+    background-color: #FFD51D !important;
+    color: #182E29;
+  }
+  .containerStore-main .containerStore-main-left .divider {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 1px;
+    background: #107a62;
+    background: linear-gradient(90deg, #107a62 0%, rgba(148, 148, 148, 0) 100%);
+  }
+  .containerStore-main .containerStore-main-left .sobre {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerStore-main .containerStore-main-left .sobre .cardRequisitos {
+    display: flex;
+    flex-direction: row;
+  }
+  .containerStore-main .containerStore-main-left .sobre .cardRequisitos-Left {
+    font-size: 12px;
+    color: #b4b4b4;
+    margin-right: 10px;
+  }
+  .containerStore-main .containerStore-main-left .sobre .cardRequisitos-Left span {
+    color: #ffffff;
+  }
+  .containerStore-main .containerStore-main-left .sobre .cardRequisitos .cardRequisitos-Right {
+    font-size: 12px;
+    color: #b4b4b4;
+  }
+  .containerStore-main .containerStore-main-left .sobre .cardRequisitos .cardRequisitos-Right span {
+    color: #ffffff;
+  }
+  .containerStore-main .containerStore-main-left .sobre .creatorLink {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+  }
+  .containerStore-main .containerStore-main-left .sobre .creatorLink:hover {
+    color: #81a2d4;
+  }
+  .containerStore-main .containerStore-main-right {
+    width: 30%;
+  }
+  .containerStore-main .containerStore-main-right section {
+    background-color: rgba(0, 0, 0, 0.151);
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .containerStore-main .containerStore-main-right section .jogoFunctions {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .containerStore-main .containerStore-main-right section .jogoFunctions .jogoFunctions_layer {
+    display: flex;
+    align-items: center;
+  }
+  .containerStore-main .containerStore-main-right section .jogoFunctions .jogoFunctions_layer span {
+    background-color: #004733;
+    width: 100%;
+    margin: 1px;
+    padding: 5px;
+    font-size: 14px;
+    color: #ABDDD2;
+  }
+  .containerStore-main .containerStore-main-right section .jogoFunctions .jogoFunctions_layer span:hover {
+    background-color: #107a62;
+    color: #ffffff;
+  }
+  .containerStore-main .containerStore-main-right section .jogoFunctions .jogoFunctions_layer i {
+    background-color: #01271c;
+    padding: 4px;
+    margin: 1px;
+    margin-right: 0px;
+  }
+  .containerStore-main .containerStore-main-right .idiomas div {
+    background-color: #203b35;
+    padding: auto;
+    margin: auto;
+  }
+  .containerStore-main .containerStore-main-right .containerStore-base-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .containerStore-main .containerStore-main-right .containerStore-base-info .fuctions {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .containerStore-main .containerStore-main-right .containerStore-base-info .fuctions .titleFuncion {
+    color: #adadadaf;
+    margin-right: 10px;
+    font-size: 12px;
+    justify-content: space-between;
+  }
+  .containerStore-main .containerStore-main-right .containerStore-base-info .fuctions .creatorLink {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+  }
+  .containerStore-main .containerStore-main-right .containerStore-base-info .fuctions .creatorLink:hover {
+    color: #81a2d4;
   }
 }
 @media (min-width: 992px) {

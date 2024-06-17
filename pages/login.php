@@ -26,7 +26,8 @@
                             </label>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-light">Login</button>
+                    <a href="home" type="submit" class="btn btn-light ">Login</a>
+
                 </form>
                 <div class="dropdown-divider mb-3"></div>
                 <a class="textLinks" href="cadastro">É novo por aqui? Cadastre-se</a>

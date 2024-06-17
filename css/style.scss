@@ -17,12 +17,13 @@ $corTextoAnaliseBoa: #87ddff;
 $corTextoAnaliseNeutra: #ffde83;
 $corTextoAnaliseRuim: #ff8383;
 
+
 body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: $corTexto !important;
-    background: rgb(5,27,20);
-    background: linear-gradient(124deg, rgba(5,27,20,1) 0%, rgb(27, 51, 46) 100%);
+    background: rgb(5, 27, 20);
+    background: linear-gradient(124deg, rgba(5, 27, 20, 1) 0%, rgb(27, 51, 46) 100%);
     background-repeat: no-repeat;
     box-sizing: border-box;
 }
@@ -219,7 +220,7 @@ footer {
     margin: 10px;
 }
 
-.containerCarrousel{
+.containerCarrousel {
     margin-left: 0 !important;
     margin-right: 0 !important;
     padding-left: 0 !important;
@@ -350,41 +351,47 @@ footer {
 
 
 
-.containerBox{
+.containerBox {
     border-radius: 5px;
     margin: 10px;
     margin-bottom: 40px;
     border: 2px solid $corTextoHover;
 
 }
-.container-cards{
+
+.container-cards {
     margin: 10px;
     justify-content: space-evenly;
     padding: 10px;
 
-    & .card{
+    & .card {
         background-color: $corBotoesEscuros;
         color: $corTexto;
         overflow: hidden;
         box-shadow: 4px 5px rgba(0, 0, 0, 0.137);
-        & .card-body{
+
+        & .card-body {
             text-decoration: none;
-            & .car-btn{
+
+            & .car-btn {
                 display: flex;
                 justify-content: space-around;
                 flex-wrap: wrap;
                 align-items: center;
-                & .card-price{
+
+                & .card-price {
                     color: $corTextoPreco !important;
                     font-weight: 700;
                     font-size: 25px;
                     text-shadow: 0 2px 2px rgba(251, 255, 0, 0.25) !important;
                     transition: 300ms;
-                    &:hover{
+
+                    &:hover {
                         color: $corTexto !important;
                     }
                 }
-                & .card-promo{
+
+                & .card-promo {
                     color: $corTextoPreco !important;
                     padding: 5px;
                     font-weight: 600;
@@ -401,7 +408,7 @@ footer {
 
 }
 
-.bannerPromo{
+.bannerPromo {
     width: 100%;
     margin: auto;
     margin-top: 5px;
@@ -411,32 +418,33 @@ footer {
     border-radius: 5px;
 }
 
-.promoLabel-none{
+.promoLabel-none {
     display: none;
 }
 
-.promoLabel{
+.promoLabel {
     display: block !important;
     position: absolute;
     transform: rotate(-45deg);
     background-color: $corPrimaria;
     top: 20px;
     left: -40px;
-padding: 5px 40px 5px 40px;
+    padding: 5px 40px 5px 40px;
 
 
 
 }
 
 
-.containerHeader{
-    width: 70%;
+.containerHeader {
+    width: 95%;
     margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 10px;
-    .btnCreator{
+
+    .btnCreator {
         background-color: $corBotoesEscuros;
         color: $corTextoHover;
         text-align: center;
@@ -444,79 +452,101 @@ padding: 5px 40px 5px 40px;
         align-content: center;
         border-radius: 0px;
         font-weight: 700;
-        &:hover{
+
+        &:hover {
             background-color: $corBotoesAvisos;
             color: $corTexto;
             opacity: 90%;
         }
     }
-    a{
+
+    a {
         text-decoration: none;
         color: $corTextoHover;
         transition: 200ms;
-        &:hover{
+
+        &:hover {
             color: $corPrimaria;
             text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25) !important;
         }
     }
 }
 
-.containerStore{
-    width: 70%;
+.containerStore {
+    width: 95%;
     margin: auto;
     margin-bottom: 50px;
     display: flex;
-    flex-direction: column;
-    .containerStore-base{
+    flex-direction: row;
+
+    .containerStore-base {
         display: flex;
-        flex-direction: row;
+        flex-direction: column-reverse;
         margin: auto;
         justify-content: space-between;
-        .containerStore-base-carousel{
+        width: 95%;
+        .containerStore-base-carousel {
             background-color: $corBotoesEscuros;
             width: 80%;
+
+            margin: auto;
+            overflow: hidden;
+
         }
-        .containerStore-base-info{
-            width: 30%;
+
+        .containerStore-base-info {
+            width: 85%;
             margin-left: 10px;
-            img{
+            margin: auto;
+            img {
                 width: 100%;
             }
+
             display: flex;
             justify-content: space-between;
             flex-direction: column;
-            .gameDescription{
+
+            .gameDescription {
                 margin-top: 5px;
                 font-size: 16px;
+                text-align: center;
             }
-            .fuctions{
+
+            .fuctions {
                 display: flex;
-                
+
                 flex-direction: row;
                 text-decoration: none;
                 align-items: center;
-                .titleFuncion{
+                align-self: center;
+
+                .titleFuncion {
                     color: $corTextoFunction;
                     margin-right: 10px;
                     font-size: 12px;
                 }
-                .analiseBoa{
+
+                .analiseBoa {
                     color: $corTextoAnaliseBoa;
                     font-size: 12px;
                 }
-                .analiseNeutra{
+
+                .analiseNeutra {
                     color: $corTextoAnaliseNeutra;
                     font-size: 12px;
                 }
-                .analiseRuim{
+
+                .analiseRuim {
                     color: $corTextoAnaliseRuim;
                     font-size: 12px;
                 }
-                .creatorLink{
+
+                .creatorLink {
                     text-decoration: none;
                     color: $corTexto;
                     font-size: 12px;
-                    &:hover{
+
+                    &:hover {
                         color: $corBotoesHover;
                     }
                 }
@@ -527,21 +557,23 @@ padding: 5px 40px 5px 40px;
 
 }
 
-.containerStore-main{
-    width: 70%;
+.containerStore-main {
+    width: 95%;
     margin: auto;
     margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column-reverse;
     text-align: center;
-    .containerStore-main-left{
-        width: 70%;
+
+    .containerStore-main-left {
+        width: 100%;
         text-align: left;
         align-items: center;
         margin-right: 10px;
         flex-wrap: wrap;
-        .areaBuy{
+
+        .areaBuy {
 
             border-radius: 5px;
             display: flex;
@@ -553,14 +585,16 @@ padding: 5px 40px 5px 40px;
             padding: 5px;
             flex-wrap: wrap;
             backdrop-filter: blur(100px) !important;
-            background: rgb(255,255,255);
+            background: rgb(255, 255, 255);
             background: linear-gradient(196deg, rgba(255, 255, 255, 0.253) 0%, rgba(148, 148, 148, 0.103) 100%);
             box-shadow: 4px 5px rgba(0, 0, 0, 0.137);
-            h3{
+
+            h3 {
                 margin: auto;
-                
+
             }
-            .buttonBuy{
+
+            .buttonBuy {
                 background-color: $corFundoEscura;
                 display: flex;
                 position: relative;
@@ -570,15 +604,17 @@ padding: 5px 40px 5px 40px;
                 border-radius: 5px 5px 5px 5px;
                 justify-content: space-between;
                 box-shadow: 4px 5px rgba(0, 0, 0, 0.137);
-                span{
+
+                span {
                     padding: 10px;
                     border-radius: 5px 5px 5px 5px;
                     text-align: center;
                     align-items: center;
                     align-content: center;
                 }
-                .buy{
-                    
+
+                .buy {
+
                     border-radius: 5px 5px 5px 5px;
                     text-align: center;
                     align-items: center;
@@ -590,7 +626,8 @@ padding: 5px 40px 5px 40px;
                     background-color: $corBotoesAvisos !important;
                     font-weight: 600;
                     transition: 300ms;
-                    &:hover{
+
+                    &:hover {
                         background-color: $corSecundaria !important;
                         color: $corTextoEscuro;
                     }
@@ -598,77 +635,92 @@ padding: 5px 40px 5px 40px;
                 }
             }
         }
-        .divider{
+
+        .divider {
             margin-top: 20px;
             margin-bottom: 5px;
             width: 100%;
             height: 1px;
-            background: rgb(16,122,98);
-            background: linear-gradient(90deg, rgba(16,122,98,1) 0%, rgba(148,148,148,0) 100%);
+            background: rgb(16, 122, 98);
+            background: linear-gradient(90deg, rgba(16, 122, 98, 1) 0%, rgba(148, 148, 148, 0) 100%);
 
         }
-        .sobre{
+
+        .sobre {
             display: flex;
             flex-direction: column;
-            .cardRequisitos{
+
+            .cardRequisitos {
                 display: flex;
                 flex-direction: row;
 
-                &-Left{
+                &-Left {
                     font-size: 12px;
                     color: #b4b4b4;
                     margin-right: 10px;
-                    span{
+
+                    span {
                         color: $corTexto;
                     }
                 }
-                .cardRequisitos-Right{
+
+                .cardRequisitos-Right {
                     font-size: 12px;
                     color: #b4b4b4;
-                    span{
+
+                    span {
                         color: $corTexto;
                     }
                 }
 
             }
-            .creatorLink{
+
+            .creatorLink {
                 text-decoration: none;
                 color: $corTexto;
                 font-size: 12px;
-                &:hover{
+
+                &:hover {
                     color: $corBotoesHover;
                 }
             }
         }
 
     }
-    .containerStore-main-right{
-        width: 30%;
-        section{
+
+    .containerStore-main-right {
+        width: 100%;
+
+        section {
             background-color: rgba(0, 0, 0, 0.151);
             padding: 10px;
             margin-bottom: 10px;
-            & .jogoFunctions{
+
+            & .jogoFunctions {
                 display: flex;
                 flex-direction: column;
 
                 text-align: left;
-                & .jogoFunctions_layer{
+
+                & .jogoFunctions_layer {
                     display: flex;
                     align-items: center;
-                    & span{
+
+                    & span {
                         background-color: $corFundo;
                         width: 100%;
                         margin: 1px;
                         padding: 5px;
                         font-size: 14px;
                         color: $corTextoHover;
-                        &:hover{
-                           background-color: $corFundoClara;
-                           color: $corTexto; 
+
+                        &:hover {
+                            background-color: $corFundoClara;
+                            color: $corTexto;
                         }
                     }
-                    & i{
+
+                    & i {
                         background-color: $corFundoEscura;
                         padding: 4px;
                         margin: 1px;
@@ -677,31 +729,33 @@ padding: 5px 40px 5px 40px;
                 }
             }
         }
-        .idiomas{
-            div{
+
+        .idiomas {
+            div {
                 background-color: $corBotoesEscuros;
                 padding: auto;
                 margin: auto;
             }
         }
-        .containerStore-base-info{
+
+        .containerStore-base-info {
             width: 100%;
 
             display: flex;
 
             flex-direction: column;
 
-            .fuctions{
+            .fuctions {
                 display: flex;
-                
+
                 flex-direction: row;
                 text-decoration: none;
                 align-items: center;
                 justify-content: space-between;
 
-                
 
-                .titleFuncion{
+
+                .titleFuncion {
                     color: $corTextoFunction;
                     margin-right: 10px;
                     font-size: 12px;
@@ -709,11 +763,12 @@ padding: 5px 40px 5px 40px;
 
                 }
 
-                .creatorLink{
+                .creatorLink {
                     text-decoration: none;
                     color: $corTexto;
                     font-size: 12px;
-                    &:hover{
+
+                    &:hover {
                         color: $corBotoesHover;
                     }
                 }
@@ -722,92 +777,107 @@ padding: 5px 40px 5px 40px;
     }
 }
 
-        .sobre{
-            display: flex;
-            flex-direction: column;
-            .cardRequisitos{
-                display: flex;
-                flex-direction: row;
+.sobre {
+    display: flex;
+    flex-direction: column;
 
-                &-Left{
-                    font-size: 12px;
-                    color: #b4b4b4;
-                    margin-right: 10px;
-                    span{
-                        color: $corTexto;
-                    }
-                }
-                .cardRequisitos-Right{
-                    font-size: 12px;
-                    color: #b4b4b4;
-                    span{
-                        color: $corTexto;
-                    }
-                }
+    .cardRequisitos {
+        display: flex;
+        flex-direction: row;
 
-            }
-            .creatorLink{
-                text-decoration: none;
+        &-Left {
+            font-size: 12px;
+            color: #b4b4b4;
+            margin-right: 10px;
+
+            span {
                 color: $corTexto;
-                font-size: 12px;
-                &:hover{
-                    color: $corBotoesHover;
-                }
             }
         }
 
-.analises{
+        .cardRequisitos-Right {
+            font-size: 12px;
+            color: #b4b4b4;
+
+            span {
+                color: $corTexto;
+            }
+        }
+
+    }
+
+    .creatorLink {
+        text-decoration: none;
+        color: $corTexto;
+        font-size: 12px;
+
+        &:hover {
+            color: $corBotoesHover;
+        }
+    }
+}
+
+.analises {
     display: flex;
     flex-direction: column;
-    .cardAnalises{
+
+    .cardAnalises {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         background-color: rgba(255, 255, 255, 0.062);
         margin-right: 10px;
-        .cardAnalises-user{
+
+        .cardAnalises-user {
             display: flex;
             flex-direction: row;
             width: 35%;
             padding: 5px;
-            img{
+
+            img {
                 width: 40px;
                 height: 40px;
                 border: 2px solid $corBotoesEscuros;
             }
         }
-        .cardAnalises-description{
+
+        .cardAnalises-description {
             width: 60%;
             font-size: 18px;
-            span{
+
+            span {
                 font-size: 12px;
             }
-            .analiseDescricao{
+
+            .analiseDescricao {
                 font-size: 12px;
                 margin-top: 10px;
             }
-            & .likeCard{
+
+            & .likeCard {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 align-content: center;
                 background-color: rgba(0, 0, 0, 0.199);
-                & p{
+
+                & p {
                     margin-bottom: 0px;
                 }
 
-                & .analiseBoa{
+                & .analiseBoa {
                     margin-right: 5px;
                     padding: 5px;
                     background-color: $corTextoAnaliseBoa;
                     color: $corBotoesEscuros;
-                } 
-                & .analiseRuim{
+                }
+
+                & .analiseRuim {
                     margin-right: 5px;
                     padding: 5px;
                     background-color: $corBotoesAvisos;
                     color: $corTexto;
-                } 
+                }
 
 
             }
@@ -816,7 +886,7 @@ padding: 5px 40px 5px 40px;
 }
 
 
-.creatorPage{
+.creatorPage {
     display: flex;
     margin: auto;
     justify-content: space-around;
@@ -828,43 +898,49 @@ padding: 5px 40px 5px 40px;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 800px;
-    .sobre{
+
+    .sobre {
         display: flex;
         flex-direction: column;
 
-        .cardRequisitos{
+        .cardRequisitos {
             display: flex;
             flex-direction: row;
-            
-            &-Left{
+
+            &-Left {
                 font-size: 12px;
                 color: #b4b4b4;
                 margin-right: 10px;
-                span{
+
+                span {
                     color: $corTexto;
                 }
             }
-            .cardRequisitos-Right{
+
+            .cardRequisitos-Right {
                 font-size: 12px;
                 color: #b4b4b4;
-                span{
+
+                span {
                     color: $corTexto;
                 }
             }
 
         }
-        .creatorLink{
+
+        .creatorLink {
             text-decoration: none;
             color: $corTexto;
             font-size: 12px;
-            &:hover{
+
+            &:hover {
                 color: $corBotoesHover;
             }
         }
     }
 }
 
-.spacing{
+.spacing {
     margin-bottom: 400px;
 }
 
@@ -880,40 +956,52 @@ padding: 5px 40px 5px 40px;
 }
 
 .carousel-indicators-screens {
-    position: unset; 
+    position: unset;
     display: flex;
     margin-bottom: 3rem;
 }
 
 
-.bibliotecaBase{
+.bibliotecaBase {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    & .bibliotecaBase-left{
-        width: 45%;
-        h1{
+    align-items: center;
+    margin: auto;
+    flex-wrap: nowrap;
+
+
+
+    & .bibliotecaBase-left {
+        width: 70%;
+
+        h1 {
             margin: 10px;
-            margin-left: 20px;
+            text-align: center;
         }
-        ul{
+
+        ul {
             background-color: $corFundo;
             padding: 5px;
-            border-radius: 0 5px 5px 0;
-            li{
+            border-radius: 5px;
+
+            li {
                 display: flex;
+                flex-direction: column;
                 justify-content: space-between;
                 list-style: none;
                 margin: 5px;
-                & img{
+
+                & img {
                     width: 30px;
                 }
-                & .bibliotecaBase-gameTitle{
+
+                & .bibliotecaBase-gameTitle {
                     color: $corTexto !important;
                     cursor: pointer;
                     text-decoration: none;
                     margin-right: 10px;
-                    &:hover{
+
+                    &:hover {
                         color: $corTextoHover !important;
                     }
                 }
@@ -921,31 +1009,39 @@ padding: 5px 40px 5px 40px;
         }
 
     }
-    & .bibliotecaBase-right{
-        width: 45%;
-        h1{
+
+    & .bibliotecaBase-right {
+        width: 70%;
+
+        h1 {
             margin: 10px;
-            margin-right: 20px;
-            text-align: right;
+            text-align: center;
         }
-        ul{
+
+        ul {
             background-color: $corFundo;
             padding: 5px;
-            border-radius: 0 5px 5px 0;
-            li{
+            border-radius: 5px;
+
+            li {
                 display: flex;
+                flex-direction: column;
+
                 justify-content: space-between;
                 list-style: none;
                 margin: 5px;
-                & img{
+
+                & img {
                     width: 30px;
                 }
-                & .bibliotecaBase-gameTitle{
+
+                & .bibliotecaBase-gameTitle {
                     color: $corTexto !important;
                     cursor: pointer;
                     text-decoration: none;
                     margin-right: 10px;
-                    &:hover{
+
+                    &:hover {
                         color: $corTextoHover !important;
                     }
                 }
@@ -954,9 +1050,9 @@ padding: 5px 40px 5px 40px;
     }
 }
 
-.jogadosRecentemente{
-        margin: 10px;
-        margin-left: 20px;
+.jogadosRecentemente {
+    margin: 10px;
+    margin-left: 20px;
 }
 
 
@@ -1003,12 +1099,28 @@ padding: 5px 40px 5px 40px;
 
 
 //Desktop
+@media (max-width: 250px) {
+    .containerHeader{
+        flex-direction: column;
+    }
+
+    .containerStore-base-carousel{
+        width: 40%;
+
+        margin: auto;
+    }
+
+    
+}
+
+
 
 @media (min-width: 480px) {
-    footer{
+    footer {
         backdrop-filter: blur(100px);
         background-color: rgba(255, 255, 255, 0.05);
     }
+
     .footerBox {
 
         margin: auto;
@@ -1018,17 +1130,89 @@ padding: 5px 40px 5px 40px;
         padding-bottom: 10px;
     }
 
-.bibliotecaBase{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    & .bibliotecaBase-left{
-        width: 45%;
+    .bibliotecaBase {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        & .bibliotecaBase-left {
+            width: 45%;
+
+            h1 {
+                margin: 10px;
+                margin-left: 20px;
+                text-align: left;
+            }
+
+            ul {
+                li {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    list-style: none;
+                    margin: 5px;
+
+                    & img {
+                        width: 30px;
+                    }
+                }
+            }
+        }
+
+        & .bibliotecaBase-right {
+            width: 45%;
+
+            h1 {
+                margin: 10px;
+                margin-right: 20px;
+                text-align: right;
+            }
+
+            ul {
+                background-color: $corFundo;
+                padding: 5px;
+                border-radius: 5px 0 0 5px;
+
+                li {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    list-style: none;
+                    margin: 5px;
+
+                    & img {
+                        width: 30px;
+                    }
+
+                    & .bibliotecaBase-gameTitle {
+                        color: $corTexto !important;
+                        cursor: pointer;
+                        text-decoration: none;
+                        margin-right: 10px;
+
+                        &:hover {
+                            color: $corTextoHover !important;
+                        }
+                    }
+                }
+            }
+        }
     }
-    & .bibliotecaBase-right{
-        width: 45%;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1109,15 +1293,350 @@ padding: 5px 40px 5px 40px;
         }
     }
 
-    .carrouselPC{
+    .carrouselPC {
         display: flex;
     }
-    .carrouselMobile{
+
+    .carrouselMobile {
         display: none;
     }
 
 
+    .containerHeader{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        .btnCreator{
+            background-color: $corBotoesEscuros;
+            color: $corTextoHover;
+            text-align: center;
+            padding: auto;
+            align-content: center;
+            border-radius: 0px;
+            font-weight: 700;
+            &:hover{
+                background-color: $corBotoesAvisos;
+                color: $corTexto;
+                opacity: 90%;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: $corTextoHover;
+            transition: 200ms;
+            &:hover{
+                color: $corPrimaria;
+                text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25) !important;
+            }
+        }
+    }
+
+
+    .containerStore {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
     
+        .containerStore-base {
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            justify-content: space-between;
+    
+            .containerStore-base-carousel {
+                background-color: $corBotoesEscuros;
+                width: 80%;
+                margin: 0;
+            }
+    
+            .containerStore-base-info {
+                width: 30%;
+
+                margin: 0;
+                margin-left: 10px;
+                img {
+                    width: 100%;
+                }
+    
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+    
+                .gameDescription {
+                    margin-top: 5px;
+                    font-size: 16px;
+                    text-align: left;
+                }
+    
+                .fuctions {
+                    display: flex;
+    
+                    flex-direction: row;
+                    text-decoration: none;
+                    align-items: center;
+                    align-self: self-start;
+
+                    .titleFuncion {
+                        color: $corTextoFunction;
+                        margin-right: 10px;
+                        font-size: 12px;
+                    }
+    
+                    .analiseBoa {
+                        color: $corTextoAnaliseBoa;
+                        font-size: 12px;
+                    }
+    
+                    .analiseNeutra {
+                        color: $corTextoAnaliseNeutra;
+                        font-size: 12px;
+                    }
+    
+                    .analiseRuim {
+                        color: $corTextoAnaliseRuim;
+                        font-size: 12px;
+                    }
+    
+                    .creatorLink {
+                        text-decoration: none;
+                        color: $corTexto;
+                        font-size: 12px;
+    
+                        &:hover {
+                            color: $corBotoesHover;
+                        }
+                    }
+                }
+            }
+    
+        }
+    
+    }
+
+    .containerStore-main {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        text-align: center;
+    
+        .containerStore-main-left {
+            width: 70%;
+            text-align: left;
+            align-items: center;
+            margin-right: 10px;
+            flex-wrap: wrap;
+    
+            .areaBuy {
+    
+                border-radius: 5px;
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                margin: auto;
+                margin: 5px;
+                margin-bottom: 15px;
+                padding: 5px;
+                flex-wrap: wrap;
+                backdrop-filter: blur(100px) !important;
+                background: rgb(255, 255, 255);
+                background: linear-gradient(196deg, rgba(255, 255, 255, 0.253) 0%, rgba(148, 148, 148, 0.103) 100%);
+                box-shadow: 4px 5px rgba(0, 0, 0, 0.137);
+    
+                h3 {
+                    margin: auto;
+    
+                }
+    
+                .buttonBuy {
+                    background-color: $corFundoEscura;
+                    display: flex;
+                    position: relative;
+                    top: 25px;
+                    border: 1px solid $corBotoes;
+                    margin: auto;
+                    border-radius: 5px 5px 5px 5px;
+                    justify-content: space-between;
+                    box-shadow: 4px 5px rgba(0, 0, 0, 0.137);
+    
+                    span {
+                        padding: 10px;
+                        border-radius: 5px 5px 5px 5px;
+                        text-align: center;
+                        align-items: center;
+                        align-content: center;
+                    }
+    
+                    .buy {
+    
+                        border-radius: 5px 5px 5px 5px;
+                        text-align: center;
+                        align-items: center;
+                        align-content: center;
+                        margin: 5px;
+                        padding: 5px;
+                        text-decoration: none;
+                        color: $corTexto;
+                        background-color: $corBotoesAvisos !important;
+                        font-weight: 600;
+                        transition: 300ms;
+    
+                        &:hover {
+                            background-color: $corSecundaria !important;
+                            color: $corTextoEscuro;
+                        }
+    
+                    }
+                }
+            }
+    
+            .divider {
+                margin-top: 20px;
+                margin-bottom: 5px;
+                width: 100%;
+                height: 1px;
+                background: rgb(16, 122, 98);
+                background: linear-gradient(90deg, rgba(16, 122, 98, 1) 0%, rgba(148, 148, 148, 0) 100%);
+    
+            }
+    
+            .sobre {
+                display: flex;
+                flex-direction: column;
+    
+                .cardRequisitos {
+                    display: flex;
+                    flex-direction: row;
+    
+                    &-Left {
+                        font-size: 12px;
+                        color: #b4b4b4;
+                        margin-right: 10px;
+    
+                        span {
+                            color: $corTexto;
+                        }
+                    }
+    
+                    .cardRequisitos-Right {
+                        font-size: 12px;
+                        color: #b4b4b4;
+    
+                        span {
+                            color: $corTexto;
+                        }
+                    }
+    
+                }
+    
+                .creatorLink {
+                    text-decoration: none;
+                    color: $corTexto;
+                    font-size: 12px;
+    
+                    &:hover {
+                        color: $corBotoesHover;
+                    }
+                }
+            }
+    
+        }
+    
+        .containerStore-main-right {
+            width: 30%;
+    
+            section {
+                background-color: rgba(0, 0, 0, 0.151);
+                padding: 10px;
+                margin-bottom: 10px;
+    
+                & .jogoFunctions {
+                    display: flex;
+                    flex-direction: column;
+    
+                    text-align: left;
+    
+                    & .jogoFunctions_layer {
+                        display: flex;
+                        align-items: center;
+    
+                        & span {
+                            background-color: $corFundo;
+                            width: 100%;
+                            margin: 1px;
+                            padding: 5px;
+                            font-size: 14px;
+                            color: $corTextoHover;
+    
+                            &:hover {
+                                background-color: $corFundoClara;
+                                color: $corTexto;
+                            }
+                        }
+    
+                        & i {
+                            background-color: $corFundoEscura;
+                            padding: 4px;
+                            margin: 1px;
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+    
+            .idiomas {
+                div {
+                    background-color: $corBotoesEscuros;
+                    padding: auto;
+                    margin: auto;
+                }
+            }
+    
+            .containerStore-base-info {
+                width: 100%;
+    
+                display: flex;
+    
+                flex-direction: column;
+    
+                .fuctions {
+                    display: flex;
+    
+                    flex-direction: row;
+                    text-decoration: none;
+                    align-items: center;
+                    justify-content: space-between;
+    
+    
+    
+                    .titleFuncion {
+                        color: $corTextoFunction;
+                        margin-right: 10px;
+                        font-size: 12px;
+                        justify-content: space-between;
+    
+                    }
+    
+                    .creatorLink {
+                        text-decoration: none;
+                        color: $corTexto;
+                        font-size: 12px;
+    
+                        &:hover {
+                            color: $corBotoesHover;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 992px) {
@@ -1198,7 +1717,8 @@ padding: 5px 40px 5px 40px;
             }
         }
     }
-    .containerBox{
+
+    .containerBox {
         width: 70%;
         margin: auto;
         margin-top: 10px;
