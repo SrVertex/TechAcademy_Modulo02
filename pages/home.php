@@ -129,7 +129,7 @@ foreach ($dadosApiPromo as $jogoPromo) {
         <div class="col">
         <div class="card" data-aos="fade-up" data-aos-duration="500">
         <span class=" <?= $jogoPromo->promoLabel ?> promoLabel-none">Promocao</span>
-                <a href=""><img src="<?= $jogoPromo->banner01 ?>" class="card-img-top" alt="<?= $jogoOriginals->title ?>"></a>
+                <a href="games_lancamentos/<?= $jogoPromo->id ?>"><img src="<?= $jogoPromo->banner01 ?>" class="card-img-top" alt="..."></a>
                 <div class="card-body">
                     <h5 class="card-title"><?= $jogoPromo->title ?></h5>
                     <p class="card-text"><?= $jogoPromo->description ?></p>
@@ -162,7 +162,7 @@ foreach ($dadosApiPromo as $jogoPromo) {
         <div class="col">
             <div class="card" data-aos="fade-up" data-aos-duration="500">
                 <span class=" <?= $jogo->promoLabel ?> promoLabel-none">Promocao</span>
-                <a href="games_ThirdParty/<?= $jogo->id ?>"><img src="<?= $jogo->banner02 ?>" class="card-img-top" alt="..."></a>
+                <a href="games_ThirdParty/<?= $jogo->id ?>"><img src="<?= $jogo->banner01 ?>" class="card-img-top" alt="..."></a>
                 <div class="card-body">
                     <h5 class="card-title"><?= $jogo->title ?></h5>
                     <p class="card-text"><?= $jogo->description ?></p>

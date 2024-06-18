@@ -203,8 +203,7 @@
         "title" => "Persona 3 Reload",
         "description" => "Mergulhe na Hora Sombria e desperte as profundezas do seu coração. Persona 3 Reload é uma reimaginação cativante do RPG que r...",
         "descriptionMid" => "Mergulhe na Hora Sombria e desperte as profundezas do seu coração. Persona 3 Reload é uma reimaginação cativante do RPG que redefiniu o gênero, agora repensado para a era moderna com gráficos e jogabilidade de ponta.",
-        "descriptionFull" => "Assuma o papel de um estudante transferido que acaba vivendo um destino inesperado ao ingressar na hora oculta entre um dia e outro. Desperte um poder incrível, investigue a misteriosa Hora Sombria, lute em nome dos seus amigos e deixe sua marca para sempre nas memórias deles.
-Persona 3 Reload é uma reimaginação cativante do RPG que redefiniu o gênero, agora repensado para a era moderna.",
+        "descriptionFull" => "Assuma o papel de um estudante transferido que acaba vivendo um destino inesperado ao ingressar na hora oculta entre um dia e outro. Desperte um poder incrível, investigue a misteriosa Hora Sombria, lute em nome dos seus amigos e deixe sua marca para sempre nas memórias deles. Persona 3 Reload é uma reimaginação cativante do RPG que redefiniu o gênero, agora repensado para a era moderna.",
         "logoGame01" => "http://localhost/VaporStore_web/img/banners/persona3/logoGame01.jpg",
         "banner01" => "http://localhost/VaporStore_web/img/banners/persona3/banner01.jpg",
         "banner02" => "http://localhost/VaporStore_web/img/banners/persona3/banner02.jpg",
@@ -293,99 +292,82 @@ Persona 3 Reload é uma reimaginação cativante do RPG que redefiniu o gênero,
         );
 
 
+    $lancamentos[4] = array(
+        "id" => 4,
+        "title" => "Senua s Saga: Hellblade II",
+        "description" => "A sequência do premiado Hellblade: Senua's Sacrifice, Senua retorna em uma jornada brutal de sobrevivência através do mi...",
+        "descriptionMid" => "A sequência do premiado Hellblade: Senua's Sacrifice, Senua retorna em uma jornada brutal de sobrevivência através do mito e tormento da Islândia Viking. Com a intenção de salvar aqueles que foram vítimas dos horrores da tirania, Senua enfrenta uma batalha de superação das trevas internas e externas",
+        "descriptionFull" => "Dos criadores de Heavenly Sword, Enslaved: Odyssey to the West, e DmC: Devil May Cry, chega agora a viagem brutal de uma guerreira até ao mito e a loucura.
+Na era dos vikings, uma guerreira celta parte numa jornada pessoal arrepiante até ao inferno viking para lutar pela alma de seu falecido amado.
 
+Criado em parceria com neurocientistas e pessoas que vivenciam psicose, Hellblade: Senua’s Sacrifice vai te levar para as profundezas da mente de Senua.
 
+Características de acessibilidade:
 
+EM JOGO
+- Opções de acessibilidade disponíveis na primeira tela de lançamento do menu opções.
+- Dificuldade de combate ajustável, entre os modos Automático (Dinamicamente ajustável) ou de seleção manual, entre Fácil, Médio e Difícil.
+- O jogo pode ser pausado tanto durante o jogo quanto durante as animações.
 
+ÁUDIO
+- Controles personalizados de volume, que podem ser ajustados separadamente para Geral, Música, Efeitos Especiais, Vozes e áudio dos Menus.
+- Saída de áudio pode ser ajustada entre os modos Estéreo e Mono.
 
+GRÁFICOS
+- Modos de daltonismo com intensidade de correção, ajustáveis entre os já inclusos filtros de Deuteranopia, Protanopia e Tritanopia.
+- Legendas de conteúdo falado podem ser ligadas ou desligadas.
+- Tamanho do texto de legenda pode ser ajustado entre Padrão e Grande.
+- A cor do texto das legendas pode ser ajustada entre Branco, Laranja, Verde ou Azul.
+- O fundo de texto das legendas pode ser ajustado entre transparente ou preto opaco.
+- O contraste entre texto e fundos dos menus pode ser ajustado entre semitransparente ou preto opaco.
 
+CONTROLES
+- Sensibilidade de entrada ajustável para os analógicos do controle, eixos do mouse e habilidade de inverter o eixo da câmera.
+- Reconfiguração de entrada para teclas do teclado e botões do controle (exceto controle de câmera e botões de navegação de menu).
+- Suporte total a teclado, permitindo que o jogo seja jogado inteiramente via teclado (setas substituem o movimento do mouse/analógico direito).
+- Vibração de controle pode ser ligada ou desligada.
+- Correr pode ser configurado como ao manter apertado ou como ativar/desativar ao pressionar a tecla alternadamente.
 
+Todas as opções de acessibilidade mencionadas velem para a versão para PC do jogo Hellblade: Senua's Sacrifice.",
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    $lancamentos[10] = array(
-        "id" => 10,
-        "title" => "Ghost of Tsushima",
-        "description" => "Ghost of Tsushima é um jogo de ação e aventura da Sucker Punch Productions, ambientado no Japão feudal durante a invasão mongol.",
-        "descriptionMid" => "Ghost of Tsushima é um jogo de ação e aventura da Sucker Punch Productions, ambientado no Japão feudal durante a invasão mongol. Ghost of Tsushima é um jogo de ação e aventura da Sucker Punch Productions, ambientado no Japão feudal durante a invasão mongol.",
-        "descriptionFull" => "Experimente a jornada de Jin Sakai pela primeira vez no PC e desfrute da experiência completa de Ghost of Tsushima na Versão do Diretor. No final do século XIII, o império mongol devastou nações em sua campanha para conquistar o Oriente. A Ilha de Tsushima é tudo que resta entre a ilha principal do Japão e a imensa frota invasora dos mongóis liderada por um general ardiloso e implacável, Khotun Khan. Enquanto a ilha é devastada pela primeira onda de ataques mongóis, surge Jin Sakai, um corajoso guerreiro samurai que é um dos últimos sobreviventes de seu clã. Ele está decidido a fazer o que for preciso, custe o que custar, para proteger seu povo e recuperar seu lar. Para isso, será necessário deixar de lado as tradições que o moldaram como guerreiro e forjar um novo caminho, o do Fantasma, travando uma guerra atípica pela liberdade de Tsushima.",
-    
-        "logoGame01" => "http://localhost/VaporStore_web/img/banners/ghostTsushima/logoGame01.jpg",
-        "banner01" => "http://localhost/VaporStore_web/img/banners/ghostTsushima/banner01.jpg",
-        "banner02" => "http://localhost/VaporStore_web/img/banners/ghostTsushima/banner02.jpg",
-        "screenShot01" => "http://localhost/VaporStore_web/img/banners/ghostTsushima/screenshot01.jpg",
-        "screenShot02" => "http://localhost/VaporStore_web/img/banners/ghostTsushima/screenshot02.jpg",
-        "screenShot03" => "http://localhost/VaporStore_web/img/banners/ghostTsushima/screenshot03.jpg",
-        "screenShot04" => "http://localhost/VaporStore_web/img/banners/ghostTsushima/screenshot04.jpg",
+        "logoGame01" => "http://localhost/VaporStore_web/img/banners/hellblade/logoGame01.jpg",
+        "banner01" => "http://localhost/VaporStore_web/img/banners/hellblade/banner01.jpg",
+        "banner02" => "http://localhost/VaporStore_web/img/banners/hellblade/banner02.jpg",
+        "screenShot01" => "http://localhost/VaporStore_web/img/banners/hellblade/screenshot01.jpg",
+        "screenShot02" => "http://localhost/VaporStore_web/img/banners/hellblade/screenshot02.jpg",
+        "screenShot03" => "http://localhost/VaporStore_web/img/banners/hellblade/screenshot03.jpg",
+        "screenShot04" => "http://localhost/VaporStore_web/img/banners/hellblade/screenshot04.jpg",
         "video01" => "",
         "category" => "Ação",
         "categoryLink" => "action",
         "modoJogo" => "Um jogador",
-        "multiplayer" => "Cooperativo on-line",
-        "controls" => "Teclado e Controles",
+        "multiplayer" => "Sem suporte a on-line",
+        "controls" => "Teclado, Controles",
     
-        "CPU_Min" => "Intel Core i3-7100 ou AMD Ryzen 3 1200",
-        "GPU_Min" => "NVIDIA GeForce GTX 960 or AMD Radeon RX 5500 XT",
-        "storage_Min" => "75 GB",
-        "memory_Min" => "8gb RAM",
+        "CPU_Min" => "Intel i5-8400 | AMD Ryzen 5 2600",
+        "GPU_Min" => "NVIDIA GeForce GTX 650 Ti, 2 GB; AMD Radeon HD 7850, 2 GB",
+        "storage_Min" => "70 GB",
+        "memory_Min" => "16gb RAM",
         "SO_Min" => "Windows 10 64-bit",
         "OBS_Min" => "SSD Recomendado",
     
-        "CPU_Recomendate" => "Intel Core i5-8600 or AMD Ryzen 5 3600",
-        "GPU_Recomendate" => "NVIDIA GeForce RTX 2060 or AMD Radeon RX 5600 XT",
-        "storage_Recomendate" => "75 GB",
+        "CPU_Recomendate" => "Intel i7-10700K | AMD Ryzen 5 5600X",
+        "GPU_Recomendate" => "Nvidia RTX 3080 | AMD RX 6800 XT | Intel Arc A770",
+        "storage_Recomendate" => "70 GB",
         "memory_Recomendate" => "16gb RAM",
         "SO_Recomendate" => "Windows 10 64-bit",
         "OBS_Recomendate" => "SSD Requisitado",
     
-    
-        "price" => "R$ 249,90",
-        "promo" => "0",
+        "price" => "R$ 229,00",
+        "promo" => "",
         "promoLabel" => "",
-        "plataform" => "PC, PS5",
+        "plataform" => "PC, Xbox Series",
         "analisesBoa" => "Muito Positivas",
         "analisesNeutra" => "",
         "analisesRuim" => "",
-        "privacity" => "https://www.playstation.com/legal/privacy-policy/",
-        "userAccept" => "https://www.playstation.com/legal/op-eula/",
-        "pegiInfo" => "+18",
+        "privacity" => "https://privacy.microsoft.com/en-gb/privacystatement",
+        "userAccept" => "https://www.microsoft.com/en-us/servicesagreement",
+        "pegiInfo" => "18+",
     
         "analise1_img" => "http://localhost/VaporStore_web/img/analise01.jpg",
         "analise1_userName" => "Joao",
@@ -423,16 +405,16 @@ Persona 3 Reload é uma reimaginação cativante do RPG que redefiniu o gênero,
         "analise4_data" => "6 DE JUNHO",
         "analise4_descricao" => "ANALISE04",
     
-        "gameLink" => "https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_VERSO_DO_DIRETOR/",
-        "realeaseDate" => "16/mai./2024",
-        "distributor" => "SrVertex",
-        "distributorSite" => "https://srvertex.github.io/Site_SrVertex_BETA/",
-        "creator" => "Sucker Punch Productions",
-        "creatorName" => "Sucker Punch Productions",
+        "gameLink" => "https://store.steampowered.com/app/2461850/Senuas_Saga_Hellblade_II/",
+        "realeaseDate" => "21/mai./2024",
+        "distributor" => "Xbox Game Studios",
+        "distributorSite" => "https://www.xbox.com/en-US/xbox-game-studios",
+        "creator" => "Ninja Theory",
+        "creatorName" => "Ninja Theory",
         "creatorDate" => "01/01/1992",
         "creatorFormation" => "Desenvolvedora de Jogos",
-        "creatorImg" => "http://localhost/VaporStore_web/img/banners/ghostTsushima/creatorLogo.jpg",
-        "creatorSite" => "https://srvertex.github.io/Site_SrVertex_BETA/"
+        "creatorImg" => "http://localhost/VaporStore_web/img/banners/hellblade/creatorLogo.jpg",
+        "creatorSite" => "https://www.xbox.com/en-US/xbox-game-studios"
         );
 
 
@@ -441,6 +423,7 @@ Persona 3 Reload é uma reimaginação cativante do RPG que redefiniu o gênero,
 
 
 
+        
 
 
 
@@ -471,8 +454,26 @@ Persona 3 Reload é uma reimaginação cativante do RPG que redefiniu o gênero,
 
 
 
-        $lancamentos[1] = array(
-            "id" => 1,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        $lancamentos[11] = array(
+            "id" => 11,
             "title" => "Ghost of Tsushima",
             "description" => "Ghost of Tsushima é um jogo de ação e aventura da Sucker Punch Productions, ambientado no Japão feudal durante a invasão mongol.",
             "descriptionMid" => "Ghost of Tsushima é um jogo de ação e aventura da Sucker Punch Productions, ambientado no Japão feudal durante a invasão mongol. Ghost of Tsushima é um jogo de ação e aventura da Sucker Punch Productions, ambientado no Japão feudal durante a invasão mongol.",
