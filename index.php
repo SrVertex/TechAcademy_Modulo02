@@ -30,6 +30,7 @@ $dadosApi = json_decode($api);
 
 <?php
 foreach ($dadosApi as $jogo) {
+    
 }
 ?>
     <header>

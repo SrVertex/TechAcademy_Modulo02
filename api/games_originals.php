@@ -2,6 +2,7 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-type: application/json; charset=utf-8");
 
+$path = "http://localhost/VaporStore_web/";
 
 $original[1] = array(
     "id" => 1,
@@ -10,13 +11,13 @@ $original[1] = array(
     "descriptionMid" => "Ghost of Tsushima é um jogo de ação e aventura da Sucker Punch Productions, ambientado no Japão feudal durante a invasão mongol. Ghost of Tsushima é um jogo de ação e aventura da Sucker Punch Productions, ambientado no Japão feudal durante a invasão mongol.",
     "descriptionFull" => "Experimente a jornada de Jin Sakai pela primeira vez no PC e desfrute da experiência completa de Ghost of Tsushima na Versão do Diretor. No final do século XIII, o império mongol devastou nações em sua campanha para conquistar o Oriente. A Ilha de Tsushima é tudo que resta entre a ilha principal do Japão e a imensa frota invasora dos mongóis liderada por um general ardiloso e implacável, Khotun Khan. Enquanto a ilha é devastada pela primeira onda de ataques mongóis, surge Jin Sakai, um corajoso guerreiro samurai que é um dos últimos sobreviventes de seu clã. Ele está decidido a fazer o que for preciso, custe o que custar, para proteger seu povo e recuperar seu lar. Para isso, será necessário deixar de lado as tradições que o moldaram como guerreiro e forjar um novo caminho, o do Fantasma, travando uma guerra atípica pela liberdade de Tsushima.",
 
-    "logoGame01" => "http://localhost/VaporStore_web/img/icons/logoGame01.jpg",
-    "banner01" => "http://localhost/VaporStore_web/img/banner_GhostOfTsushima.png",
-    "banner02" => "http://localhost/VaporStore_web/img/banners/banner_GhostOfTsushima.jpg",
-    "screenShot01" => "http://localhost/VaporStore_web/img/banner_Cyberpunk.png",
-    "screenShot02" => "http://localhost/VaporStore_web/img/banner_ResidentEvil.png",
-    "screenShot03" => "http://localhost/VaporStore_web/img/banner_GhostOfTsushima.png",
-    "screenShot04" => "http://localhost/VaporStore_web/img/banner_ResidentEvil.png",
+    "logoGame01" => "{$path}img/icons/logoGame01.jpg",
+    "banner01" => "{$path}img/banner_GhostOfTsushima.png",
+    "banner02" => "{$path}img/banners/banner_GhostOfTsushima.jpg",
+    "screenShot01" => "{$path}img/banner_Cyberpunk.png",
+    "screenShot02" => "{$path}img/banner_ResidentEvil.png",
+    "screenShot03" => "{$path}img/banner_GhostOfTsushima.png",
+    "screenShot04" => "{$path}img/banner_ResidentEvil.png",
     "video01" => "BASE",
     "category" => "Ação",
     "categoryLink" => "action",
@@ -50,7 +51,7 @@ $original[1] = array(
     "pegiInfo" => "+18",
     "rating" => "4.8 / 5 (63)",
 
-    "analise1_img" => "http://localhost/VaporStore_web/img/2p.jpg",
+    "analise1_img" => "{$path}img/2p.jpg",
     "analise1_userName" => "Joao",
     "analise1_recomendacao" => "",
     "analise1_naoRecomendacao" => "Nao recomendado",
@@ -59,7 +60,7 @@ $original[1] = array(
     "analise1_data" => "3 DE JUNHO",
     "analise1_descricao" => "Dica para quem gosta de realismo e desafios: Jogue na dificuldade letal! Ajuda muito na imersão e você sente de fato que é um samurai, desferindo golpes precisos e letais contra inimigos, porém você deve dominar as técnicas defensivas também, pois até os inimigos mais fracos conseguem te matar com 1 ou 2 golpes.",
 
-    "analise2_img" => "http://localhost/VaporStore_web/img/2p.jpg",
+    "analise2_img" => "{$path}img/2p.jpg",
     "analise2_userName" => "Lucas",
     "analise2_recomendacao" => "Recomendado",
     "analise2_naoRecomendacao" => "",
@@ -68,7 +69,7 @@ $original[1] = array(
     "analise2_data" => "4 DE JUNHO",
     "analise2_descricao" => "Dica para quem gosta de realismo e desafios: Jogue na dificuldade letal! Ajuda muito na imersão e você sente de fato que é um samurai, desferindo golpes precisos e letais contra inimigos, porém você deve dominar as técnicas defensivas também, pois até os inimigos mais fracos conseguem te matar com 1 ou 2 golpes.",
 
-    "analise3_img" => "http://localhost/VaporStore_web/img/2p.jpg",
+    "analise3_img" => "{$path}img/2p.jpg",
     "analise3_userName" => "Patrick",
     "analise3_recomendacao" => "Recomendado",
     "analise3_naoRecomendacao" => "",
@@ -77,7 +78,7 @@ $original[1] = array(
     "analise3_data" => "5 DE JUNHO",
     "analise3_descricao" => "Dica para quem gosta de realismo e desafios: Jogue na dificuldade letal! Ajuda muito na imersão e você sente de fato que é um samurai, desferindo golpes precisos e letais contra inimigos, porém você deve dominar as técnicas defensivas também, pois até os inimigos mais fracos conseguem te matar com 1 ou 2 golpes.",
 
-    "analise4_img" => "http://localhost/VaporStore_web/img/2p.jpg",
+    "analise4_img" => "{$path}img/2p.jpg",
     "analise4_userName" => "Caio",
     "analise4_recomendacao" => "",
     "analise4_naoRecomendacao" => "Nao recomendado",
@@ -94,7 +95,7 @@ $original[1] = array(
     "creatorName" => "Teste",
     "creatorDate" => "Teste",
     "creatorFormation" => "Teste",
-    "creatorImg" => "http://localhost/VaporStore_web/img/2p.jpg",
+    "creatorImg" => "{$path}img/2p.jpg",
     "creatorSite" => "https://srvertex.github.io/Site_SrVertex_BETA/",
     "descriptionCreator" => "Desde 2019, conquistamos diversos Fãs pelo mundo, que apreciam nossos trabalhos e aclamam todos nossos Modelos, 3ds, e trabalhos de conteudo adicional Para Farming Simulator."
 );
@@ -106,13 +107,13 @@ $original[2] = array(
     "descriptionMid" => "Ghost of Tsushima é um jogo de ação e aventura da Sucker Punch Productions, ambientado no Japão feudal durante a invasão mongol. Ghost of Tsushima é um jogo de ação e aventura da Sucker Punch Productions, ambientado no Japão feudal durante a invasão mongol.",
     "descriptionFull" => "Experimente a jornada de Jin Sakai pela primeira vez no PC e desfrute da experiência completa de Ghost of Tsushima na Versão do Diretor. No final do século XIII, o império mongol devastou nações em sua campanha para conquistar o Oriente. A Ilha de Tsushima é tudo que resta entre a ilha principal do Japão e a imensa frota invasora dos mongóis liderada por um general ardiloso e implacável, Khotun Khan. Enquanto a ilha é devastada pela primeira onda de ataques mongóis, surge Jin Sakai, um corajoso guerreiro samurai que é um dos últimos sobreviventes de seu clã. Ele está decidido a fazer o que for preciso, custe o que custar, para proteger seu povo e recuperar seu lar. Para isso, será necessário deixar de lado as tradições que o moldaram como guerreiro e forjar um novo caminho, o do Fantasma, travando uma guerra atípica pela liberdade de Tsushima.",
 
-    "logoGame01" => "http://localhost/VaporStore_web/img/icons/logoGame01.jpg",
-    "banner01" => "http://localhost/VaporStore_web/img/banner_GhostOfTsushima.png",
-    "banner02" => "http://localhost/VaporStore_web/img/banners/banner_GhostOfTsushima.jpg",
-    "screenShot01" => "http://localhost/VaporStore_web/img/banner_Cyberpunk.png",
-    "screenShot02" => "http://localhost/VaporStore_web/img/banner_ResidentEvil.png",
-    "screenShot03" => "http://localhost/VaporStore_web/img/banner_GhostOfTsushima.png",
-    "screenShot04" => "http://localhost/VaporStore_web/img/banner_ResidentEvil.png",
+    "logoGame01" => "{$path}img/icons/logoGame01.jpg",
+    "banner01" => "{$path}img/banner_GhostOfTsushima.png",
+    "banner02" => "{$path}img/banners/banner_GhostOfTsushima.jpg",
+    "screenShot01" => "{$path}img/banner_Cyberpunk.png",
+    "screenShot02" => "{$path}img/banner_ResidentEvil.png",
+    "screenShot03" => "{$path}img/banner_GhostOfTsushima.png",
+    "screenShot04" => "{$path}img/banner_ResidentEvil.png",
     "video01" => "BASE",
     "category" => "Ação",
     "categoryLink" => "action",
@@ -146,7 +147,7 @@ $original[2] = array(
     "pegiInfo" => "+18",
     "rating" => "4.8 / 5 (63)",
 
-    "analise1_img" => "http://localhost/VaporStore_web/img/2p.jpg",
+    "analise1_img" => "{$path}img/2p.jpg",
     "analise1_userName" => "Joao",
     "analise1_recomendacao" => "",
     "analise1_naoRecomendacao" => "Nao recomendado",
@@ -155,7 +156,7 @@ $original[2] = array(
     "analise1_data" => "3 DE JUNHO",
     "analise1_descricao" => "Dica para quem gosta de realismo e desafios: Jogue na dificuldade letal! Ajuda muito na imersão e você sente de fato que é um samurai, desferindo golpes precisos e letais contra inimigos, porém você deve dominar as técnicas defensivas também, pois até os inimigos mais fracos conseguem te matar com 1 ou 2 golpes.",
 
-    "analise2_img" => "http://localhost/VaporStore_web/img/2p.jpg",
+    "analise2_img" => "{$path}img/2p.jpg",
     "analise2_userName" => "Lucas",
     "analise2_recomendacao" => "Recomendado",
     "analise2_naoRecomendacao" => "",
@@ -164,7 +165,7 @@ $original[2] = array(
     "analise2_data" => "4 DE JUNHO",
     "analise2_descricao" => "Dica para quem gosta de realismo e desafios: Jogue na dificuldade letal! Ajuda muito na imersão e você sente de fato que é um samurai, desferindo golpes precisos e letais contra inimigos, porém você deve dominar as técnicas defensivas também, pois até os inimigos mais fracos conseguem te matar com 1 ou 2 golpes.",
 
-    "analise3_img" => "http://localhost/VaporStore_web/img/2p.jpg",
+    "analise3_img" => "{$path}img/2p.jpg",
     "analise3_userName" => "Patrick",
     "analise3_recomendacao" => "Recomendado",
     "analise3_naoRecomendacao" => "",
@@ -173,7 +174,7 @@ $original[2] = array(
     "analise3_data" => "5 DE JUNHO",
     "analise3_descricao" => "Dica para quem gosta de realismo e desafios: Jogue na dificuldade letal! Ajuda muito na imersão e você sente de fato que é um samurai, desferindo golpes precisos e letais contra inimigos, porém você deve dominar as técnicas defensivas também, pois até os inimigos mais fracos conseguem te matar com 1 ou 2 golpes.",
 
-    "analise4_img" => "http://localhost/VaporStore_web/img/2p.jpg",
+    "analise4_img" => "{$path}img/2p.jpg",
     "analise4_userName" => "Caio",
     "analise4_recomendacao" => "",
     "analise4_naoRecomendacao" => "Nao recomendado",
@@ -190,7 +191,7 @@ $original[2] = array(
     "creatorName" => "Teste",
     "creatorDate" => "Teste",
     "creatorFormation" => "Teste",
-    "creatorImg" => "http://localhost/VaporStore_web/img/2p.jpg",
+    "creatorImg" => "{$path}img/2p.jpg",
     "creatorSite" => "https://srvertex.github.io/Site_SrVertex_BETA/",
     "descriptionCreator" => "Desde 2019, conquistamos diversos Fãs pelo mundo, que apreciam nossos trabalhos e aclamam todos nossos Modelos, 3ds, e trabalhos de conteudo adicional Para Farming Simulator."
 
