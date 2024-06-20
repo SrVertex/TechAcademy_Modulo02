@@ -74,7 +74,7 @@ foreach ($dadosApiPromo as $jogoPromo) {
     <div>
             <ul>
                 <?php
-                foreach ($dadosApiOriginals as $jogoPromo) {
+                foreach ($dadosApiPromo as $jogoPromo) {
                 ?>
                     <li>
                         <div> <img src="<?= $jogoPromo->logoGame01 ?>" alt="<?= $jogoPromo->title ?>"> <a class="bibliotecaBase-gameTitle" href="games_lancamentos/<?= $jogoPromo->id ?>"><?= $jogoPromo->title ?></a></div> <a href="games_lancamentos/<?= $jogoPromo->id ?>" class="btn btn-light">Comprar Jogo</a>

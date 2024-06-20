@@ -8,7 +8,7 @@
     $game[1] = array(
         "id" => 1,
         "title" => "Red Dead Redemption 2",
-        "description" => "Red Dead Redemption 2, a épica aventura de mundo aberto da Rockstar Games aclamada pela crítica e o jogo mais bem avaliado...",
+        "description" => "Red Dead Redemption 2, a épica aventura de mundo aberto da Rockstar Games aclamada pela crítica e o jogo mais bem...",
         
         "descriptionMid" => "Red Dead Redemption 2, a épica aventura de mundo aberto da Rockstar Games aclamada pela crítica e o jogo mais bem avaliado desta geração de consoles, agora chega aprimorado para PC com conteúdos inéditos no Modo História, melhorias visuais e muito mais.",
         "descriptionFull" => "Estados Unidos, 1899.
@@ -106,7 +106,7 @@ Red Dead Redemption 2 para PC também oferece suporte a HDR e a monitores de pon
     $game[2] = array(
         "id" => 2,
         "title" => "Cyberpunk 2077",
-        "description" => "Cyberpunk 2077 é um RPG de ação e aventura em mundo aberto que se passa em Night City, uma megalópole perigosa onde...",
+        "description" => "Cyberpunk 2077 é um RPG de ação e aventura em mundo aberto que se passa em Night City, uma megalópole perigosa...",
         
         "descriptionMid" => "Cyberpunk 2077 é um RPG de ação e aventura em mundo aberto que se passa em Night City, uma megalópole perigosa onde todos são obcecados por poder, glamour e alterações corporais.",
         "descriptionFull" => "Cyberpunk 2077 é um RPG de ação e aventura em mundo aberto ambientado na megalópole de Night City, onde você é um mercenário cyberpunk envolvido em uma intensa luta pela sobrevivência. Com diversas melhorias e conteúdo adicional gratuito, personalize o seu personagem e o seu estilo de jogo conforme aceita trabalhos, construa uma reputação e desbloqueie melhorias. Seus relacionamentos e suas escolhas moldarão a história e o mundo ao seu redor. Aqui nascem as lendas. Qual será a sua?",
@@ -201,7 +201,7 @@ Red Dead Redemption 2 para PC também oferece suporte a HDR e a monitores de pon
     $game[3] = array(
         "id" => 3,
         "title" => "iRacing",
-        "description" => "Somos o principal jogo de corrida de automobilismo do mundo. Uma associação ao iRacing oferece acesso à mais nova form...",
+        "description" => "Somos o principal jogo de corrida de automobilismo do mundo. Uma associação ao iRacing oferece acesso à mais nova...",
         
         "descriptionMid" => "Somos o principal jogo de corrida de automobilismo do mundo. Uma associação ao iRacing oferece acesso à mais nova forma de automobilismo: corridas pela Internet. As corridas pela Internet são uma maneira divertida, fácil e barata para os fãs e jogadores de corridas aproveitarem a emoção da pista de corrida no conforto de suas casas.",
         "descriptionFull" => "Somos o principal jogo/simulação/jogo de corrida de automobilismo baseado em computador do mundo. A associação ao iRacing.com oferece acesso à mais nova forma de automobilismo competitivo: corridas pela Internet. As corridas pela Internet são uma maneira divertida, fácil e barata para os fãs de corridas, simracers e jogadores aproveitarem a emoção da pista de corrida no conforto de suas casas. Somos o melhor lugar para correr online. Da NASCAR ao World of Outlaws, dos Supercars australianos aos carros esportivos e corridas de Grand Prix, o iRacing tem de tudo. Tudo o que você precisa é de um computador, um volante ou gamepad que simplesmente se conecte à porta USB do seu computador e uma conexão à Internet. iRacing organiza centralmente todas as corridas para você com mais de 150 carros e pistas, 40 séries oficiais, ou você pode optar por hospedar sua própria corrida ou corrida em uma das mais de 800 ligas privadas. iRacing é uma experiência online emocionante que oferece: * A melhor simulação e serviço de corrida online do mundo, com recursos e funcionalidades brilhantes * Competição de corrida frente a frente em um local centralizado e fácil de usar - corrida contra pessoas reais * Superfícies de pista dinâmicas que mudam ao longo de uma corrida, assim como nas corridas do mundo real * Treinos abertos, qualificação, testes, corridas fantasmas, competição de contra-relógio * Team Racing - compartilhe as responsabilidades de direção, localização e equipe de box com seus companheiros de equipe e corra em eventos de até 24 horas de duração * Corrida de Calor * Constantes atualizações automáticas gratuitas e melhorias no serviço * Carros oficialmente licenciados, projetados desde o início em cooperação com equipes de corrida do mundo real e usando a física do mundo real * Réplicas exatas digitalizadas a laser e oficialmente licenciadas das maiores pistas de corrida do mundo * Corridas oficialmente sancionadas e organizadas pela iRacing * Uma comunidade online de entusiastas de corridas com mais de 170.000 pessoas * Organize suas próprias sessões privadas, organize seus próprios torneios * League Racing: crie sua própria série de corridas personalizadas com seus amigos ou junte-se a uma das mais de 800 ligas existentes...",
@@ -295,7 +295,7 @@ Red Dead Redemption 2 para PC também oferece suporte a HDR e a monitores de pon
     $game[4] = array(
         "id" => 4,
         "title" => "Stardew Valley",
-        "description" => "Você herdou a antiga fazenda do seu avô, em Stardew Valley. Com ferramentas de segunda-mão e algumas moedas, você...",
+        "description" => "Você herdou a antiga fazenda do seu avô, em Stardew Valley. Com ferramentas de segunda-mão e algumas moedas...",
         
         "descriptionMid" => "Você herdou a antiga fazenda do seu avô, em Stardew Valley. Com ferramentas de segunda-mão e algumas moedas, você parte para dar início a sua nova vida. Será que você vai aprender a viver da terra, a transformar esse matagal em um próspero lar?",
         "descriptionFull" => "Você herdou a antiga fazenda do seu avô, em Stardew Valley. Com ferramentas de segunda-mão e algumas moedas, você parte para dar início a sua nova vida. Será que você vai aprender a viver da terra, a transformar esse matagal em um próspero lar? Crie a fazenda dos seus sonhos! Construa sua fazenda do zero em 1 de 5 mapas diferentes. Domine as técnicas da agropecuária! Crie animais, plantações, máquinas úteis e muito mais. Faça parte de uma comunidade local! Faça amizade com mais de 30 moradores diferentes de Pelican Town. Personalize seu fazendeiro! Escolha entre centenas de opções para modificar seu personagem. Organize-se e crie uma família! Compartilhe sua vida na fazenda em um relacionamento com 1 entre 12 personagens disponíveis. Explore cavernas vastas e misteriosas! Encontre monstros perigosos e tesouros valiosos.",
@@ -389,7 +389,7 @@ Red Dead Redemption 2 para PC também oferece suporte a HDR e a monitores de pon
     $game[5] = array(
         "id" => 5,
         "title" => "Overwatch® 2",
-        "description" => "Overwatch® 2 é um jogo de tiro em equipe aclamado pela crítica, ambientado em um futuro otimista com um elenco...",
+        "description" => "Overwatch® 2 é um jogo de tiro em equipe aclamado pela crítica, ambientado em um futuro otimista com um...",
         
         "descriptionMid" => "Overwatch® 2 é um jogo de tiro em equipe aclamado pela crítica, ambientado em um futuro otimista com um elenco crescente de heróis. Jogue com seus amigos e entre agora mesmo!",
         "descriptionFull" => "Estamos animados para apresentar o novo programa de E-sports de Overwatch e a Overwatch Champions Series. Assista ao vídeo de atualização e acesse nosso blog para saber mais sobre o que vem aí nos E-sports de Overwatch em 2024. Conheça Venture, a nova adição aos heróis de Dano, disponível para todos. Com seu entusiasmo arqueológico e grande heroísmo, Venture muda o jogo com suas habilidades subterrâneas e dano considerável. Supere seus adversários e desenterre a vitória enquanto cava, mergulha, perfura e causa danos sísmicos massivos para esmagar esperanças e diminuir barras de vida. Viaje pelo mundo e lute pelo futuro em diversos lugares do planeta. Das maravilhas tecnológicas de Busan às ruas nevadas de Toronto, cada mapa conta com objetivos para alcançar, segredos para descobrir e estratégias para explorar.",

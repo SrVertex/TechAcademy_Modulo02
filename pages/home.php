@@ -52,7 +52,7 @@ foreach ($dadosApiPromo as $jogoPromo) {
 
                 <div class="carousel-item" data-bs-interval="4000">
 
-                    <a href="gamesPage/<?= $jogo->id ?>"><img src="<?= $jogo->banner02 ?>" class="d-block w-100" alt="<?= $jogo->title ?>"></a>
+                    <a href="games_ThirdParty/<?= $jogo->id ?>"><img src="<?= $jogo->banner02 ?>" class="d-block w-100" alt="<?= $jogo->title ?>"></a>
                     <div class="carousel-caption d-none d-md-block">
                         <h5><?= $jogo->title ?></h5>
                         <p><?= $jogo->description ?></p>

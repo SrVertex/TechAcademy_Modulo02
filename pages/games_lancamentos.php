@@ -15,12 +15,12 @@ $jogo = $dadosApi->$id;
 
 <div class="containerHeader">
     <div>
-        <a href="home">Jogos > <a href="<?= $jogo->categoryLink ?>"><?= $jogo->category ?> ></a> <a href="gamesPage/<?= $jogo->id ?>"><?= $jogo->title ?> ></a> </a>
+        <a href="home">Jogos > <a href="<?= $jogo->categoryLink ?>"><?= $jogo->category ?> ></a> <a href="games_Lancamentos/<?= $jogo->id ?>"><?= $jogo->title ?> ></a> </a>
 
         <h3><?= $jogo->title ?></h3>
     </div>
 
-    <a href="login" class="btn btn-light btnCreator">Pagina do Criador</a>
+    <a href="creatorPageLancamentos/<?= $jogo->id ?>" class="btn btn-light btnCreator">Pagina do Criador</a>
 
 
 </div>
@@ -102,7 +102,7 @@ $jogo = $dadosApi->$id;
                 <img src="<?= $jogo->banner01 ?>"" alt=" <?= $jogo->title ?>">
                 <p class="gameDescription"><?= $jogo->descriptionMid ?></p>
             </div>
-            <a class="fuctions" href="">
+            <a class="fuctions" href="games_Lancamentos/<?= $jogo->id ?>">
                 <span class="titleFuncion">TODAS AS ANÁLISES: </span>
                 <span class="descriptionFuncion analiseBoa"><?= $jogo->analisesBoa ?> </span>
                 <span class="descriptionFuncion analiseNeutra"><?= $jogo->analisesNeutra ?> </span>
@@ -114,7 +114,7 @@ $jogo = $dadosApi->$id;
             </div>
             <div class="fuctions">
                 <span class="titleFuncion">DESENVOLVEDOR: </span>
-                <a class="creatorLink" href="creatorPage"><?= $jogo->creator ?></a>
+                <a class="creatorLink" href="creatorPageLancamentos/<?= $jogo->id ?>"><?= $jogo->creator ?></a>
                 <span></span>
             </div>
             <div class="fuctions">
@@ -321,15 +321,15 @@ $jogo = $dadosApi->$id;
             <div class="containerStore-base-info">
                 <div class="fuctions">
                     <span class="titleFuncion">TITULO: </span>
-                    <a class="creatorLink" href=""><?= $jogo->title ?></a>
+                    <a class="creatorLink" href="games_Lancamentos/<?= $jogo->id ?>"><?= $jogo->title ?></a>
                 </div>
                 <div class="fuctions">
                     <span class="titleFuncion">GENERO: </span>
-                    <a class="creatorLink" href="categoryLink"><?= $jogo->category ?></a>
+                    <a class="creatorLink" href="<?= $jogo->categoryLink ?>"><?= $jogo->category ?></a>
                 </div>
                 <div class="fuctions">
                     <span class="titleFuncion">DESENVOLVEDOR: </span>
-                    <a class="creatorLink" href="creatorPage"><?= $jogo->creator ?></a>
+                    <a class="creatorLink" href="creatorPageLancamentos/<?= $jogo->id ?>"><?= $jogo->creator ?></a>
                 </div>
                 <div class="fuctions">
                     <span class="titleFuncion">DISTRIBUIDORA: </span>
@@ -337,7 +337,7 @@ $jogo = $dadosApi->$id;
                 </div>
                 <div class="fuctions">
                     <span class="titleFuncion">LANÇAMENTO: </span>
-                    <a class="creatorLink" href=""><?= $jogo->realeaseDate ?></a>
+                    <a class="creatorLink" href="games_Lancamentos/<?= $jogo->id ?>"><?= $jogo->realeaseDate ?></a>
                 </div>
             </div>
         </section>

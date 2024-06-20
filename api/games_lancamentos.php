@@ -88,7 +88,7 @@
     
         "gameLink" => "https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_VERSO_DO_DIRETOR/",
         "realeaseDate" => "16/mai./2024",
-        "distributor" => "SrVertex",
+        "distributor" => "PlayStation",
         "distributorSite" => "https://www.playstation.com/pt-br/",
         "creator" => "Sucker Punch Productions",
         "creatorName" => "Sucker Punch Productions",
@@ -202,7 +202,7 @@
     $lancamentos[3] = array(
         "id" => 3,
         "title" => "Persona 3 Reload",
-        "description" => "Mergulhe na Hora Sombria e desperte as profundezas do seu coração. Persona 3 Reload é uma reimaginação cativante do...",
+        "description" => "Mergulhe na Hora Sombria e desperte as profundezas do seu coração. Persona 3 Reload é uma reimaginação cativante...",
         "descriptionMid" => "Mergulhe na Hora Sombria e desperte as profundezas do seu coração. Persona 3 Reload é uma reimaginação cativante do RPG que redefiniu o gênero, agora repensado para a era moderna com gráficos e jogabilidade de ponta.",
         "descriptionFull" => "Assuma o papel de um estudante transferido que acaba vivendo um destino inesperado ao ingressar na hora oculta entre um dia e outro. Desperte um poder incrível, investigue a misteriosa Hora Sombria, lute em nome dos seus amigos e deixe sua marca para sempre nas memórias deles. Persona 3 Reload é uma reimaginação cativante do RPG que redefiniu o gênero, agora repensado para a era moderna.",
         "logoGame01" => "{$path}img/banners/persona3/logoGame01.jpg",
@@ -296,7 +296,7 @@
     $lancamentos[4] = array(
         "id" => 4,
         "title" => "Senua s Saga: Hellblade II",
-        "description" => "A sequência do premiado Hellblade: Senua's Sacrifice, Senua retorna em uma jornada brutal de sobrevivência através do mi...",
+        "description" => "A sequência do premiado Hellblade: Senua's Sacrifice, Senua retorna em uma jornada brutal de sobrevivência através...",
         "descriptionMid" => "A sequência do premiado Hellblade: Senua's Sacrifice, Senua retorna em uma jornada brutal de sobrevivência através do mito e tormento da Islândia Viking. Com a intenção de salvar aqueles que foram vítimas dos horrores da tirania, Senua enfrenta uma batalha de superação das trevas internas e externas",
         "descriptionFull" => "Dos criadores de Heavenly Sword, Enslaved: Odyssey to the West, e DmC: Devil May Cry, chega agora a viagem brutal de uma guerreira até ao mito e a loucura.
 Na era dos vikings, uma guerreira celta parte numa jornada pessoal arrepiante até ao inferno viking para lutar pela alma de seu falecido amado.
