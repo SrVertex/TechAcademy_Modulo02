@@ -12,7 +12,9 @@
 
 <br>
 <h3> Hospedagem do Projeto:
-<a> https://vaporstoresite.000webhostapp.com
+    <div> 
+        <a href="https://vaporstoresite.000webhostapp.com" target="_blank">https://vaporstoresite.000webhostapp.com<a> 
+    </div>
 <br>
 <br>
 
