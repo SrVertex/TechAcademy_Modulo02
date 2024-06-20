@@ -924,7 +924,7 @@ Projetado para inovar, o Assetto Corsa Competizione será usado na promoção de
                             "OBS_Recomendate" => "",
                         
                             "price" => "R$ 47,70",
-                            "promo" => "R$ 159,00",
+                            "promo" => "159,00",
                             "promoLabel" => "promoLabel",
                             "plataform" => "PC, PS4, Xbox One",
                             "analisesBoa" => "Muito Positivas",

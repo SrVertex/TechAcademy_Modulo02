@@ -395,7 +395,9 @@ footer {
                     color: $corTextoPreco !important;
                     padding: 5px;
                     font-weight: 600;
-                    font-size: 22px;
+                    font-size: 10px;
+                    position: relative;
+                    bottom: 8px;
                     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25) !important;
                     transition: 300ms;
                     text-decoration: line-through;

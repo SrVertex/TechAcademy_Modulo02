@@ -97,8 +97,11 @@ foreach ($dadosApiPromo as $jogoPromo) {
                     <p class="card-text"><?= $jogoOriginals->description ?></p>
                     <div class="car-btn">
                         <a href="gamesPage/<?= $jogoOriginals->id ?>" class="btn btn-light">Pagina do Jogo</a>
+                        <div>
                         <span class="card-price"><?= $jogoOriginals->price ?></span>
                         <span class="card-promo"><?= $jogoOriginals->promo ?></span>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -113,7 +116,7 @@ foreach ($dadosApiPromo as $jogoPromo) {
 
 
 
-<h2 class="titleDestaque text-center mt-4">Lançamentos</h2>
+<h2 class="titleDestaque text-center mt-5 mb-5">Lançamentos</h2>
 
 
 
@@ -135,8 +138,11 @@ foreach ($dadosApiPromo as $jogoPromo) {
                     <p class="card-text"><?= $jogoPromo->description ?></p>
                     <div class="car-btn">
                         <a href="games_lancamentos/<?= $jogoPromo->id ?>" class="btn btn-light">Pagina do Jogo</a>
+                        <div>
                         <span class="card-price"><?= $jogoPromo->price ?></span>
                         <span class="card-promo"><?= $jogoPromo->promo ?></span>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -168,8 +174,11 @@ foreach ($dadosApiPromo as $jogoPromo) {
                     <p class="card-text"><?= $jogo->description ?></p>
                     <div class="car-btn">
                         <a href="games_ThirdParty/<?= $jogo->id ?>" class="btn btn-light">Pagina do Jogo</a>
+                        <div>
                         <span class="card-price"><?= $jogo->price ?></span>
                         <span class="card-promo"><?= $jogo->promo ?></span>
+                        </div>
+
                     </div>
                 </div>
             </div>
