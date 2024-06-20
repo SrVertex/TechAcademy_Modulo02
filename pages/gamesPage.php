@@ -322,7 +322,7 @@ $jogo = $dadosApi->$id;
                 </div>
                 <div class="fuctions">
                     <span class="titleFuncion">GENERO: </span>
-                    <a class="creatorLink" href="categoryLink"><?= $jogo->category ?></a>
+                    <a class="creatorLink" href="<?= $jogo->categoryLink ?>"><?= $jogo->category ?></a>
                 </div>
                 <div class="fuctions">
                     <span class="titleFuncion">DESENVOLVEDOR: </span>

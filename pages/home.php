@@ -29,9 +29,9 @@ foreach ($dadosApiPromo as $jogoPromo) {
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <?php
-            foreach ($dadosApiOriginals as $jogoOriginals) {
+            foreach ($dadosApi as $jogo) {
             ?>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="<?= $jogoOriginals->id ?>" aria-label="<?= $jogoOriginals->title ?>"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="<?= $jogo->id ?>" aria-label="<?= $jogo->title ?>"></button>
             <?php
             }
             ?>
@@ -47,15 +47,15 @@ foreach ($dadosApiPromo as $jogoPromo) {
             </div>
 
             <?php
-            foreach ($dadosApiOriginals as $jogoOriginals) {
+            foreach ($dadosApi as $jogo) {
             ?>
 
                 <div class="carousel-item" data-bs-interval="4000">
 
-                    <a href="gamesPage/<?= $jogoOriginals->id ?>"><img src="<?= $jogoOriginals->banner02 ?>" class="d-block w-100" alt="..."></a>
+                    <a href="gamesPage/<?= $jogo->id ?>"><img src="<?= $jogo->banner02 ?>" class="d-block w-100" alt="<?= $jogo->title ?>"></a>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5><?= $jogoOriginals->title ?></h5>
-                        <p><?= $jogoOriginals->description ?></p>
+                        <h5><?= $jogo->title ?></h5>
+                        <p><?= $jogo->description ?></p>
                     </div>
                 </div>
 
@@ -89,8 +89,8 @@ foreach ($dadosApiPromo as $jogoPromo) {
     foreach ($dadosApiOriginals as $jogoOriginals) {
     ?>
         <div class="col">
-        <div class="card" data-aos="fade-up" data-aos-duration="500">
-        <span class=" <?= $jogoOriginals->promoLabel ?> promoLabel-none">Promocao</span>
+            <div class="card" data-aos="fade-up" data-aos-duration="500">
+                <span class=" <?= $jogoOriginals->promoLabel ?> promoLabel-none">Promocao</span>
                 <a href="gamesPage/<?= $jogoOriginals->id ?>"><img src="<?= $jogoOriginals->banner01 ?>" class="card-img-top" alt="<?= $jogoOriginals->title ?>"></a>
                 <div class="card-body">
                     <h5 class="card-title"><?= $jogoOriginals->title ?></h5>
@@ -98,8 +98,8 @@ foreach ($dadosApiPromo as $jogoPromo) {
                     <div class="car-btn">
                         <a href="gamesPage/<?= $jogoOriginals->id ?>" class="btn btn-light">Pagina do Jogo</a>
                         <div>
-                        <span class="card-price"><?= $jogoOriginals->price ?></span>
-                        <span class="card-promo"><?= $jogoOriginals->promo ?></span>
+                            <span class="card-price"><?= $jogoOriginals->price ?></span>
+                            <span class="card-promo"><?= $jogoOriginals->promo ?></span>
                         </div>
 
                     </div>
@@ -130,8 +130,8 @@ foreach ($dadosApiPromo as $jogoPromo) {
     foreach ($dadosApiPromo as $jogoPromo) {
     ?>
         <div class="col">
-        <div class="card" data-aos="fade-up" data-aos-duration="500">
-        <span class=" <?= $jogoPromo->promoLabel ?> promoLabel-none">Promocao</span>
+            <div class="card" data-aos="fade-up" data-aos-duration="500">
+                <span class=" <?= $jogoPromo->promoLabel ?> promoLabel-none">Promocao</span>
                 <a href="games_lancamentos/<?= $jogoPromo->id ?>"><img src="<?= $jogoPromo->banner01 ?>" class="card-img-top" alt="..."></a>
                 <div class="card-body">
                     <h5 class="card-title"><?= $jogoPromo->title ?></h5>
@@ -139,8 +139,8 @@ foreach ($dadosApiPromo as $jogoPromo) {
                     <div class="car-btn">
                         <a href="games_lancamentos/<?= $jogoPromo->id ?>" class="btn btn-light">Pagina do Jogo</a>
                         <div>
-                        <span class="card-price"><?= $jogoPromo->price ?></span>
-                        <span class="card-promo"><?= $jogoPromo->promo ?></span>
+                            <span class="card-price"><?= $jogoPromo->price ?></span>
+                            <span class="card-promo"><?= $jogoPromo->promo ?></span>
                         </div>
 
                     </div>
@@ -175,8 +175,8 @@ foreach ($dadosApiPromo as $jogoPromo) {
                     <div class="car-btn">
                         <a href="games_ThirdParty/<?= $jogo->id ?>" class="btn btn-light">Pagina do Jogo</a>
                         <div>
-                        <span class="card-price"><?= $jogo->price ?></span>
-                        <span class="card-promo"><?= $jogo->promo ?></span>
+                            <span class="card-price"><?= $jogo->price ?></span>
+                            <span class="card-promo"><?= $jogo->promo ?></span>
                         </div>
 
                     </div>
