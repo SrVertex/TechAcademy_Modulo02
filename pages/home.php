@@ -116,14 +116,14 @@ foreach ($dadosApiPromo as $jogoPromo) {
 
 
 
-<h2 class="titleDestaque text-center mt-5 mb-5">Lançamentos</h2>
+<h2 class="titleDestaque text-center mt-5 mb-2">Lançamentos</h2>
 
 
 
-<div>
+<!-- <div>
     <img src="http://localhost/VaporStore_web/img/banner2.jpg" class="bannerPromo" alt="..." data-aos="fade-up" data-aos-duration="500">
 
-</div>
+</div> -->
 
 <div class="container-cards row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xxl-3 row-cols-fluid-4 g-4 x-4">
     <?php

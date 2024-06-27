@@ -111,7 +111,7 @@ $jogo = $dadosApi->$id;
             </div>
             <div class="fuctions">
                 <span class="titleFuncion">DESENVOLVEDOR: </span>
-                <a class="creatorLink" href="creatorPage"><?= $jogo->creator ?></a>
+                <a class="creatorLink" href="creatorPage/<?= $jogo->id ?>"><?= $jogo->creator ?></a>
                 <span></span>
             </div>
             <div class="fuctions">

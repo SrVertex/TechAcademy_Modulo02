@@ -9,14 +9,14 @@
 
 
             <div>
-                <form class="">
+                <form class="" id="loginForm">
                     <div class="mb-3">
                         <label for="exampleDropdownFormEmail1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@exemplo.com">
+                        <input type="email" class="form-control" id="exampleDropdownFormEmail1 email" placeholder="email@exemplo.com">
                     </div>
                     <div class="mb-3">
                         <label for="exampleDropdownFormPassword1" class="form-label">Senha</label>
-                        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Digite sua senha">
+                        <input type="password" class="form-control" id="exampleDropdownFormPassword1 password" placeholder="Digite sua senha">
                     </div>
                     <div class="mb-3">
                         <div class="form-check">
@@ -26,7 +26,7 @@
                             </label>
                         </div>
                     </div>
-                    <a href="home" type="submit" class="btn btn-light ">Login</a>
+                    <input type="submit" class="btn btn-light" value="Login">
 
                 </form>
                 <div class="dropdown-divider mb-3"></div>
@@ -40,6 +40,7 @@
     </div>
 
 </div>
+
 
 
 
