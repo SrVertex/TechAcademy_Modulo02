@@ -423,4 +423,109 @@ Todas as opções de acessibilidade mencionadas velem para a versão para PC do 
     "creatorImg" => "{$path}img/banners/hellblade/creatorLogo.jpg",
     "creatorSite" => "https://www.xbox.com/en-US/xbox-game-studios"
 );
+
+
+$lancamentos[5] = array(
+    "id" => 5,
+    "title" => "Assetto Corsa Competizione",
+
+
+    "description" => "Assetto Corsa Competizione é o novo jogo oficial do Blancpain GT Series. Graças à qualidade extraordinária...",
+
+    "descriptionMid" => "Assetto Corsa Competizione é o novo jogo oficial do Blancpain GT Series. Graças à qualidade extraordinária da simulação, o jogo permitirá que você experimente a atmosfera real do campeonato homologado pela FIA GT3, competindo contra motoristas, equipes, carros e circuitos oficiais.",
+    "descriptionFull" => "Assetto Corsa Competizione é o novo jogo oficial do Blancpain GT Series.
+Graças à qualidade extraordinária da simulação, o jogo permitirá que você experimente a atmosfera real do campeonato GT3, competindo contra motoristas, equipes, carros e circuitos oficiais reproduzidos no jogo com o mais alto nível de precisão já obtido.
+Corridas de Velocidade, Resistência e 24 Horas de Spa ganharão vida com um nível de realismo incrível, tanto no modo para um único jogador quanto para multijogadores.
+Assetto Corsa Competizione contará com a Temporada 2018 do Blancpain GT Series e também incluirá a Temporada 2019, que será fornecida como uma atualização gratuita durante o Verão de 2019.
+O Assetto Corsa Competizione é o resultado da união da larga experiência do KUNOS Simulazioni com a tecnologia do Unreal Engine 4, capaz de reproduzir gráficos, condições climáticas, corridas noturnas, captura de movimentos e animações fotorrealistas, definindo um novo padrão em termos de imersão no comando de veículos, graças a seus modelos de pneus e aerodinâmica aprimorados.
+Projetado para inovar, o Assetto Corsa Competizione será usado na promoção de eSports, levando jogadores ao coração do Blancpain GT Series e oferecendo a eles o comando de Ferraris, Lamborghinis, McLarens e vários outros conceituados carros de corrida GT. Tudo isso reproduzido com um impressionante nível de detalhes.",
+
+    "logoGame01" => "{$path}img/banners/assettoCorsaCompetizione/logoGame01.jpg",
+    "banner01" => "{$path}img/banners/assettoCorsaCompetizione/banner01.jpg",
+    "banner02" => "{$path}img/banners/assettoCorsaCompetizione/banner02.jpg",
+    "screenShot01" => "{$path}img/banners/assettoCorsaCompetizione/screenshot01.jpg",
+    "screenShot02" => "{$path}img/banners/assettoCorsaCompetizione/screenshot02.jpg",
+    "screenShot03" => "{$path}img/banners/assettoCorsaCompetizione/screenshot03.jpg",
+    "screenShot04" => "{$path}img/banners/assettoCorsaCompetizione/screenshot04.jpg",
+    "video01" => "",
+    "category" => "Simulacao",
+    "categoryLink" => "simulator",
+    "modoJogo" => "Um jogador",
+    "multiplayer" => "Eventos On-line",
+    "controls" => "Teclado, Controles, Volante e VR",
+
+    "CPU_Min" => "AMD Athlon X2 2.8 GHZ, Intel Core 2 Duo 2.4 GHZ",
+    "GPU_Min" => "DirectX 10.1 (e.g. AMD Radeon HD 6450, Nvidia GeForce GT 460)",
+    "storage_Min" => "15 GB",
+    "memory_Min" => "2gb RAM",
+    "SO_Min" => "Windows 10 64-bit",
+    "OBS_Min" => "",
+
+    "CPU_Recomendate" => "AMD Six-Core CPU, Intel Quad-Core CPU",
+    "GPU_Recomendate" => "DirectX 11 (e.g. AMD Radeon 290x, Nvidia GeForce GTX 970)",
+    "storage_Recomendate" => "30 GB",
+    "memory_Recomendate" => "8gb RAM",
+    "SO_Recomendate" => "Windows 10 64-bit",
+    "OBS_Recomendate" => "",
+
+    "price" => "R$ 47,70",
+    "promo" => "159,00",
+    "promoLabel" => "promoLabel",
+    "plataform" => "PC, PS4, Xbox One",
+    "analisesBoa" => "Muito Positivas",
+    "analisesNeutra" => "",
+    "analisesRuim" => "",
+    "privacity" => "https://assettocorsa.gg/privacy-policy/",
+    "userAccept" => "https://assettocorsa.gg/#newsletter",
+    "pegiInfo" => "LIVRE",
+
+    "analise1_img" => "{$path}img/analise01.jpg",
+    "analise1_userName" => "hrcarazatto",
+    "analise1_recomendacao" => "Recomendado",
+    "analise1_naoRecomendacao" => "",
+    "analise1_recomendacaoRuim" => "",
+    "analise1_recomendacaoBoa" => "<i class='analiseBoa bi bi-hand-thumbs-up-fill'></i>",
+    "analise1_data" => "31 DE MAIO",
+    "analise1_descricao" => "Bons gráficos, desafiador na medida certa. Excelente simulador de GT! Jogo com o Logitech g923 e me divirto muito!",
+
+    "analise2_img" => "{$path}img/analise02.jpg",
+    "analise2_userName" => "mamaduck",
+    "analise2_recomendacao" => "Recomendado",
+    "analise2_naoRecomendacao" => "",
+    "analise2_recomendacaoRuim" => "",
+    "analise2_recomendacaoBoa" => "<i class='analiseBoa bi bi-hand-thumbs-up-fill'></i>",
+    "analise2_data" => "14 DE JUNHO",
+    "analise2_descricao" => "Jogo extremamente amigável para quem vai jogar no controle, as assistências ajudam demais! recomendo",
+
+    "analise3_img" => "{$path}img/analise03.jpg",
+    "analise3_userName" => "juniorschr",
+    "analise3_recomendacao" => "Recomendado",
+    "analise3_naoRecomendacao" => "",
+    "analise3_recomendacaoRuim" => "",
+    "analise3_recomendacaoBoa" => "<i class='analiseBoa bi bi-hand-thumbs-up-fill'></i>",
+    "analise3_data" => "2 DE MAIO",
+    "analise3_descricao" => "Definitivamente um dos melhores jogos como porta de entrada para o automobilismo virtual, se você tem um volante e quer começar nos simuladores, pode vim para o ACC que o negocio é bom msm",
+
+    "analise4_img" => "{$path}img/analise04.jpg",
+    "analise4_userName" => "FR4NC4",
+    "analise4_recomendacao" => "Recomendado",
+    "analise4_naoRecomendacao" => "",
+    "analise4_recomendacaoRuim" => "",
+    "analise4_recomendacaoBoa" => "<i class='analiseBoa bi bi-hand-thumbs-up-fill'></i>",
+    "analise4_data" => "24 DE ABRIL",
+    "analise4_descricao" => "Melhor otimizado para VR que seu antecessor, porem só tem corrida GT, isso não não e um ponto negativo pois o jogo ainda e muito bom de se jogar com bastante variedade de pistas e carros, para quem pode compras as dlcs fica ainda melhor.",
+
+    "gameLink" => "https://store.steampowered.com/app/805550/Assetto_Corsa_Competizione/",
+    "realeaseDate" => "29/mai./2019",
+    "distributor" => "Kunos Simulazioni",
+    "distributorSite" => "https://assettocorsa.gg",
+    "creator" => "Kunos Simulazioni",
+    "creatorName" => "Kunos Simulazioni",
+    "creatorDate" => "01/01/1992",
+    "creatorFormation" => "Desenvolvedora de Jogos",
+    "creatorImg" => "{$path}img/banners/assettoCorsaCompetizione/creatorLogo.jpg",
+    "creatorSite" => "https://assettocorsa.gg"
+);
+
+
 echo json_encode($lancamentos);
