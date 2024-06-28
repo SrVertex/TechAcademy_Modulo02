@@ -1,41 +1,22 @@
 <?php
-
 $id = $p[1] ?? NULL;
-
 $dadosApi = file_get_contents("http://localhost/VaporStore_web/api/games_originals.php/");
-
 $dadosApi = json_decode($dadosApi);
-
 $jogo = $dadosApi->$id;
-
 ?>
 
 <div class="containerHeader">
     <div>
         <a href="home">Jogos > <a href="<?= $jogo->categoryLink ?>"><?= $jogo->category ?> ></a> <a href="gamesPage/<?= $jogo->id ?>"><?= $jogo->title ?> ></a> </a>
-
         <h3><?= $jogo->title ?></h3>
     </div>
-
     <a href="creatorPage/<?= $jogo->id ?>" class="btn btn-light btnCreator">Pagina do Criador</a>
-
-
 </div>
-
-
-
-
-
-
 
 <div class="containerStore">
     <div class="containerStore-base">
         <div class="containerStore-base-carousel">
-
-
-
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="4000">
                         <img src="<?= $jogo->screenShot01 ?>" class="d-block w-100" alt="...">
@@ -58,20 +39,13 @@ $jogo = $dadosApi->$id;
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Proxima</span>
                 </button>
-
-
-
-
-
                 <div class="carousel-indicators carousel-indicators-screens">
                     <button type="button" class="active" data-bs-target="#carouselExampleFade" data-bs-slide-to="0">
                         <img src="<?= $jogo->screenShot01 ?>" alt="">
                     </button>
-
                     <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1">
                         <img src="<?= $jogo->screenShot02 ?>" alt="">
                     </button>
-
                     <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2">
                         <img src="<?= $jogo->screenShot03 ?>" alt="">
                     </button>
@@ -79,20 +53,8 @@ $jogo = $dadosApi->$id;
                         <img src="<?= $jogo->screenShot04 ?>" alt="">
                     </button>
                 </div>
-
             </div>
-
         </div>
-
-
-
-
-
-
-
-
-
-
 
         <div class="containerStore-base-info">
             <div>
@@ -128,7 +90,6 @@ $jogo = $dadosApi->$id;
             <h3>Comprar <?= $jogo->title ?></h3>
             <div class="buttonBuy">
                 <span><?= $jogo->price ?></span>
-
                 <a href="<?= $jogo->gameLink ?>" class="buy">Comprar</a>
             </div>
         </div>
@@ -209,7 +170,6 @@ $jogo = $dadosApi->$id;
                         <span><?= $jogo->analise2_userName ?></span>
                     </div>
                     <div class="cardAnalises-description">
-
                         <div class="likeCard">
                             <?= $jogo->analise2_recomendacaoBoa ?>
                             <?= $jogo->analise2_recomendacaoRuim ?>
@@ -234,7 +194,6 @@ $jogo = $dadosApi->$id;
                         <span><?= $jogo->analise3_userName ?></span>
                     </div>
                     <div class="cardAnalises-description">
-
                         <div class="likeCard">
                             <?= $jogo->analise3_recomendacaoBoa ?>
                             <?= $jogo->analise3_recomendacaoRuim ?>
@@ -259,7 +218,6 @@ $jogo = $dadosApi->$id;
                         <span><?= $jogo->analise4_userName ?></span>
                     </div>
                     <div class="cardAnalises-description">
-
                         <div class="likeCard">
                             <?= $jogo->analise4_recomendacaoBoa ?>
                             <?= $jogo->analise4_recomendacaoRuim ?>
@@ -329,10 +287,7 @@ $jogo = $dadosApi->$id;
             </div>
         </section>
         <section>
-
         </section>
     </div>
-    
+
 </div>
-
-

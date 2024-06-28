@@ -121,6 +121,19 @@ footer .footerDown {
   display: flex;
   flex-wrap: wrap;
 }
+footer .footerDown .btnCadastro {
+  background-color: #ff000000 !important;
+  color: white;
+  border: none !important;
+  font-size: 10px;
+  color: #ffffff !important;
+  text-decoration: none;
+  transition: 300ms !important;
+}
+footer .footerDown .btnCadastro:hover {
+  color: #ABDDD2;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.25) !important;
+}
 footer .footerDown a {
   font-size: 10px;
   color: #ffffff !important;

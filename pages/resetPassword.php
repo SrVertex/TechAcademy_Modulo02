@@ -1,11 +1,8 @@
 <h1 class="text-center">Esqueceu sua senha</h1>
 <div class="resetPassword">
     <div class="bannerPassword">
-
         <div class="formLogin">
             <h3 class="text-center">Redefinir senha</h3>
-
-
             <div>
                 <form class="formReset">
                     <div class="mb-3">
@@ -29,24 +26,11 @@
                         </div>
                     </div>
                     <button type="submit" class="btn btn-light">Redefinir senha</button>
-
-
-
-
                 </form>
                 <div class="dropdown-divider"></div>
             </div>
-
-
         </div>
-
     </div>
-
-
-
-
 </div>
 
-<div class="spacing">
-    
-    </div>
+<div class="spacing"></div>

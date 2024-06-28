@@ -14,38 +14,6 @@ foreach ($dadosApiPromo as $jogoPromo) {
 }
 ?>
 
-
-<!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-  Link with href
-</a>
-<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-  Button with data-bs-target
-</button>
-
-<div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div>
-      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-    </div>
-    <div class="dropdown mt-3">
-      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-        Dropdown button
-      </button>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
-    </div>
-  </div>
-</div> -->
-
-
-
 <div class="bibliotecaBase">
     <div class="bibliotecaBase-left">
         <h1>Biblioteca</h1>
@@ -62,16 +30,12 @@ foreach ($dadosApiPromo as $jogoPromo) {
                 ?>
             </ul>
         </div>
-
-
-
     </div>
 
-
     <div class="bibliotecaBase-right">
-    <h1>Lista de Desejos</h1>
+        <h1>Lista de Desejos</h1>
 
-    <div>
+        <div>
             <ul>
                 <?php
                 foreach ($dadosApiPromo as $jogoPromo) {
@@ -85,13 +49,7 @@ foreach ($dadosApiPromo as $jogoPromo) {
             </ul>
         </div>
     </div>
-
-
-
-
 </div>
-
-
 
 <h2 class="jogadosRecentemente">Jogados Recentemente</h2>
 
@@ -109,28 +67,21 @@ foreach ($dadosApiPromo as $jogoPromo) {
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="1500">
-
                 <img src="http://localhost/VaporStore_web/img/banners/banner_welcome.jpg" class="d-block w-100" alt="...">
-
             </div>
 
             <?php
             foreach ($dadosApiOriginals as $jogoOriginals) {
             ?>
-
                 <div class="carousel-item" data-bs-interval="4000">
-
                     <a href="gamesPage/<?= $jogoOriginals->id ?>"><img src="<?= $jogoOriginals->banner02 ?>" class="d-block w-100" alt="..."></a>
                     <div class="carousel-caption d-none d-md-block">
                         <h5><?= $jogoOriginals->title ?></h5>
                     </div>
                 </div>
-
-
             <?php
             }
             ?>
-
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -142,6 +93,3 @@ foreach ($dadosApiPromo as $jogoPromo) {
         </button>
     </div>
 </div>
-
-
-

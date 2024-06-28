@@ -17,7 +17,6 @@ $corTextoAnaliseBoa: #87ddff;
 $corTextoAnaliseNeutra: #ffde83;
 $corTextoAnaliseRuim: #ff8383;
 
-
 body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -38,9 +37,6 @@ body {
         }
     }
 
-
-
-
     & .divisorIcon {
         display: none;
         align-items: center;
@@ -56,7 +52,6 @@ body {
             color: $corTexto !important;
             text-decoration: none;
             transition: 300ms !important;
-
         }
     }
 
@@ -68,10 +63,7 @@ body {
         text-decoration: none;
         color: $corTexto !important;
     }
-
 }
-
-
 
 .btn {
     background-color: $corBotoes;
@@ -81,7 +73,6 @@ body {
 
     & &-icon {
         color: $corFundoEscura !important;
-
     }
 
     &:hover {
@@ -96,7 +87,6 @@ body {
 
     & &-icon {
         color: $corFundoEscura !important;
-
     }
 
     &:hover {
@@ -149,11 +139,8 @@ body {
 }
 
 footer {
-
-
     .footerBase {
         display: flex;
-
         align-items: center;
         margin: auto;
         box-sizing: border-box;
@@ -175,6 +162,21 @@ footer {
         display: flex;
         flex-wrap: wrap;
 
+        .btnCadastro {
+            background-color: #ff000000 !important;
+            color: white;
+            border: none !important;
+            font-size: 10px;
+            color: $corTexto !important;
+            text-decoration: none;
+            transition: 300ms !important;
+
+            &:hover {
+                color: $corTextoHover;
+                box-shadow: 0 0 5px rgba(255, 255, 255, 0.25) !important;
+            }
+        }
+
         a {
             font-size: 10px;
             color: $corTexto !important;
@@ -184,7 +186,6 @@ footer {
             &:hover {
                 color: $corTextoHover;
                 box-shadow: 0 0 5px rgba(255, 255, 255, 0.25) !important;
-
             }
         }
 
@@ -203,7 +204,6 @@ footer {
                 color: $corTexto !important;
                 text-decoration: none;
                 transition: 300ms !important;
-
             }
 
             &:hover {
@@ -232,11 +232,7 @@ footer {
     display: flex;
     flex-direction: row;
     margin: 20px;
-
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.26);
-
-
-
     padding: 10px;
     background-image: url(..//img/backgroundGreenMobile.png);
     background-size: 100%;
@@ -273,21 +269,10 @@ footer {
 
     }
 
-
-
     & .formLogin {
         margin: 10px;
     }
-
-
-
-
 }
-
-
-
-
-
 
 .resetPassword {
     display: flex;
@@ -295,9 +280,6 @@ footer {
     margin: 20px;
     justify-content: space-around;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.26);
-
-
-
     padding: 10px;
     background-image: url(..//img/backgroundGreenMobile.png);
     background-size: 100%;
@@ -330,7 +312,6 @@ footer {
     }
 }
 
-
 .modal-content {
     color: $corTexto !important;
     background: rgb(1, 39, 28);
@@ -349,14 +330,11 @@ footer {
     }
 }
 
-
-
 .containerBox {
     border-radius: 5px;
     margin: 10px;
     margin-bottom: 40px;
     border: 2px solid $corTextoHover;
-
 }
 
 .container-cards {
@@ -406,8 +384,6 @@ footer {
             }
         }
     }
-
-
 }
 
 .bannerPromo {
@@ -432,11 +408,7 @@ footer {
     top: 20px;
     left: -40px;
     padding: 5px 40px 5px 40px;
-
-
-
 }
-
 
 .containerHeader {
     width: 95%;
@@ -487,19 +459,19 @@ footer {
         margin: auto;
         justify-content: space-between;
         width: 95%;
+
         .containerStore-base-carousel {
             background-color: $corBotoesEscuros;
             width: 80%;
-
             margin: auto;
             overflow: hidden;
-
         }
 
         .containerStore-base-info {
             width: 85%;
             margin-left: 10px;
             margin: auto;
+
             img {
                 width: 100%;
             }
@@ -516,7 +488,6 @@ footer {
 
             .fuctions {
                 display: flex;
-
                 flex-direction: row;
                 text-decoration: none;
                 align-items: center;
@@ -554,9 +525,7 @@ footer {
                 }
             }
         }
-
     }
-
 }
 
 .containerStore-main {
@@ -576,7 +545,6 @@ footer {
         flex-wrap: wrap;
 
         .areaBuy {
-
             border-radius: 5px;
             display: flex;
             flex-direction: row;
@@ -593,7 +561,6 @@ footer {
 
             h3 {
                 margin: auto;
-
             }
 
             .buttonBuy {
@@ -616,7 +583,6 @@ footer {
                 }
 
                 .buy {
-
                     border-radius: 5px 5px 5px 5px;
                     text-align: center;
                     align-items: center;
@@ -633,7 +599,6 @@ footer {
                         background-color: $corSecundaria !important;
                         color: $corTextoEscuro;
                     }
-
                 }
             }
         }
@@ -645,7 +610,6 @@ footer {
             height: 1px;
             background: rgb(16, 122, 98);
             background: linear-gradient(90deg, rgba(16, 122, 98, 1) 0%, rgba(148, 148, 148, 0) 100%);
-
         }
 
         .sobre {
@@ -674,7 +638,6 @@ footer {
                         color: $corTexto;
                     }
                 }
-
             }
 
             .creatorLink {
@@ -687,7 +650,6 @@ footer {
                 }
             }
         }
-
     }
 
     .containerStore-main-right {
@@ -701,7 +663,6 @@ footer {
             & .jogoFunctions {
                 display: flex;
                 flex-direction: column;
-
                 text-align: left;
 
                 & .jogoFunctions_layer {
@@ -742,27 +703,21 @@ footer {
 
         .containerStore-base-info {
             width: 100%;
-
             display: flex;
-
             flex-direction: column;
 
             .fuctions {
                 display: flex;
-
                 flex-direction: row;
                 text-decoration: none;
                 align-items: center;
                 justify-content: space-between;
-
-
 
                 .titleFuncion {
                     color: $corTextoFunction;
                     margin-right: 10px;
                     font-size: 12px;
                     justify-content: space-between;
-
                 }
 
                 .creatorLink {
@@ -880,13 +835,10 @@ footer {
                     background-color: $corBotoesAvisos;
                     color: $corTexto;
                 }
-
-
             }
         }
     }
 }
-
 
 .creatorPage {
     display: flex;
@@ -896,7 +848,6 @@ footer {
     padding: 20px;
     margin: 10px;
     border-radius: 5px;
-
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 800px;
@@ -927,7 +878,6 @@ footer {
                     color: $corTexto;
                 }
             }
-
         }
 
         .creatorLink {
@@ -963,15 +913,12 @@ footer {
     margin-bottom: 3rem;
 }
 
-
 .bibliotecaBase {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
     flex-wrap: nowrap;
-
-
 
     & .bibliotecaBase-left {
         width: 70%;
@@ -1009,7 +956,6 @@ footer {
                 }
             }
         }
-
     }
 
     & .bibliotecaBase-right {
@@ -1028,7 +974,6 @@ footer {
             li {
                 display: flex;
                 flex-direction: column;
-
                 justify-content: space-between;
                 list-style: none;
                 margin: 5px;
@@ -1057,65 +1002,17 @@ footer {
     margin-left: 20px;
 }
 
-
-
-// .loginPC {
-//     display: flex;
-//     flex-direction: column;
-//     margin: 20px;
-//     margin-left: 20%;
-//     margin-right: 20%;
-
-
-
-//     padding: 10px;
-//     background-image: url(..//img/backgroundGreenPC.png);
-//     border-radius: 10px;
-//     border: 2px solid #83838383;
-
-//     & .bannerLogin {
-//         justify-content: space-evenly;
-//         padding: 5px;
-//         display: flex;
-
-//         & .imgLoginPC{
-//             width: 40%;
-//             margin: 10px;
-//             border-radius: 5px 0px 0px 5px;
-//             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
-//         }
-
-//     }
-
-
-
-//     & .formLogin{
-//         margin: 10px;
-//     }
-
-
-
-
-// }
-
-
-
 //Desktop
 @media (max-width: 250px) {
-    .containerHeader{
+    .containerHeader {
         flex-direction: column;
     }
 
-    .containerStore-base-carousel{
+    .containerStore-base-carousel {
         width: 40%;
-
         margin: auto;
     }
-
-    
 }
-
-
 
 @media (min-width: 480px) {
     footer {
@@ -1124,7 +1021,6 @@ footer {
     }
 
     .footerBox {
-
         margin: auto;
         width: 70%;
         margin-top: 10px;
@@ -1200,25 +1096,6 @@ footer {
             }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 @media (min-width: 800px) {
@@ -1272,9 +1149,6 @@ footer {
         margin-right: 20%;
         justify-content: space-around;
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.26);
-
-
-
         padding: 10px;
         background-image: url(..//img/backgroundGreenMobile.png);
         background-size: 100%;
@@ -1303,15 +1177,15 @@ footer {
         display: none;
     }
 
-
-    .containerHeader{
+    .containerHeader {
         width: 70%;
         margin: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding-bottom: 10px;
-        .btnCreator{
+
+        .btnCreator {
             background-color: $corBotoesEscuros;
             color: $corTextoHover;
             text-align: center;
@@ -1319,23 +1193,25 @@ footer {
             align-content: center;
             border-radius: 0px;
             font-weight: 700;
-            &:hover{
+
+            &:hover {
                 background-color: $corBotoesAvisos;
                 color: $corTexto;
                 opacity: 90%;
             }
         }
-        a{
+
+        a {
             text-decoration: none;
             color: $corTextoHover;
             transition: 200ms;
-            &:hover{
+
+            &:hover {
                 color: $corPrimaria;
                 text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25) !important;
             }
         }
     }
-
 
     .containerStore {
         width: 70%;
@@ -1343,41 +1219,40 @@ footer {
         margin-bottom: 50px;
         display: flex;
         flex-direction: column;
-    
+
         .containerStore-base {
             display: flex;
             flex-direction: row;
             margin: auto;
             justify-content: space-between;
-    
+
             .containerStore-base-carousel {
                 background-color: $corBotoesEscuros;
                 width: 80%;
                 margin: 0;
             }
-    
+
             .containerStore-base-info {
                 width: 30%;
-
                 margin: 0;
                 margin-left: 10px;
+
                 img {
                     width: 100%;
                 }
-    
+
                 display: flex;
                 justify-content: space-between;
                 flex-direction: column;
-    
+
                 .gameDescription {
                     margin-top: 5px;
                     font-size: 16px;
                     text-align: left;
                 }
-    
+
                 .fuctions {
                     display: flex;
-    
                     flex-direction: row;
                     text-decoration: none;
                     align-items: center;
@@ -1388,36 +1263,34 @@ footer {
                         margin-right: 10px;
                         font-size: 12px;
                     }
-    
+
                     .analiseBoa {
                         color: $corTextoAnaliseBoa;
                         font-size: 12px;
                     }
-    
+
                     .analiseNeutra {
                         color: $corTextoAnaliseNeutra;
                         font-size: 12px;
                     }
-    
+
                     .analiseRuim {
                         color: $corTextoAnaliseRuim;
                         font-size: 12px;
                     }
-    
+
                     .creatorLink {
                         text-decoration: none;
                         color: $corTexto;
                         font-size: 12px;
-    
+
                         &:hover {
                             color: $corBotoesHover;
                         }
                     }
                 }
             }
-    
         }
-    
     }
 
     .containerStore-main {
@@ -1428,16 +1301,15 @@ footer {
         justify-content: space-between;
         flex-direction: row;
         text-align: center;
-    
+
         .containerStore-main-left {
             width: 70%;
             text-align: left;
             align-items: center;
             margin-right: 10px;
             flex-wrap: wrap;
-    
+
             .areaBuy {
-    
                 border-radius: 5px;
                 display: flex;
                 flex-direction: row;
@@ -1451,12 +1323,11 @@ footer {
                 background: rgb(255, 255, 255);
                 background: linear-gradient(196deg, rgba(255, 255, 255, 0.253) 0%, rgba(148, 148, 148, 0.103) 100%);
                 box-shadow: 4px 5px rgba(0, 0, 0, 0.137);
-    
+
                 h3 {
                     margin: auto;
-    
                 }
-    
+
                 .buttonBuy {
                     background-color: $corFundoEscura;
                     display: flex;
@@ -1467,7 +1338,7 @@ footer {
                     border-radius: 5px 5px 5px 5px;
                     justify-content: space-between;
                     box-shadow: 4px 5px rgba(0, 0, 0, 0.137);
-    
+
                     span {
                         padding: 10px;
                         border-radius: 5px 5px 5px 5px;
@@ -1475,9 +1346,8 @@ footer {
                         align-items: center;
                         align-content: center;
                     }
-    
+
                     .buy {
-    
                         border-radius: 5px 5px 5px 5px;
                         text-align: center;
                         align-items: center;
@@ -1489,16 +1359,15 @@ footer {
                         background-color: $corBotoesAvisos !important;
                         font-weight: 600;
                         transition: 300ms;
-    
+
                         &:hover {
                             background-color: $corSecundaria !important;
                             color: $corTextoEscuro;
                         }
-    
                     }
                 }
             }
-    
+
             .divider {
                 margin-top: 20px;
                 margin-bottom: 5px;
@@ -1506,69 +1375,65 @@ footer {
                 height: 1px;
                 background: rgb(16, 122, 98);
                 background: linear-gradient(90deg, rgba(16, 122, 98, 1) 0%, rgba(148, 148, 148, 0) 100%);
-    
             }
-    
+
             .sobre {
                 display: flex;
                 flex-direction: column;
-    
+
                 .cardRequisitos {
                     display: flex;
                     flex-direction: row;
-    
+
                     &-Left {
                         font-size: 12px;
                         color: #b4b4b4;
                         margin-right: 10px;
-    
+
                         span {
                             color: $corTexto;
                         }
                     }
-    
+
                     .cardRequisitos-Right {
                         font-size: 12px;
                         color: #b4b4b4;
-    
+
                         span {
                             color: $corTexto;
                         }
                     }
-    
                 }
-    
+
                 .creatorLink {
                     text-decoration: none;
                     color: $corTexto;
                     font-size: 12px;
-    
+
                     &:hover {
                         color: $corBotoesHover;
                     }
                 }
             }
-    
         }
-    
+
         .containerStore-main-right {
             width: 30%;
-    
+
             section {
                 background-color: rgba(0, 0, 0, 0.151);
                 padding: 10px;
                 margin-bottom: 10px;
-    
+
                 & .jogoFunctions {
                     display: flex;
                     flex-direction: column;
-    
                     text-align: left;
-    
+
                     & .jogoFunctions_layer {
                         display: flex;
                         align-items: center;
-    
+
                         & span {
                             background-color: $corFundo;
                             width: 100%;
@@ -1576,13 +1441,13 @@ footer {
                             padding: 5px;
                             font-size: 14px;
                             color: $corTextoHover;
-    
+
                             &:hover {
                                 background-color: $corFundoClara;
                                 color: $corTexto;
                             }
                         }
-    
+
                         & i {
                             background-color: $corFundoEscura;
                             padding: 4px;
@@ -1592,7 +1457,7 @@ footer {
                     }
                 }
             }
-    
+
             .idiomas {
                 div {
                     background-color: $corBotoesEscuros;
@@ -1600,37 +1465,31 @@ footer {
                     margin: auto;
                 }
             }
-    
+
             .containerStore-base-info {
                 width: 100%;
-    
                 display: flex;
-    
                 flex-direction: column;
-    
+
                 .fuctions {
                     display: flex;
-    
                     flex-direction: row;
                     text-decoration: none;
                     align-items: center;
                     justify-content: space-between;
-    
-    
-    
+
                     .titleFuncion {
                         color: $corTextoFunction;
                         margin-right: 10px;
                         font-size: 12px;
                         justify-content: space-between;
-    
                     }
-    
+
                     .creatorLink {
                         text-decoration: none;
                         color: $corTexto;
                         font-size: 12px;
-    
+
                         &:hover {
                             color: $corBotoesHover;
                         }
@@ -1697,9 +1556,6 @@ footer {
         margin-right: 30%;
         justify-content: space-around;
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.26);
-
-
-
         padding: 10px;
         background-image: url(..//img/backgroundGreenMobile.png);
         background-size: 100%;

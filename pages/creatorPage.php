@@ -1,35 +1,18 @@
 <?php
-
 $id = $p[1] ?? NULL;
-
 $dadosApi = file_get_contents("http://localhost/VaporStore_web/api/games_originals.php/");
-
 $dadosApi = json_decode($dadosApi);
-
 $jogo = $dadosApi->$id;
-
 ?>
 
 <?php
-
 $id = $p[1] ?? NULL;
-
 $dadosApiPromo = file_get_contents("http://localhost/VaporStore_web/api/games_originals.php/");
-
 $dadosApiPromo = json_decode($dadosApiPromo);
-
 $jogoPromo = $dadosApiPromo->$id;
-
 ?>
 
-
-
-
-
-
 <h1 class="text-center">Pagina do criador</h1>
-
-
 
 <div class="creatorPage">
     <div class="sobre">
@@ -52,7 +35,6 @@ $jogoPromo = $dadosApiPromo->$id;
 
 <div class="creatorPage">
     <div class="sobre">
-
         <h5><?= $jogoPromo->creator ?></h5>
         <div class="cardRequisitos">
             <div class="cardRequisitos-Left">

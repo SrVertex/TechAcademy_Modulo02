@@ -8,31 +8,28 @@
     <link rel="shortcut icon" href="img/logoTipo02_low.png" type="image/x-icon">
     <base href="http://localhost/VaporStore_web/">
 
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
- 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-<?php
+    <?php
 
-$api = file_get_contents("http://localhost/VaporStore_web/api/games.php");
-$dadosApi = json_decode($api);
+    $api = file_get_contents("http://localhost/VaporStore_web/api/games.php");
+    $dadosApi = json_decode($api);
 
-?>
+    ?>
 
-<?php
-foreach ($dadosApi as $jogo) {
-    
-}
-?>
+    <?php
+    foreach ($dadosApi as $jogo) {
+    }
+    ?>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid">
@@ -72,15 +69,6 @@ foreach ($dadosApi as $jogo) {
                     </ul>
 
                     <a href="login" class="btn btn-light">Login</a>
-
-
-
-
-
-
-
-
-
                     <!-- <div class="dropdown">
                         <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                             Login
@@ -110,29 +98,10 @@ foreach ($dadosApi as $jogo) {
                             <a class="dropdown-item" href="#">Esqueceu sua senha?</a>
                         </div>
                     </div> -->
-                
-                
-                
                 </div>
             </div>
         </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </header>
-
 
     <main>
         <!-- Comeco PHP BASE -->
@@ -158,79 +127,83 @@ foreach ($dadosApi as $jogo) {
         }
         ?>
         <!-- Final PHP BASE -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </main>
-
-
-
-
 
     <footer>
         <div class="footerBox">
-        <div class="footerBase">
-            <a href="home"><img class="logoFooter" src="img/logoTipo02_low.png" alt="Vapor Store"></a>
-            <p>© 2024 SrVertex Corporation. Todos os direitos reservados. Todas as marcas comerciais são propriedade dos respetivos proprietários nos E.U.A. e outros países.
-                IVA incluído em todos os preços onde aplicável.</p>
+            <div class="footerBase">
+                <a href="home"><img class="logoFooter" src="img/logoTipo02_low.png" alt="Vapor Store"></a>
+                <p>© 2024 SrVertex Corporation. Todos os direitos reservados. Todas as marcas comerciais são propriedade dos respetivos proprietários nos E.U.A. e outros países.
+                    IVA incluído em todos os preços onde aplicável.</p>
+            </div>
+            <div class="footerDown">
+                <div class="groupFooter">
+                    <a href="#">Parceiros</a>
+                </div>
+                <div class="groupFooter">
+                    <span>|</span>
+                </div>
+                <div class="groupFooter">
+                    <button type="button" class="btnCadastro" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Contato</button>
+                </div>
+                <div class="groupFooter">
+                    <span>|</span>
+                </div>
+                <div class="groupFooter">
+                    <i class="bi bi-facebook"></i>
+                    <a href="https://www.facebook.com/Sr.Vertex">SrVertex</a>
+                </div>
+                <div class="groupFooter">
+                    <span>|</span>
+                </div>
+                <div class="groupFooter">
+                    <i class="bi bi-instagram"></i>
+                    <a href="https://www.instagram.com/sr_vertex/">@sr.vertex</a>
+                </div>
+                <div class="groupFooter">
+                    <span>|</span>
+                </div>
+                <div class="groupFooter">
+                    <i class="bi bi-github"></i>
+                    <a href="https://github.com/SrVertex">SrVertex</a>
+                </div>
+            </div>
         </div>
-        <div class="footerDown">
-            <div class="groupFooter">
-                <a href="#">Parceiros</a>
-            </div>
-            <div class="groupFooter">
-                <span>|</span>
-            </div>
-            <div class="groupFooter">
-                <a href="#">Contato</a>
-            </div>
-            <div class="groupFooter">
-                <span>|</span>
-            </div>
-            <div class="groupFooter">
-                <i class="bi bi-facebook"></i>
-                <a href="#">SrVertex</a>
-            </div>
-            <div class="groupFooter">
-                <span>|</span>
-            </div>
-            <div class="groupFooter">
-                <i class="bi bi-instagram"></i>
-                <a href="#">@sr.vertex</a>
-            </div>
-            <div class="groupFooter">
-                <span>|</span>
-            </div>
-            <div class="groupFooter">
-                <i class="bi bi-github"></i>
-                <a href="#">SrVertex</a>
-            </div>
-        </div>
-        </div>
-
+        <!-- Button trigger modal -->
     </footer>
 
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Entre em Contato</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="https://formsubmit.co/leonardo.decaris@grupointegrado.br" method="POST">
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Email</label>
+                            <input type="email" class="form-control required" id="recipient-name" placeholder="email@exemplo.com" oninput="emailRagex" required oninput="emailValidate()">
+                            <span class="span-required" style="display: none; color: red;">Email Invalido</span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Mensagem:</label>
+                            <textarea class="form-control" id="message-text" placeholder="Sua Mensagem"></textarea>
+                        </div>
+                        <input type="hidden" name="_sudject" value="Novo Contato!">
+                        <input type="text" name="_honey" style="display: none;">
+                        <input type="hidden" name="_captcha" value="false">
 
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Fechar</button>
+                            <button type="submit" class="btn btn-light" name="_sudject" value="Novo Contato!">Enviar</button>
+                        </div>
+                    </form>
+                </div>
 
-
-
-
+            </div>
+        </div>
+    </div>
 
     <script src="js/scriptLogin.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -240,5 +213,4 @@ foreach ($dadosApi as $jogo) {
     <script src="fslightbox.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-
 </html>

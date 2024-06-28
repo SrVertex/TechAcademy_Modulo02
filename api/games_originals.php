@@ -4,11 +4,10 @@ header("Content-type: application/json; charset=utf-8");
 
 $path = "http://localhost/VaporStore_web/";
 
-
 $original[1] = array(
     "id" => 1,
-    "apiKey1" => "01010011 01110010 01010110 01100101 01110010 01110100 01100101 01111000" ,
-    "apiKey2" => "srventerrtenterx lenterobernairdober" ,
+    "apiKey1" => "01010011 01110010 01010110 01100101 01110010 01110100 01100101 01111000",
+    "apiKey2" => "srventerrtenterx lenterobernairdober",
     "title" => "Rocket On The Rocks",
     "description" => "Apertem os cintos e se prepare para um universo cheio de historias e aventuras, explorando novos mundos...",
     "descriptionMid" => "Apertem os cintos e se prepare para um universo cheio de historias e aventuras, explorando novos mundos, personagens e possibilidades. Momentos epicos e adrenalina podem lhe esperar a cada fase, a cada inimigo derrotado.",
@@ -102,11 +101,11 @@ $original[1] = array(
 );
 $original[2] = array(
     "id" => 2,
-    "apiKey1" => "01010011 01110010 01010110 01100101 01110010 01110100 01100101 01111000" ,
-    "apiKey2" => "srventerrtenterx lenterobernairdober" ,
+    "apiKey1" => "01010011 01110010 01010110 01100101 01110010 01110100 01100101 01111000",
+    "apiKey2" => "srventerrtenterx lenterobernairdober",
     "title" => "Cowboy in a DreamLand",
     "description" => "Em um dia nosso herói acorda em uma área devastada pelos mortos vivos. Apenas com breves lembranças...",
-    
+
     "descriptionMid" => "Em um dia nosso herói acorda em uma área devastada pelos mortos vivos. Apenas com breves lembranças de seu passado ele define seu destino: Salvar a garota que aparece em seus sonhos.",
     "descriptionFull" => "Em um dia nosso herói acorda em uma área devastada pelos mortos vivos.
 Apenas com breves lembranças de seu passado ele define seu destino:
@@ -201,11 +200,11 @@ Nosso herói não sabe se tudo isso é real",
 );
 $original[3] = array(
     "id" => 3,
-    "apiKey1" => "01010011 01110010 01010110 01100101 01110010 01110100 01100101 01111000" ,
-    "apiKey2" => "srventerrtenterx lenterobernairdober" ,
+    "apiKey1" => "01010011 01110010 01010110 01100101 01110010 01110100 01100101 01111000",
+    "apiKey2" => "srventerrtenterx lenterobernairdober",
     "title" => "Tommy Adventure",
     "description" => "O jogo de plataforma Tommy's Adventure é inspirado em jogos estilo Endless Runner que são ...",
-    
+
     "descriptionMid" => "O jogo de plataforma Tommy's Adventure é inspirado em jogos estilo Endless Runner que são jogos de corrida intermináveis, como exemplo o Dino T-Rex, o famoso dinossauro do Google que aparece quando a internet cai.",
     "descriptionFull" => "O jogo de plataforma Tommy's Adventure é inspirado em jogos estilo Endless Runner que são jogos de corrida intermináveis, como exemplo o Dino T-Rex, o famoso dinossauro do Google que aparece quando a internet cai.
 No Tommy's Adventure, o jogador iniciará a partida já em movimento e deverá seguir a diante tomando cuidado com os obstáculos e trajetos incompletos que implicarão direto no resultado do jogo.",
@@ -298,11 +297,11 @@ No Tommy's Adventure, o jogador iniciará a partida já em movimento e deverá s
 );
 $original[4] = array(
     "id" => 4,
-    "apiKey1" => "01010011 01110010 01010110 01100101 01110010 01110100 01100101 01111000" ,
-    "apiKey2" => "srventerrtenterx lenterobernairdober" ,
+    "apiKey1" => "01010011 01110010 01010110 01100101 01110010 01110100 01100101 01111000",
+    "apiKey2" => "srventerrtenterx lenterobernairdober",
     "title" => "Curse Game",
     "description" => "Entre no mundo perigoso e cheio de ação de Rua do Samurai, um jogo de combate intenso...",
-    
+
     "descriptionMid" => "Entre no mundo perigoso e cheio de ação de Rua do Samurai, um jogo de combate intenso onde você assume o papel de um samurai solitário, determinado a livrar sua cidade da ameaça de bandidos implacáveis",
     "descriptionFull" => "Entre no mundo perigoso e cheio de ação de Rua do Samurai, um jogo de combate intenso onde você assume o papel de um samurai solitário, determinado a livrar sua cidade da ameaça de bandidos implacáveis. Com sua espada afiada e habilidades de luta excepcionais, você enfrentará ondas de inimigos em batalhas de rua eletrizantes. Defenda os inocentes, restabeleça a ordem e prove seu valor como o verdadeiro guardião da justiça neste jogo de ação imersivo e dinâmico. Prepare-se para duelos épicos e combates corpo a corpo que testarão sua habilidade e honra de samurai.",
 
@@ -394,11 +393,11 @@ $original[4] = array(
 );
 $original[5] = array(
     "id" => 5,
-    "apiKey1" => "01010011 01110010 01010110 01100101 01110010 01110100 01100101 01111000" ,
-    "apiKey2" => "srventerrtenterx lenterobernairdober" ,
+    "apiKey1" => "01010011 01110010 01010110 01100101 01110010 01110100 01100101 01111000",
+    "apiKey2" => "srventerrtenterx lenterobernairdober",
     "title" => "BUg From Hell 2.0",
     "description" => "Entre no mundo perigoso e cheio de ação de Rua do Samurai, um jogo de combate intenso...",
-    
+
     "descriptionMid" => "Entre no mundo perigoso e cheio de ação de Rua do Samurai, um jogo de combate intenso onde você assume o papel de um samurai solitário, determinado a livrar sua cidade da ameaça de bandidos implacáveis",
     "descriptionFull" => "Entre no mundo perigoso e cheio de ação de Rua do Samurai, um jogo de combate intenso onde você assume o papel de um samurai solitário, determinado a livrar sua cidade da ameaça de bandidos implacáveis. Com sua espada afiada e habilidades de luta excepcionais, você enfrentará ondas de inimigos em batalhas de rua eletrizantes. Defenda os inocentes, restabeleça a ordem e prove seu valor como o verdadeiro guardião da justiça neste jogo de ação imersivo e dinâmico. Prepare-se para duelos épicos e combates corpo a corpo que testarão sua habilidade e honra de samurai.",
 
@@ -488,16 +487,5 @@ $original[5] = array(
     "creatorImg" => "{$path}img/banners/bugFromHell2/creatorLogo.jpg",
     "creatorSite" => "FALTA"
 );
-
-
-
-
-
-
-
-
-
-
-
 
 echo json_encode($original);

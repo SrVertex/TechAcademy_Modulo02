@@ -6,8 +6,6 @@
         <img src="img/loginPhotoMobile.png" class="imgLoginMobile" alt="">
         <div class="formLogin">
             <h3 class="text-center">Cadastre-se</h3>
-
-
             <div>
                 <form class="">
                     <div class="mb-3">
@@ -28,13 +26,10 @@
                             <label class="form-check-label mb-1" for="dropdownCheck">
                                 Aceito todos os termos
                             </label>
-
                         </div>
                         <a class="textLinks" href="login">Ja tem uma conta? Login</a>
                     </div>
-                    <button type="button" class="btn btn-light mt-1"  data-bs-toggle="modal" data-bs-target="#exampleModal">Cadastrar</button>
-
-
+                    <button type="button" class="btn btn-light mt-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Cadastrar</button>
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
@@ -52,25 +47,11 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-
                 </form>
                 <div class="dropdown-divider"></div>
-
             </div>
-
-
         </div>
-
     </div>
-
 </div>
 
-
-<div class="spacing">
-    
-    </div>
+<div class="spacing"></div>

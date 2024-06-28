@@ -1,31 +1,32 @@
-document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+const form = document.getElementById('form');
+const campos =document.querySelectorAll('.required')
+const spans = document.querySelectorAll('.span-required');
+const emailRegex =/^\w+([-+.']\w+)@\w+([-.]\w+)\.\w+([-.]\w+)*$/;
 
-    var email = document.getElementById('email').value;
-    var password = document.getElementById('password').value;
+function setError(index){
+    campos [index].style.border ='2px solid #e63636';
+    spans [index].style.display= 'block';
+    
+}
+function removeError(index) {
 
-    var errorMessage = '';
+  campos[index].style.border = '2px solid #fff';
+  spans[index].style.display = 'none';
 
-    if (email.trim() === '') {
-        errorMessage += 'O campo de email não pode estar vazio.\n';
-    } else {
-        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailPattern.test(email)) {
-            errorMessage += 'Formato de email inválido.\n';
-        }
-    }
-
-    if (password.trim() === '') {
-        errorMessage += 'O campo de senha não pode estar vazio.\n';
-    }
-
-    if (email.trim() !== 'teste@email.com' || password.trim() !== 'teste1234') {
-        errorMessage += 'Email ou senha incorretos.\n';
-    }
-
-    if (errorMessage) {
-        alert(errorMessage);
-    } else {
-        alert('Login realizado com sucesso!');
-    }
-});
+}
+    
+function emailValidate() {
+  if(!emailRegex.test(campos[0])) {
+    setError(0);
+  }else {
+    removaError(0);
+  }
+}
+function mainPasswordValidate(){
+    if(campos[1].value.length < 8){
+    setError(1);
+}
+else {
+    removeError(1);
+}
+}
